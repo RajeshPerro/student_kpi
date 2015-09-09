@@ -25,7 +25,7 @@ echo '<tr class="student-row">';
 	echo '<td><p class="student-id" data-id='.$value[s_id].'>'.$value['s_id'].'</p></td>';
 	echo '<td><p class="student-name" data-name='.$value[name].'>'.$value['name'].'</p></td>';
 	//echo '<td>'.$value['name'].'</td>';
-	echo '<td> <a class=" add_score btn btn-success" href="#" data-toggle="modal" data-target=".pop">'."Add Score".'</a></td>';
+	echo '<td> <a class=" add_score btn btn-success why-its-not-working" href="#" data-toggle="modal" data-target=".pop">'."Add Score".'</a></td>';
 	
 echo "</tr>";
 }

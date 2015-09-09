@@ -410,8 +410,6 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
         console.log(today);
     });
 </script>
-<script type="text/javascript">
-    $('.selectpicker').selectpicker();
-</script>
+
 </body>
 </html>

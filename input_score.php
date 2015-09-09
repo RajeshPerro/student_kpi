@@ -28,6 +28,7 @@ $fetch_result =5;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript">
+
     $(document).ready(function(){
     	  $('#group_id').change(function(){
             $.ajax({
@@ -37,14 +38,49 @@ $fetch_result =5;
                 data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
                 success: function(aa){
 
-                	console.log(aa);
-                	$('#test_data_table').html(aa);                    
+                	//console.log(aa);
+                	$('#test_data_table').html(aa);
+                    setTimeout(function () {
+//                        $('.add_score').click(function(){
+//                            console.log("Working!!");
+//                        });
+                        $(".add_score").click(send_data);
+                    }, 100);
+
                 },
                 error: function(x)
                 {
-                	console.log("In Error!!");
-                   	console.log(x);
+                	//console.log("In Error!!");
+                   //	console.log(x);
                    
+
+                }
+
+            }); // Ajax Call
+        }); //event handler
+        $('#batch_id').change(function(){
+            $.ajax({
+
+                type: "GET",
+                url: "test.php",
+                data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
+                success: function(aa){
+
+                    //console.log(aa);
+                    $('#test_data_table').html(aa);
+                    setTimeout(function () {
+//                        $('.add_score').click(function(){
+//                            console.log("Working!!");
+//                        });
+                        $(".add_score").click(send_data);
+                    }, 100);
+
+                },
+                error: function(x)
+                {
+                    //console.log("In Error!!");
+                    //	console.log(x);
+
 
                 }
 
@@ -66,7 +102,12 @@ $fetch_result =5;
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>-
+-
+-
+-
+-
+-
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
@@ -159,29 +200,9 @@ $fetch_result =5;
                             </tr>
                         </table>
                         <table id="test_data_table" class="text-center table table-striped table-condensed table-bordered table-hover">
-                        	
-                        </table>
-                        <!-- <table >
-                            
-                            <?php
-                            $sl=0;
-                            foreach($fetch_result as $value)
-                            {
-                            $sl++;
 
-                            ?>
-                            <tr class="student-row" >
-                                <td><?php echo $sl;?></td>
-                                <td>
-                                <p class="student-id" data-id="<?php echo $value['s_id'];?>"><?php echo $value['s_id'];?></p>
-                                </td>
-                                <td>
-                                <p id="js_s_name" class="student-name" data-name="<?php echo $value['name'];?>"><?php echo $value['name'];?></p>
-                                </td>
-                                <td><a class=" add_score btn btn-success" href="#" data-toggle="modal" data-target=".pop"> Add Score</a></td>
-                            </tr>
-                            <?php }?>
-                        </table> -->
+                        </table>
+
 
 
 
@@ -408,9 +429,11 @@ $fetch_result =5;
     // $(document).ready(function () {
     //     $('.student-row a').click(send_data);
     // })
-$(document).ready(function(){
-	$(".add_score").click(send_data);
-});
+//$(document).ready(function(){
+//
+//	$(".add_score").click(send_data);
+//});-
+
 </script>
 
 </body>
