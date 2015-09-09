@@ -1,6 +1,9 @@
 /**
  * Created by rajesh on 9/9/15.
  */
+
+
+//Common area JS
 //Date capture function start..
 var today = new Date();
 $(document).ready(function() {
@@ -22,6 +25,9 @@ $(document).ready(function() {
     console.log(today);
 });
 //Date capture function End..
+
+
+//input_score page JS
 
 //Score calculation in modal..
 function score_cal()
@@ -201,7 +207,7 @@ $(document).ready(function(){
             },
             error: function(x)
             {
-                
+
             }
 
         }); // Ajax Call
@@ -222,3 +228,29 @@ function fuck()
     console.log(groupid);
     console.log(today);
 }
+//Dashboard JS
+
+$(window).load(function(){
+
+    $('td.final_result').each(function()
+    {
+        if($(this).html()>=80)
+        {
+            $(this).css("background-color","green");
+            $(this).css("color","white");
+        }
+
+        if($(this).html()<=49)
+        {
+            $(this).css("background-color","red");
+            $(this).css("color","white");
+        }
+        if($(this).html()>=50&&$(this).html()<=69)
+        {
+            $(this).css("background-color","orange");
+            $(this).css("color","white");
+        }
+
+    });
+
+});

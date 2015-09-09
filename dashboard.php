@@ -25,7 +25,9 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
     <link  rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custome.js"></script>
 </head>
 <body>
 
@@ -361,55 +363,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 
     </div>
 </section>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(window).load(function(){
 
-        $('td.final_result').each(function()
-        {
-            if($(this).html()>=80)
-            {
-                $(this).css("background-color","green");
-                $(this).css("color","white");
-            }
-
-            if($(this).html()<=49)
-            {
-                $(this).css("background-color","red");
-                $(this).css("color","white");
-            }
-            if($(this).html()>=50&&$(this).html()<=69)
-            {
-                $(this).css("background-color","orange");
-                $(this).css("color","white");
-            }
-
-        });
-
-    });
-
-</script>
-<script>
-    $(document).ready(function() {
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1; //January is 0!
-        var yyyy = today.getFullYear();
-
-        if (dd < 10) {
-            dd = '0' + dd
-        }
-
-        if (mm < 10) {
-            mm = '0' + mm
-        }
-
-        today = yyyy + '/' + mm + '/' + dd;
-        $("#e_date").val(today);
-        console.log(today);
-    });
-</script>
 
 </body>
 </html>

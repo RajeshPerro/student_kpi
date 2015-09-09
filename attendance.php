@@ -11,6 +11,9 @@
     <link  rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custome.js"></script>
 </head>
 <body>
 
@@ -206,28 +209,5 @@
         </div>
     </div>
 </section>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function() {
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1; //January is 0!
-        var yyyy = today.getFullYear();
-
-        if (dd < 10) {
-            dd = '0' + dd
-        }
-
-        if (mm < 10) {
-            mm = '0' + mm
-        }
-
-        today = yyyy + '/' + mm + '/' + dd;
-        $("#e_date").val(today);
-        console.log(today);
-    });
-</script>
-
 </body>
 </html>
