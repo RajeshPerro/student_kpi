@@ -228,8 +228,6 @@
         console.log(today);
     });
 </script>
-<script type="text/javascript">
-    $('.selectpicker').selectpicker();
-</script>
+
 </body>
 </html>

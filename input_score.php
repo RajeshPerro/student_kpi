@@ -11,7 +11,7 @@ include('rajesh_model.php');
 // $db_pass='root123';
 // $db_Name='student_kpi';
 // $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
-$fetch_result =5;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,9 +50,6 @@ $fetch_result =5;
                 },
                 error: function(x)
                 {
-                	//console.log("In Error!!");
-                   //	console.log(x);
-                   
 
                 }
 
