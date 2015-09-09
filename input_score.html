@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDU KPI :: Input Score </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link  rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link  rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link  rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Fonts -->   
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Header Section -->
+            <div id="header">
+
+                <!-- Navigation -->
+                <nav class="navbar navbar-default padding-top-bottom">
+                    <div class="container">
+
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="col-xs-4 col-sm-12">
+                                <a class="navbar-brand logo" href="#">
+                                    <img src="images/ct.png" alt="CT logo" class="img-responsive" width="100" height="100">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="attendance.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                                    <li><a href="attendance.html"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
+                                    <li><a href="input_score.html"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>
+                                </ul>
+                        </div>
+
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div> 
+
+            <!-- Automated Attendance Section -->
+            <section id="auto-attendance">       
+                <div class="container">  
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Input Score</h2>  
+                        </div>
+                    </div>
+
+                    <div class="row bg-white padding-top-bottom">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <select class="selectpicker">
+                                    <option>Select Batch...</option>
+                                    <option>First batch</option>
+                                    <option>Second batch</option>
+                                    <option>Third batch</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="selectpicker">
+                                    <option>Select Group...</option>
+                                    <option>Group 02</option>
+                                    <option>Group 03</option>
+                                    <option>Group 04</option>
+                                    <option>Group 05</option>
+                                    <option>Group 06</option>
+                                    <option>Group 07</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+
+
+
+
+            <div class="container">
+
+
+                <div class="row">
+
+                    <ul class="breadcrumb">
+                        <li ><a href="#"> Dashboard</a></li>
+                        <li class="active">Input Score</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="back">
+                        <div class="mainbody">
+                            <div class="row custom-border">
+                                <div class="col-md-12">
+                                    <div class="col-md-6">
+                                        <h3 class="pull-left">Students List</h3>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="pull-right">
+                                           <input readonly  id="e_date" class="form-control input-lg" type="text" name="entry_date" value="">
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-12"> 
+                                <br><br>
+                                <table class="text-center table table-striped table-condensed table-bordered table-hover">
+                                    <tr>
+                                        <th>#Sl</th>
+                                        <th>Students Id</th>
+                                        <th>Students Name</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2945</td>
+                                        <td>Linkon Islam</td>
+                                        <td><a class="btn btn-success" href="#" data-toggle="modal" data-target=".pop"> Add Score</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2945</td>
+                                        <td>Linkon Islam</td>
+                                        <td><a class="btn btn-success" href="#" data-toggle="modal" data-target=".pop"> Add Score</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2945</td>
+                                        <td>Linkon Islam</td>
+                                        <td><a class="btn btn-success" href="#" data-toggle="modal" data-target=".pop"> Add Score</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2945</td>
+                                        <td>Linkon Islam</td>
+                                        <td><a class="btn btn-success" href="#" data-toggle="modal" data-target=".pop"> Add Score</a></td>
+                                    </tr>
+                                </table>
+
+
+
+                                <div class="modal pop">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <div class="col-md-12">
+                                                    <select class="selectpicker">
+                                                        <option>Select Batch...</option>
+                                                        <option>First batch</option>
+                                                        <option>Second batch</option>
+                                                        <option>Third batch</option>
+                                                    </select>
+                                                </div>
+                                                <br>
+                                                <form >
+                                                    <div class="col-xs-5 col-sm-5 text-right font">Students ID</div>
+                                                    <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total" placeholder="2497" name="score" class="form-control" readonly></div>
+                                                    <br>
+                                                    <div class="col-xs-5 col-sm-5 text-right font">Total Score</div>
+                                                    <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total" placeholder="Enter Score" name="score" class="form-control"></div>
+                                                    <br>
+                                                    <div class="col-xs-5 col-sm-5 text-right font">Obtain Marks</div>
+                                                    <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="obtain" placeholder="Enter Score" name="marks" class="form-control"></div>
+                                                    <br>
+                                                    <div class="col-xs-5 col-sm-5 text-right font">Actual Marks</div>
+                                                    <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="actual" placeholder="100" name="marks" class="form-control" readonly></div>
+
+
+                                                    <button type="button" class="btn btn-lg btn-success"> Update Score </button>
+
+                                                </form>
+                                                <button type="button" data-dismiss="modal" class="btn btn-danger cross" ><span>&times;</span></button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Student List Section -->
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="footer" class="padding-top-bottom">
+            <div class="container">
+                
+                    <div class="col-md-12 text-center">
+                        <p>© 2015 | Powered by Mentor Team, Coderstrust  </p>
+                        <p>All Rights Reserved</p>
+                    </div>
+                
+            </div>
+        </section>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if(dd<10) {
+            dd='0'+dd
+        }
+
+        if(mm<10) {
+            mm='0'+mm
+        }
+
+        today =yyyy+'/'+mm+'/'+dd;
+    $("#e_date").val(today);
+        console.log(today);
+    });
+        </script>
+        <script type="text/javascript">
+            $('.selectpicker').selectpicker();
+        </script>
+    </body>
+</html> 
