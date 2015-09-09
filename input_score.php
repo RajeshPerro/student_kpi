@@ -199,7 +199,7 @@ $fetch_result =5;
                                 <th>Action</th>
                             </tr>
                         </table>
-                        <table id="test_data_table" class="text-center table table-striped table-condensed table-bordered table-hover">
+                        <table id="test_data_table" class="table table-striped table-condensed table-bordered table-hover">
 
                         </table>
 
@@ -230,7 +230,7 @@ $fetch_result =5;
                                             <br>
                                         </div>
                                         <br>
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 drop-down-space">
                                             <select id="ex" name="exam_type">
                                                 <option>--Select Assessment--</option>
                                                 <option value="ST">Small Test</option>
@@ -240,6 +240,24 @@ $fetch_result =5;
                                             </select>
                                         </div>
                                         <br>
+                                        <div class="col-md-12 drop-down-space">
+                                            <select id="front_end" name="skill_type">
+                                                <option value="#" selected>Select Skill Type</option>
+                                                <option value="Front End">Front End</option>
+                                                <option value="Back End">Back End</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 drop-down-space">
+                                            <select name="skill_name">
+                                                <option value="#" class="default" selected>Select Skill</option>
+                                                <option value="HTML and CSS" class="fe">HTML && CSS</option>
+                                                <option value="Bootstrap" class="fe">Bootstrap</option>
+                                                <option value="Javascript and jQuery" class="fe">Javascript & jQuery</option>
+                                                <option value="PHP and MySQL" class="be">PHP & MySQL</option>
+                                                <option value="WordPress" class="be">WordPress</option>
+                                            </select>
+                                        </div>
+
 
                                             <div class="col-xs-5 col-sm-5 text-right font">Students ID</div>
                                             <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="modal_id"  name="s_id" class="form-control" readonly></div>
@@ -295,6 +313,34 @@ $fetch_result =5;
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
+//    skill select dropdown start
+    $(document).ready(function(){
+        $(".be").hide();
+        $(".fe").hide();
+        $("#front_end").change(function(){
+            if($("#front_end").val()=="Front End")
+            {
+                $(".fe").show();
+                $(".be").hide();
+            }else if($("#front_end").val()=="Back End")
+            {
+                $(".be").show();
+                $(".fe").hide();
+            }else
+            {
+
+            }
+        });
+        $("#front_end").change(function(){
+            if($("#front_end").val()=="Front End")
+            {
+                $(".default").hide();
+            }
+        });
+    });
+//skill select dropdown End
+
+//Date capture function start..
     var today = new Date();
     $(document).ready(function() {
 
@@ -314,6 +360,9 @@ $fetch_result =5;
         $("#e_date").val(today);
         console.log(today);
     });
+//Date capture function End..
+
+//Score calculation in modal..
     function score_cal()
     {
         var result,actual, outof= parseFloat($("#of").val()), obtained= parseFloat($("#obtain").val()),ac=$("#actual");
@@ -333,6 +382,7 @@ $fetch_result =5;
                 result=actual.toFixed(2);
                 ac.val(result);
                 score_msg.text(10);
+                save.attr('disabled', false);
             }
 
         }
@@ -352,6 +402,7 @@ $fetch_result =5;
                 result=actual.toFixed(2);
                 ac.val(result);
                 score_msg.text(35);
+                save.attr('disabled', false);
             }
         }
         else if(exam_type === 'ASS')
@@ -368,6 +419,7 @@ $fetch_result =5;
                 result=actual.toFixed(2);
                 ac.val(result);
                 score_msg.text(20);
+                save.attr('disabled', false);
             }
         }
         else if(exam_type === 'PR')
@@ -384,6 +436,7 @@ $fetch_result =5;
                 result=actual.toFixed(2);
                 ac.val(result);
                 score_msg.text(20);
+                save.attr('disabled', false);
             }
         }
         else
@@ -394,6 +447,7 @@ $fetch_result =5;
 
     }
 
+//Just for test..no need this function you can remove..
     function fuck()
     {
         var batchid =$("#batch_id").val();
@@ -403,7 +457,7 @@ $fetch_result =5;
         console.log(groupid);
         console.log(today);
     }
-
+//Sending data in modal..
     function send_data(e)
     {
         var parentRow = $(e.target).parents('.student-row')
