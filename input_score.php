@@ -150,13 +150,16 @@ $fetch_result =5;
                         </div>
                     <div class="col-xs-12 col-sm-12">
                         <br><br>
-                        <table id="test_data_table" class="text-center table table-striped table-condensed table-bordered table-hover">
-                        	<tr>
+                        <table class="text-center table table-striped table-condensed table-bordered table-hover">
+                            <tr>
                                 <th>Sl#</th>
                                 <th>Students Id</th>
                                 <th>Students Name</th>
                                 <th>Action</th>
                             </tr>
+                        </table>
+                        <table id="test_data_table" class="text-center table table-striped table-condensed table-bordered table-hover">
+                        	
                         </table>
                         <!-- <table >
                             
