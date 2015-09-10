@@ -15,7 +15,6 @@ if(isset($_POST['attendance']))//Mandatory field name
     $db_name='student_kpi';
 
 
-
     $raj_modelobject->data_insert($post,$table,$db_user,$db_pass,$db_name);
     //data_insert_withfile($post,$file,$table,$db_user,$db_pass,$db_name);
     // data_insert($post,'user',$user,$pass,$dbname);//model's function Name(postdata,file,TableName)

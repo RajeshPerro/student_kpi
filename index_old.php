@@ -32,14 +32,14 @@
                     </div>
                     <div class="form-group form-group-lg">
 
-                        <input  type="text" placeholder="Type your username" name="username" class="form-control" id="username" >
+                        <input  type="text" placeholder="Type your username" name="username" class="form-control">
                     </div>
                     <div class="form-group form-group-lg">
-                        <input  type="password" placeholder="Enter password" name="password" class="form-control" id="password">
+                        <input  type="password" placeholder="Enter password" name="password" class="form-control">
                     </div>
 
 
-                    <button type="button" class="btn btn-lg btn-success btn-block" id="bt_login"> Login </button>
+                    <a href="dashboard.php"><button type="button" class="btn btn-lg btn-success btn-block"> Login </button></a>
 
                 </form>
             </div>
@@ -49,6 +49,5 @@
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/authentication.js"></script>
 </body>
 </html>

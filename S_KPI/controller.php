@@ -20,7 +20,7 @@ include('rajesh_model.php');
      //data_insert_withfile($post,$file,$table,$db_user,$db_pass,$db_name);
     // data_insert($post,'user',$user,$pass,$dbname);//model's function Name(postdata,file,TableName)
     echo("<script>alert('Successfully Saved!')</script>");
-    echo("<script>location.href='index.php'</script>");
+    echo("<script>location.href='index_old.php'</script>");
 
 }
 if(isset($_POST['exam_type']) )

@@ -64,9 +64,9 @@ include('rajesh_model.php');
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                        <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
+                        <li><a href="attendance_old.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
                         <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>
-                        <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+                        <li><a href="index_old.php"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
                     </ul>
                 </div>
 
@@ -120,6 +120,11 @@ include('rajesh_model.php');
                                     <option value="1">Group-01</option>
                                     <option value="2">Group-02</option>
                                     <option value="3">Group-03</option>
+                                    <option value="4">Group-04</option>
+                                    <option value="5">Group-05</option>
+                                    <option value="6">Group-06</option>
+                                    <option value="7">Group-07</option>
+                                    <option value="18">DIU</option>
                                 </select>
                             </div>
                             <div class="col-xs-12 col-sm-2">

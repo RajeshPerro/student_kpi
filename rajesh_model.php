@@ -70,10 +70,6 @@ class test
         }
     }
 
-
-    //Data Insert Start
-
-
     //Data Insert Start
     public function data_insert($post,$table,$db_user,$db_pass,$db_name)//withoutFile
     {
@@ -120,17 +116,6 @@ class test
         $preparedStatement =$dbcon->prepare($sql);
 
         $preparedStatement->execute(array('$colum' => '$allvalues'));
-//        if(  $preparedStatement->execute(array('$colum' => '$allvalues')))
-//        {
-//            echo "<script>alert('তথ্যটি সংরক্ষন করা হয়েছে ।')</script>";
-//            echo("<script>location.href='../index.php'</script>");
-//        }
-//        else
-//        {
-//            echo "<script>alert('আপনার তথ্যটি সংরক্ষন করা সম্ভব হয়নি ।')</script>";
-//
-//            echo("<script>location.href='index.php'</script>");
-//        }
 
     }
 
@@ -201,172 +186,12 @@ class test
         $preparedStatement =$dbcon->prepare($sql);
         $preparedStatement->execute(array('$colum' => '$allvalues'));
 
-//
-//        if(  $preparedStatement->execute(array('$colum' => '$allvalues')))
-//        {
-//            echo "<script>alert('তথ্যটি সংরক্ষন করা হয়েছে ।')</script>";
-//            echo("<script>location.href='index.php'</script>");
-//        }
-//        else
-//        {
-//            echo "<script>alert('আপনার তথ্যটি সংরক্ষন করা সম্ভব হয়নি ।')</script>";
-//
-//            echo("<script>location.href='index.php'</script>");
-//        }
 
     }
 
 
     //Data Insert End
 
-    public function data_insert_wife($post, $file, $table, $db_user, $db_pass, $db_name)
-    {
-
-        $con_user = $db_user;
-        $con_pass = $db_pass;
-        $con_name = $db_name;
-
-        $colum = "";
-        $values = "";
-        $limit = count($post);
-        $image = 'image';
-        $allvalues = "";
-        $i = 0;
-        foreach ($post as $name => $value) {
-            if ($i == 0) {
-                $colum .= "`" . $name . "`";
-                $values .= "'" . $value . "'";
-
-            } else {
-                $colum .= ",`" . $name . "`";
-                $values .= ",'" . $value . "'";
-            }
-            if ($i == ($limit - 1)) {
-                $colum .= ",`" . $image . "`";
-            }
-            $i++;
-        }
-        $colum;
-        $values;
-        $j = 0;
-        $imgvalues = "";
-        $allimge = "";
-        foreach ($_FILES['image']['tmp_name'] as $key => $tmp_name) {
-            $name = trim($_FILES['image']['name'][$key]);
-            $target = "Image/";
-            $target = $target . $_FILES['image']['name'][$key];
-            if ($j == 0) {
-                $imgvalues .= $name;
-            } else {
-                $imgvalues .= ";" . $name;
-            }
-            $j++;
-            move_uploaded_file($tmp_name, $target);
-        }
-        $allimge = ",'" . $imgvalues . "'";
-        $colum;
-        $allvalues .= $values . $allimge;
-        $sql = "insert into $table ($colum)values($allvalues)";
-        //exit;
-        $connection_object = new connect();
-        if (!empty($con_user) && !empty($con_pass)) {
-            $dbcon = $connection_object->connection('localhost', $con_user, $con_pass, $con_name);
-        } else {
-            $dbcon = $connection_object->connection('localhost', 'firoz', 'firoz', $con_name);
-
-        }
-
-        $preparedStatement = $dbcon->prepare($sql);
-
-        // $preparedStatement->execute(array('$colum' => '$allvalues'));
-        if ($preparedStatement->execute(array('$colum' => '$allvalues'))) {
-            echo "<script>alert('তথ্যটি সংরক্ষন করা হয়েছে ।')</script>";
-            echo("<script>location.href='../step2E.php'</script>");
-
-
-
-        } else {
-            echo "<script>alert('আপনার তথ্যটি সংরক্ষন করা সম্ভব হয়নি ।')</script>";
-
-            echo("<script>location.href='wife.php'</script>");
-        }
-
-    }
-
-
-    public function data_insert_kid($post, $file, $table, $db_user, $db_pass, $db_name)
-    {
-
-        $con_user = $db_user;
-        $con_pass = $db_pass;
-        $con_name = $db_name;
-
-        $colum = "";
-        $values = "";
-        $limit = count($post);
-        $image = 'image';
-        $allvalues = "";
-        $i = 0;
-        foreach ($post as $name => $value) {
-            if ($i == 0) {
-                $colum .= "`" . $name . "`";
-                $values .= "'" . $value . "'";
-
-            } else {
-                $colum .= ",`" . $name . "`";
-                $values .= ",'" . $value . "'";
-            }
-            if ($i == ($limit - 1)) {
-                $colum .= ",`" . $image . "`";
-            }
-            $i++;
-        }
-        $colum;
-        $values;
-        $j = 0;
-        $imgvalues = "";
-        $allimge = "";
-        foreach ($_FILES['image']['tmp_name'] as $key => $tmp_name) {
-            $name = trim($_FILES['image']['name'][$key]);
-            $target = "Image/";
-            $target = $target . $_FILES['image']['name'][$key];
-            if ($j == 0) {
-                $imgvalues .= $name;
-            } else {
-                $imgvalues .= ";" . $name;
-            }
-            $j++;
-            move_uploaded_file($tmp_name, $target);
-        }
-        $allimge = ",'" . $imgvalues . "'";
-        $colum;
-        $allvalues .= $values . $allimge;
-       $sql = "insert into $table ($colum)values($allvalues)";
-        //exit;
-        $connection_object = new connect();
-        if (!empty($con_user) && !empty($con_pass)) {
-            $dbcon = $connection_object->connection('localhost', $con_user, $con_pass, $con_name);
-        } else {
-            $dbcon = $connection_object->connection('localhost', 'firoz', 'firoz', $con_name);
-
-        }
-
-        $preparedStatement = $dbcon->prepare($sql);
-
-        //  $preparedStatement->execute(array('$colum' => '$allvalues'));
-        if ($preparedStatement->execute(array('$colum' => '$allvalues'))) {
-            echo "<script>alert('তথ্যটি সংরক্ষন করা হয়েছে ।')</script>";
-            echo("<script>location.href='../step3E.php'</script>");
-        } else {
-            echo "<script>alert('আপনার তথ্যটি সংরক্ষন করা সম্ভব হয়নি ।')</script>";
-
-            echo("<script>location.href='../step3E.php'</script>");
-        }
-
-    }
-
-
-    //Data Insert End
 
 
     public function DataView($sql_select, $users, $passwords, $dbName)
@@ -404,7 +229,7 @@ class test
         if (!empty($con_user) && !empty($con_pass)) {
             $dbcon = $connection_object->connection('localhost', $con_user, $con_pass, $con_name);
         } else {
-            $dbcon = $connection_object->connection('localhost', 'firoz', 'firoz', $con_name);
+            $dbcon = $connection_object->connection('localhost', 'root', '', $con_name);
 
         }
         $data = $dbcon->query($sql);
@@ -513,7 +338,7 @@ class test
         if (!empty($con_user) && !empty($con_pass)) {
             $dbcon = $connection_object->connection('localhost', $con_user, $con_pass, $con_name);
         } else {
-            $dbcon = $connection_object->connection('localhost', 'firoz', 'firoz', $con_name);
+            $dbcon = $connection_object->connection('localhost', 'root', '', $con_name);
 
         }
         $sql = "delete from $table where `id`=$id";
@@ -521,11 +346,11 @@ class test
         $deleteStatement = $dbcon->prepare($sql);
 
         if ($deleteStatement->execute(array(':id' => $id))) {
-            echo "<script> alert('তথ্যটি ডিলিট করা হয়েছে ।')</script>";
+            echo "<script> alert('Data Deleted!!')</script>";
             echo("<script>location.href='enter.php'</script>");
         } else {
 
-            echo "<script> alert('আপনার ডিলিট করা সম্ভব হয়নি ।')</script>";
+            echo "<script> alert('Sorry!! Not Possible')</script>";
             echo("<script>location.href='enter.php'</script>");
         }
 

@@ -2,7 +2,6 @@
  * Created by rajesh on 9/9/15.
  */
 
-
 //Common area JS
 //Date capture function start..
 var today = new Date();

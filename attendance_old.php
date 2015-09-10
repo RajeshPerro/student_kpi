@@ -13,29 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/authentication.js"></script>
-    <script type="javascript" src="js/custome.js"></script>
-    <script>
-        var today = new Date();
-        $(document).ready(function() {
-
-            var dd = today.getDate();
-            var mm = today.getMonth()+1; //January is 0!
-            var yyyy = today.getFullYear();
-
-            if(dd<10) {
-                dd='0'+dd
-            }
-
-            if(mm<10) {
-                mm='0'+mm
-            }
-
-            today =yyyy+'/'+mm+'/'+dd;
-            $("#e_date").val(today);
-            console.log(today);
-        });
-    </script>
+    <script type="text/javascript" src="js/custome.js"></script>
 </head>
 <body>
 
@@ -65,9 +43,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                        <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
+                        <li><a href="attendance_old.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
                         <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>
-                        <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+                        <li><a href="index_old.php"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
 
                     </ul>
                 </div>
@@ -116,16 +94,22 @@
                     <div class="col-xs-12 col-sm-12">
                         <br><br>
 
-                        <form action="atten_controller.php" method="post" enctype="multipart/form-data">
+                        <form action="controller.php" method="post">
                             <div class="col-xs-12 col-sm-12">
                                 <div class="col-xs-12 col-sm-5">
-                                    <select name="b_id" id="bt_select">
-                                        
+                                    <select name="b_id" class="selectpicker">
+                                        <option>--Select Batch--</option>
+                                        <option value="1">Batch-01</option>
+                                        <option value="2">Batch-02</option>
+                                        <option value="3">Batch-03</option>
                                     </select>
                                 </div>
                                 <div class="col-xs-12 col-sm-5">
-                                    <select name="g_id" id="gr_select">
-                                        
+                                    <select name="g_id" class="selectpicker">
+                                        <option>--Select Group--</option>
+                                        <option value="1">Group-01</option>
+                                        <option value="2">Group-02</option>
+                                        <option value="3">Group-03</option>
                                     </select>
                                 </div>
                                 <div class="col-xs-12 col-sm-2">
@@ -134,7 +118,7 @@
                             </div>
 
                             <div class="col-xs-12 col-sm-12 table_padding">
-                                <table class="text-center table table-striped table-condensed table-bordered" id="records_table">
+                                <table class="text-center table table-striped table-condensed table-bordered">
 
                                     <tr>
                                         <th>Student ID</th>
@@ -142,7 +126,7 @@
                                         <th>Attendance</th>
                                     </tr>
 
-                                   <!--  <tr>
+                                    <tr>
                                         <td><input  class="form-control input-sm" type="number" name="s_id" value=""></td>
                                         <td><input  class="form-control input-sm" type="text" name="name" value=""></td>
 
@@ -150,13 +134,13 @@
                                             <input  type="radio" name="attendance" value="1"> Yes
                                             <input  type="radio" name="attendance" value="0"> No
                                         </td>
-                                    </tr> -->
+                                    </tr>
 
 
                                 </table>
                             </div>
                             <div class="col-xs-3 col-sm-3">
-                                <input type="submit" class="btn btn-primary" value="Update" id="button_submit">
+                                <input type="submit" class="btn btn-primary" value="Update">
                             </div>
                         </form>
 
@@ -225,42 +209,5 @@
         </div>
     </div>
 </section>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function() {
-        
-        var make_student_table = function(){
-
-            var jsongroup =  [{"id":428,"name":"Shamsul Islam  Sujon"},{"id":505,"name":"Simson  Halder"},{"id":552,"name":"Apurba  Biswas"},{"id":1019,"name":"Zakaria  Shuvo"},{"id":1377,"name":"Rahul  Ray"},{"id":1895,"name":"Sayeed  Hasan"},{"id":1897,"name":"Hasan  Talukder"},{"id":2055,"name":"Shakhawat Hossain Khan"},{"id":2180,"name":"Md.  Ibrahim Hossain"},{"id":2191,"name":"Osman  Shak"},{"id":2262,"name":"Md. Sakhawat Hossain"},{"id":2271,"name":"Manir  Hossen"},{"id":2277,"name":"Md  Irfanuzzaman"},{"id":2307,"name":"Sayed  Khan"},{"id":2337,"name":"Fahad Hossain Howlader"},{"id":2478,"name":"farhana  binte hasan"},{"id":2501,"name":"MD. Borhan  Uddin"}];
-            // $('#records_table').attr('enabled', 'true');
-            
-           
-
-            // $.ajax({
-            //     url: '/S_KPI/bt.json',
-            //     type: 'POST',        
-            //     success: function (response) {
-
-            //         alert("fuck me");
-            //         var trHTML = '';
-            //         $.each(response, function (i, item) {
-            //             trHTML += '<tr><td>' + item.id + '</td><td>' + item.name + '</td><td><input  type="radio" name="attendance" value="1"> Yes <input  type="radio" name="attendance" value="0"> No </td></tr>';
-            //         });
-            //         $('#records_table').append(trHTML);
-            //     }
-            // });
-        }
-
-
-        
-    });
-
-
-
-
-</script>
-
-
 </body>
 </html>

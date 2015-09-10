@@ -123,13 +123,13 @@ class test
 //        if(  $preparedStatement->execute(array('$colum' => '$allvalues')))
 //        {
 //            echo "<script>alert('তথ্যটি সংরক্ষন করা হয়েছে ।')</script>";
-//            echo("<script>location.href='../index.php'</script>");
+//            echo("<script>location.href='../index_old.php'</script>");
 //        }
 //        else
 //        {
 //            echo "<script>alert('আপনার তথ্যটি সংরক্ষন করা সম্ভব হয়নি ।')</script>";
 //
-//            echo("<script>location.href='index.php'</script>");
+//            echo("<script>location.href='index_old.php'</script>");
 //        }
 
     }
@@ -205,13 +205,13 @@ class test
 //        if(  $preparedStatement->execute(array('$colum' => '$allvalues')))
 //        {
 //            echo "<script>alert('তথ্যটি সংরক্ষন করা হয়েছে ।')</script>";
-//            echo("<script>location.href='index.php'</script>");
+//            echo("<script>location.href='index_old.php'</script>");
 //        }
 //        else
 //        {
 //            echo "<script>alert('আপনার তথ্যটি সংরক্ষন করা সম্ভব হয়নি ।')</script>";
 //
-//            echo("<script>location.href='index.php'</script>");
+//            echo("<script>location.href='index_old.php'</script>");
 //        }
 
     }
