@@ -2,6 +2,7 @@
 <?php
 
 include('rajesh_model.php');
+session_start();
 
 //Registration Page Data Insert
 //echo $_POST['user_name'].$_POST['password'];

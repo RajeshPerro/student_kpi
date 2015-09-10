@@ -5,6 +5,7 @@
  * Date: 9/4/15
  * Time: 2:46 PM
  */
+
 $total_score=0;
 include('rajesh_model.php');
 $sql="select * FROM student_assessment GROUP BY s_id";
@@ -15,7 +16,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 $userName = $_GET['user'];//"<script>document.write(localStorage.getItem('username'))</script>";
 $token =$_GET['token'];//"<script>document.write(localStorage.getItem('usertoken'))</script>";
 //echo $userName."and".$token;
-session_start();
+
  $_SESSION['user']=$userName;
  $_SESSION['token']=$token;
 if($_SESSION['user']==null && $_SESSION['token']==null ) {
