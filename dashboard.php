@@ -110,19 +110,13 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                         <form action="controller.php" method="post">
                             <div class="col-xs-12 col-sm-12">
                                 <div class="col-xs-12 col-sm-5">
-                                    <select name="b_id" class="selectpicker">
-                                        <option>--Select Batch--</option>
-                                        <option value="1">Batch-01</option>
-                                        <option value="2">Batch-02</option>
-                                        <option value="3">Batch-03</option>
+                                    <select name="" id="batch_id" onchange="fuck()">
+
                                     </select>
                                 </div>
                                 <div class="col-xs-12 col-sm-5">
-                                    <select name="g_id" class="selectpicker">
-                                        <option>--Select Group--</option>
-                                        <option value="1">Group-01</option>
-                                        <option value="2">Group-02</option>
-                                        <option value="3">Group-03</option>
+                                    <select id="group_id" onchange="fuck()">
+
                                     </select>
                                 </div>
                                 <div class="col-xs-12 col-sm-2">
@@ -364,6 +358,6 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
     </div>
 </section>
 
-
+<script src="js/batchgroup.js"></script>
 </body>
 </html>

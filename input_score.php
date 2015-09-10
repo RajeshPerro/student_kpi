@@ -108,23 +108,12 @@ include('rajesh_model.php');
                         <div class="col-xs-12 col-sm-12">
                             <div class="col-xs-12 col-sm-5">
                                 <select name="" id="batch_id" onchange="fuck()">
-                                    <option value="0">--Select--</option>
-                                    <option value="1">Batch-01</option>
-                                    <option value="2">Batch-02</option>
-                                    <option value="3">Batch-03</option>
+
                                 </select>
                             </div>
                             <div class="col-xs-12 col-sm-5">
                                 <select id="group_id" onchange="fuck()">
-                                    <option value="0">--Select--</option>
-                                    <option value="1">Group-01</option>
-                                    <option value="2">Group-02</option>
-                                    <option value="3">Group-03</option>
-                                    <option value="4">Group-04</option>
-                                    <option value="5">Group-05</option>
-                                    <option value="6">Group-06</option>
-                                    <option value="7">Group-07</option>
-                                    <option value="18">DIU</option>
+
                                 </select>
                             </div>
                             <div class="col-xs-12 col-sm-2">
@@ -259,5 +248,6 @@ include('rajesh_model.php');
 </section>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/batchgroup.js"></script>
 </body>
 </html>
