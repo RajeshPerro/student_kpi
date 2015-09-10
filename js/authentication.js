@@ -24,12 +24,15 @@ $(document).ready(function() {
 		 	}, 
 		 	success: function (data) {
 		 		
-
+				var UserName=data.user;
+				var Token_data=data.token;
 		 		save_token(data.user, data.token);
-		 		window.location = "/edu_kpi/dashboard.php";
+		 		window.location = "/edu_kpi/dashboard.php?user="+UserName+"&token="+Token_data;
+				//window.location.href = "somepage.php?w1=" + hello + "&w2=" + world;
 
 
-		 	}
+
+			}
 		})
 	});
 

@@ -228,6 +228,19 @@ function fuck()
     console.log(today);
 }
 //Dashboard JS
+function storage_remove()
+{
+    localStorage.removeItem("username");
+    localStorage.removeItem("usertoken");
+    console.log("hello!");
+   // window.location.href='http://localhost/edu_kpi/index.php';
+
+}
+
+$(document).ready(function signout(){
+   $("#sign-out").click(storage_remove);
+
+});
 
 $(window).load(function(){
 

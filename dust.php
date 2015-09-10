@@ -48,3 +48,6 @@ foreach($fetch_result as $value)
         console.log(today);
     });
 </script>
+<?php if($_SESSION['user'] !== null && $_SESSION[''] !== null ): ?>
+
+<?php endif; ?>
