@@ -131,31 +131,41 @@ $(document).ready(function() {
 
 	//start get student list for attendance
 	function student_come(){
-		 // alert(current_batch_id+" "+current_group_id);
+		// alert(current_batch_id+" "+current_group_id);
 
 		var token = 'Bearer '+localStorage.getItem("usertoken");
 		$.ajax({headers: {
-  		 'Authorization': token }, 
-	   type: 'get', 
-	   url: 'http://www.coderstrust.com/api/batches/'+current_batch_id+'/groups/'+current_group_id+'/students.json', 
-	   error: function (data) {console.log(data)}, 
-	   success: function (data) {
-	   	
-	   	console.log(data);
-	   	var trHTML = '';
-	   	$('#records_table').html("");
-            $.each(data, function() {
-               trHTML += '<tr><td><input  class="form-control input-sm transparent" readonly type="number" name="s_id[]" value="'+this.id+'"></td>' +
-				   '<td><input  class="form-control input-sm transparent" readonly type="text" name="name[]" value="'+this.name+ '"</td>' +
-				   '<td><input  type="checkbox" name="attendance[]" value="1" id="'+ this.id +'"> Yes <input  type="checkbox" name="attendance[]" value="0"> No </td>' +
-				   '</tr>';
-           	  
-            });
-            $('#records_table').append('<tr><th>Student ID</th><th>Student Name</th><th>Attendance</th></tr>');
-            $('#records_table').append(trHTML);
-	   	 
-	   }
-	})
+			'Authorization': token },
+			type: 'get',
+			url: 'http://www.coderstrust.com/api/batches/'+current_batch_id+'/groups/'+current_group_id+'/students.json',
+			error: function (data) {console.log(data)},
+			success: function (data) {
+
+				console.log(data);
+				var trHTML = '';
+				$('#records_table').html("");
+				$.each(data, function() {
+					// console.log(this.name+"  "+this.hours_spent_today);
+					trHTML += '<tr><td><input  class="form-control input-sm transparent" readonly type="number" name="s_id[]" value="'+this.id+'"></td><td><input  class="form-control input-sm transparent" readonly type="text" name="name[]" value="'+this.name+ '"</td><td><input  type="checkbox" name="attendance[]" value="1" id="'+ this.id +'"> Yes <input  type="checkbox" name="attendance[]" value="0"> No </td></tr>';
+
+				});
+				$('#records_table').append('<tr><th>Student ID</th><th>Student Name</th><th>Attendance</th></tr>');
+				$('#records_table').append(trHTML);
+
+				//worksnap hours
+
+				var trHTML = '';
+				$('#worktable').html("");
+				$.each(data, function() {
+					console.log(this.name+"  "+this.hours_spent_today);
+					trHTML += '<tr><td><input  class="form-control input-sm transparent" readonly type="number" name="s_id[]" value="'+this.id+'"></td><td><input  class="form-control input-sm transparent" readonly type="text" name="name[]" value="'+this.name+ '"</td><td><input  class="form-control input-sm transparent" readonly type="text" name="hour[]" value="'+this.hours_spent_today+ '"</td></tr>';
+
+				});
+				$('#worktable').append('<tr><th>Student ID</th><th>Student Name</th><th>Wroksnap Hours</th></tr>');
+				$('#worktable').append(trHTML);
+
+			}
+		})
 
 	}
 

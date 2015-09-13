@@ -130,17 +130,10 @@ else {
                             </div>
                             <div class="col-xs-12 col-sm-12">
                                 <br><br>
-                                <table
-                                    class="text-center table table-striped table-condensed table-bordered table-hover">
-                                    <tr>
-                                        <th>Sl#</th>
-                                        <th>Students Id</th>
-                                        <th>Students Name</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </table>
-                                <table id="test_data_table"
-                                       class="table table-striped table-condensed table-bordered table-hover">
+<!--                                <table class="text-center table table-striped table-condensed table-bordered table-hover">-->
+<!--                                    -->
+<!--                                </table>-->
+                                <table id="test_data_table" class="table table-striped table-condensed table-bordered table-hover">
 
                                 </table>
 

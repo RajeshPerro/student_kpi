@@ -262,6 +262,12 @@ $(window).load(function(){
             $(this).css("background-color","orange");
             $(this).css("color","white");
         }
+        if($(this).html()>=70&&$(this).html()<=79)
+        {
+            $(this).css("background-color","mediumseagreen");
+            $(this).css("color","white");
+        }
+
 
     });
 
@@ -297,6 +303,11 @@ $(document).ready(function(){
                     {
                         $(this).css("background-color","orange")
                         $(this).css("color","white")
+                    }
+                    if($(this).html()>=70&&$(this).html()<=79)
+                    {
+                        $(this).css("background-color","mediumseagreen");
+                        $(this).css("color","white");
                     }
 
                 })

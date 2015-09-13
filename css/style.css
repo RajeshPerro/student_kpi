@@ -185,4 +185,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', end
 
 table .custom_table thead tr th{
     width: 20px;
+    /*background-color: mediumseagreen;*/
 }

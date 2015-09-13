@@ -17,21 +17,23 @@ $db_pass='root123';
 $db_Name='student_kpi';
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
+echo '<table class="table table-striped table-condensed table-bordered table-hover"><tr><th>Sl#</th><th>Students Id</th><th>Students Name</th><th>Action</th></tr>';
 foreach ($fetch_result as $key => $value) {
 $sl++;
 
 echo '<tr class="student-row">';
 	echo '<td>'.$sl.'</td>';
-	echo '<td><p class="student-id" data-id='.$value[s_id].'>'.$value['s_id'].'</p></td>';
-	echo '<td><p class="student-name" data-name='.$value[name].'>'.$value['name'].'</p></td>';
+	//echo '<td><input class="student-id" data-id=".$value[s_id]." value='.$value['s_id'].'></td>';
+	//echo '<td><p readonly class="student-id" data-id="'.$value["s_id"].'" value="'.$value["s_id"].'"></td>';
+	//echo'<td><p class="student-id"></p></td>';
+	echo '<td><input size="20" readonly class="student-id form-control" data-id="'.$value["s_id"].'" value="'.$value["s_id"].'"></td>';
+	echo '<td><input size="30" readonly class="student-name form-control" data-name="'.$value["name"].'" value="'.$value["name"].'"></td>';
+	//echo '<td><input class="student-name" data-name='.$value[name].'value='.$value['name'].'></td>';
 	//echo '<td>'.$value['name'].'</td>';
 	echo '<td> <a class=" add_score btn btn-success why-its-not-working" href="#" data-toggle="modal" data-target=".pop">'."Add Score".'</a></td>';
 	
 echo "</tr>";
 }
 
-//print_r($test);
-//$jsonstring = json_encode($test);
-//echo $jsonstring;
-
+echo '</table>';
 ?>
