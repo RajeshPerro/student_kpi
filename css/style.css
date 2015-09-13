@@ -178,3 +178,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', end
 #e_date{
         margin-top: 0px;
 }
+
+.table_custom thead tr th{
+    width: 20px;
+}
+
+table .custom_table thead tr th{
+    width: 20px;
+}

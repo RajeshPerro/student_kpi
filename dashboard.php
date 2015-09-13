@@ -1,30 +1,3 @@
-
-<?php
-/**
- * Created by PhpStorm.
- * User: rajesh
- * Date: 9/4/15
- * Time: 2:46 PM
- */
-
-$total_score=0;
-include('rajesh_model.php');
-$sql="select * FROM student_assessment GROUP BY s_id";
-$db_user='root';
-$db_pass='root123';
-$db_Name='student_kpi';
-$fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
-$userName = $_GET['user'];//"<script>document.write(localStorage.getItem('username'))</script>";
-$token =$_GET['token'];//"<script>document.write(localStorage.getItem('usertoken'))</script>";
-//echo $userName."and".$token;
-
- $_SESSION['user']=$userName;
- $_SESSION['token']=$token;
-if($_SESSION['user']==null && $_SESSION['token']==null ) {
-    echo("<script>location.href='sorry.php'</script>");
-}
-else{
-    ?>
     <!DOCTYPE html>
     <html>
     <head>
@@ -32,17 +5,45 @@ else{
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/batchgroup.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/custome.js"></script>
     </head>
     <body>
 
+    <?php
+    /**
+     * Created by PhpStorm.
+     * User: rajesh
+     * Date: 9/4/15
+     * Time: 2:46 PM
+     */
+
+    $total_score=0;
+    include('rajesh_model.php');
+    $sql="select * FROM student_assessment GROUP BY s_id";
+    $db_user='root';
+    $db_pass='root123';
+    $db_Name='student_kpi';
+    $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
+    $userName = $_GET['user'];//"<script>document.write(localStorage.getItem('username'))</script>";
+    $token =$_GET['token'];//"<script>document.write(localStorage.getItem('usertoken'))</script>";
+    //echo $userName."and".$token;
+
+    $_SESSION['user']=$userName;
+    $_SESSION['token']=$token;
+    if($_SESSION['user']==null && $_SESSION['token']==null ) {
+        echo("<script>location.href='sorry.php'</script>");
+    }
+    else{
+    ?>
     <div class="container-fluid">
         <!-- Header Section -->
         <div id="header">
@@ -69,7 +70,8 @@ else{
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-left">
-                            <li><a href="dashboard.php"><span class="glyphicon glyphicon-dashboard"></span>
+                            <li><a href="dashboard.php?user=<?php echo $_SESSION['user']?> &token=<?php echo $_SESSION['token']?>">
+                                    <span class="glyphicon glyphicon-dashboard"></span>
                                     Dashboard</a></li>
                             <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a>
                             </li>
@@ -148,8 +150,15 @@ else{
                                         <div class="col-xs-12 col-sm-12">
                                             <div class="bs-example table_back table_padding"
                                                  data-example-id="contextual-table">
+<!--                                                <div class="table-responsive">-->
+<!--                                                    <table class="table table-hover table-striped table-bordered">-->
+<!---->
+<!--                                                        <tbody>-->
+<!--                                                        </tbody>-->
+<!--                                                    </table>-->
+<!--                                                </div>-->
                                                 <div class="table-responsive">
-                                                    <table class="table table-hover table-striped table-bordered">
+                                                    <table class="table table-hover table-striped table-bordered" id="dashboard-data-table">
                                                         <thead>
                                                         <tr>
                                                             <th>SL#</th>
@@ -164,12 +173,6 @@ else{
                                                             <th>Total</th>
                                                         </tr>
                                                         </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="table-responsive">
-                                                    <table class="table table-hover table-striped table-bordered" id="dashboard-data-table">
                                                         <tbody>
                                                         <?php
                                                         $id = 1;
@@ -392,7 +395,7 @@ else{
         </div>
     </section>
 
-    <script src="js/batchgroup.js"></script>
+
     </body>
     </html>
     <?php

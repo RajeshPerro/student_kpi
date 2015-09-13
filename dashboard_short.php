@@ -6,6 +6,7 @@
  * Date: 9/8/15
  * Time: 2:31 PM
  */
+
 $total_score=0;
 $test =array();
 $Batch=$_GET['batch'];
@@ -18,8 +19,10 @@ $db_pass='root123';
 $db_Name='student_kpi';
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
+echo ('<table class="table table-hover table-striped table-bordered"><thead><tr><th>SL#</th><th>Id</th><th>Name</th><th>Attendance</th><th>Small Test</th><th>Final Test</th><th>Assignments</th><th>Project</th><th>Worksnap</th><th>Total</th></tr></thead><tbody>');
 foreach ($fetch_result as $key => $value) {
     $sl++;
+
     echo '<tr>';
     echo '<td>'.$sl.'</td>';
     echo '<td>'.$value['s_id'].'</td>';
@@ -98,7 +101,7 @@ foreach ($fetch_result as $key => $value) {
 
     foreach ($assignment as $ass) {
         $final_ass = $ass['SUM(actual)'] / $ass['COUNT(*)'];
-        echo number_format((float)$final_ass, 2, '.', '');
+        echo '<td>'.number_format((float)$final_ass, 2, '.', '').'</td>';
         //echo $final_ass;
     }
     $total_score += $final_ass;
@@ -126,10 +129,7 @@ foreach ($fetch_result as $key => $value) {
     $total_score = 0;
 
     echo "</tr>";
+
 }
-
-//print_r($test);
-//$jsonstring = json_encode($test);
-//echo $jsonstring;
-
+echo '</tbody></table>';
 ?>
