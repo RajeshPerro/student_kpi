@@ -71,16 +71,17 @@ else
 
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li><a href="dashboard.php?user=<?php echo $_SESSION['user']?> &token=<?php echo $_SESSION['token']?>">
-                                <span class="glyphicon glyphicon-dashboard"></span>
-                                Dashboard</a></li>
-                        <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
-                        <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>
-                        <li><a href="logout.php" id="sign-out"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
-                        <li><a href="dashboard.php"><span class=""></span><?php echo $_SESSION['user']; ?></a></li>
-
-                    </ul>
+<!--                    <ul class="nav navbar-nav navbar-left">-->
+<!--                        <li><a href="dashboard.php?user=--><?php //echo $_SESSION['user']?><!-- &token=--><?php //echo $_SESSION['token']?><!--">-->
+<!--                                <span class="glyphicon glyphicon-dashboard"></span>-->
+<!--                                Dashboard</a></li>-->
+<!--                        <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>-->
+<!--                        <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>-->
+<!--                        <li><a href="logout.php" id="sign-out"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>-->
+<!--                        <li><a href="dashboard.php"><span class=""></span>--><?php //echo $_SESSION['user']; ?><!--</a></li>-->
+<!---->
+<!--                    </ul>-->
+                    <?php include('header.php'); ?>
                 </div>
 
                 <!-- /.navbar-collapse -->
@@ -102,7 +103,9 @@ else
         <div class="row">
 
             <ul class="breadcrumb">
-                <li ><a href="dashboard.php"> Dashboard</a></li>
+                <li><a href="dashboard.php?user=<?php echo $_SESSION['user']?> &token=<?php echo $_SESSION['token']?>">
+                        <span class="glyphicon glyphicon-dashboard"></span>
+                        Dashboard</a></li>
                 <li class="active">Attendance</li>
             </ul>
         </div>
