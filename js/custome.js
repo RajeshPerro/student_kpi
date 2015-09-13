@@ -266,3 +266,70 @@ $(window).load(function(){
     });
 
 });
+
+//ajax calling for dash board
+$(document).ready(function(){
+    $('.dashboard-batch').change(function(){
+        console.log("Batch is:"+$('#batch_id').val());
+        console.log("Group is:"+$('#group_id').val());
+        $.ajax({
+
+            type: "GET",
+            url: "dashboard_short.php",
+            headers: { 'x-my-custom-header': '' },
+            data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
+            success: function(aa){
+                $('#dashboard-data-table').html(aa)
+                $('td.final_result').each(function()
+                {
+                    if($(this).html()>=80)
+                    {
+                        $(this).css("background-color","green")
+                        $(this).css("color","white")
+                    }
+
+                    if($(this).html()<=49)
+                    {
+                        $(this).css("background-color","red")
+                        $(this).css("color","white")
+                    }
+                    if($(this).html()>=50&&$(this).html()<=69)
+                    {
+                        $(this).css("background-color","orange")
+                        $(this).css("color","white")
+                    }
+
+                })
+            },
+            error: function(x)
+            {
+
+            }
+
+        }); // Ajax Call
+    }); //event handler
+    //$('#batch_id').change(function(){
+    //    $.ajax({
+    //
+    //        type: "GET",
+    //        url: "test.php",
+    //        data: 'batch=' + $('#batch-id-dashboard').val() + '&group=' + $('#group-id-dashboard').val(),
+    //        success: function(aa){
+    //
+    //
+    //            $('#test_data_table').html(aa);
+    //            setTimeout(function () {
+    //
+    //                $(".add_score").click(send_data);
+    //            }, 100);
+    //
+    //        },
+    //        error: function(x)
+    //        {
+    //
+    //        }
+    //
+    //    }); // Ajax Call
+    //}); //event handler
+
+});

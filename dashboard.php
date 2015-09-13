@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -125,12 +126,12 @@ else{
                             <form action="controller.php" method="post">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="col-xs-12 col-sm-5">
-                                        <select name="" id="batch_id" onchange="fuck()">
+                                        <select class="dashboard-batch" name="" id="batch_id" onchange="fuck()">
 
                                         </select>
                                     </div>
                                     <div class="col-xs-12 col-sm-5">
-                                        <select id="group_id" onchange="fuck()">
+                                        <select class="dashboard-batch" id="group_id" onchange="fuck()">
 
                                         </select>
                                     </div>
@@ -163,6 +164,12 @@ else{
                                                             <th>Total</th>
                                                         </tr>
                                                         </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-striped table-bordered" id="dashboard-data-table">
                                                         <tbody>
                                                         <?php
                                                         $id = 1;
@@ -289,6 +296,7 @@ else{
                                                         }
                                                         ?>
                                                         </tbody>
+
                                                     </table>
                                                 </div>
                                             </div>
