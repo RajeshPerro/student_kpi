@@ -127,7 +127,7 @@ else
                         <div class="col-xs-12 col-sm-12">
                             <br><br>
 
-                            <form action="atten_controller.php" method="post" enctype="multipart/form-data">
+                            <form action="wroksnap_controller.php" method="post" enctype="multipart/form-data">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="col-xs-12 col-sm-5">
                                         <select name="b_id" id="bt_select">

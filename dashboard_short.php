@@ -120,9 +120,49 @@ foreach ($fetch_result as $key => $value) {
     }
     $total_score += $final_pr;
 //..........................Worksnap Score.....................
-    $ws = 5;
-    echo '<td>'.$ws.'</td>';
-    $total_score += $ws;
+    $ws_value=0;
+    $stu_id = $row['s_id'];
+    $today = date('Y-m-d');
+    $sql2 = "select hours FROM worksnap WHERE s_id='$stu_id' AND DATE(entry_date)='$today' ";
+    $db_user = 'root';
+    $db_pass = 'root123';
+    $db_Name = 'student_kpi';
+    $worksnap_hour = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
+
+    foreach ($worksnap_hour as $ws)
+    {
+        $hours=$ws['hours'];
+        if($hours >= 3)
+        {
+            $ws_value=15;
+        }
+        elseif($hours >= 2.5 && $hours < 3)
+        {
+            $ws_value=12;
+        }
+        elseif($hours >= 2 && $hours < 2.5)
+        {
+            $ws_value=10;
+        }
+        elseif($hours >= 1.5 && $hours < 2)
+        {
+            $ws_value=8;
+        }
+        elseif($hours >= 1 && $hours < 1.5)
+        {
+            $ws_value=5;
+        }
+        elseif($hours >= 0.5 && $hours < 1)
+        {
+            $ws_value=3;
+        }
+        else
+        {
+            $ws_value=0;
+        }
+    }
+    echo '<td>'. $ws_value.'</td>';
+    $total_score += $ws_value;
 //..........................Total Score.......................
     echo'<td class="final_result">'.number_format((float)$total_score, 2, '.', '').'</td>';
     //echo $total_score;

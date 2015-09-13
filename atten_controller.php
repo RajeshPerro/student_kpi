@@ -42,12 +42,7 @@ $preparedStatement = $dbcon->prepare('INSERT INTO student_attendance (s_id, name
 $arrlength = count($student_id);
 
 for($x = 0; $x < $arrlength; $x++) {
-    echo "<br>".$batch."--";
-    echo $group."--";
-    echo $student_id[$x];
-    echo $std_names[$x];
-    echo $att[$x];
-    echo "<br>";
+
     $preparedStatement->bindParam(':sid', $student_id[$x]);
     $preparedStatement->bindParam(':sname', $std_names[$x]);
     $preparedStatement->bindParam(':bid', $batch);
@@ -56,7 +51,8 @@ for($x = 0; $x < $arrlength; $x++) {
     $preparedStatement->bindParam(':ent_date', $en_date);
     $preparedStatement->execute();
 }
+$user=$_SESSION['user'];$token=$_SESSION['token'];
 echo("<script>alert('Successfully Saved!')</script>");
-echo("<script>location.href='dashboard.php'</script>");
+echo("<script>location.href='dashboard.php?user=$user&token=$token'</script>");
 
 ?>
