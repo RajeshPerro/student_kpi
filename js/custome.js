@@ -286,6 +286,13 @@ $(window).load(function(){
 
 //ajax calling for dash board
 $(document).ready(function(){
+    var frm_date = $( "#from-date" ), to_date= $( "#to-date" );
+    frm_date.datepicker({dateFormat: "yy-mm-dd"});
+    to_date.datepicker({dateFormat: "yy-mm-dd"});
+    $(".date-value").change(function(){
+        console.log(frm_date.val());
+        console.log(to_date.val());
+    })
     $('.dashboard-batch').change(function(){
         console.log("Batch is:"+$('#batch_id').val());
         console.log("Group is:"+$('#group_id').val());
