@@ -18,7 +18,7 @@
     <script src="js/batchgroup.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/custome.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
+
 </head>
 <body>
 
@@ -174,7 +174,7 @@ else{
                                     </div>
                                     <div class="col-xs-12 col-sm-3 drop-down-space">
                                         <span>Skill</span>
-                                        <select name="skill_name">
+                                        <select name="skill_name" id="skill-name">
                                             <option value="#" class="default" selected>Select Skill
                                             </option>
                                             <option value="HTML and CSS" class="fe">HTML && CSS</option>

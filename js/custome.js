@@ -132,7 +132,7 @@ $(document).ready(function(){
         }
     });
     $("#front_end").change(function(){
-        if($("#front_end").val()=="Front End")
+        if($("#front_end").val()=="Front End" || $("#front_end").val()=="Back End")
         {
             $(".default").hide();
         }
@@ -230,15 +230,6 @@ function fuck()
 }
 //Dashboard JS
 
-//var $loading = $('#loadingDiv').hide();
-//$(document)
-//    .ajaxStart(function () {
-//        $loading.show();
-//    })
-//    .ajaxStop(function () {
-//        $loading.hide();
-//    });
-
 function storage_remove()
 {
     localStorage.removeItem("username");
@@ -287,12 +278,19 @@ $(window).load(function(){
 //ajax calling for dash board
 $(document).ready(function(){
     var frm_date = $( "#from-date" ), to_date= $( "#to-date" );
+    var skill_type =$("#front_end"), skill=$("#skill-name");
     frm_date.datepicker({dateFormat: "yy-mm-dd"});
     to_date.datepicker({dateFormat: "yy-mm-dd"});
     $(".date-value").change(function(){
         console.log(frm_date.val());
         console.log(to_date.val());
-    })
+    });
+     skill.change(function(){
+       console.log(skill_type.val());
+       console.log(skill.val());
+
+
+     });
     $('.dashboard-batch').change(function(){
         console.log("Batch is:"+$('#batch_id').val());
         console.log("Group is:"+$('#group_id').val());
