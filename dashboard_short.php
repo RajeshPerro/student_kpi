@@ -121,7 +121,7 @@ foreach ($fetch_result as $key => $value) {
     $total_score += $final_pr;
 //..........................Worksnap Score.....................
     $ws_value=0;
-    $stu_id = $row['s_id'];
+    $stu_id = $value['s_id'];
     $today = date('Y-m-d');
     $sql2 = "select hours FROM worksnap WHERE s_id='$stu_id' AND DATE(entry_date)='$today' ";
     $db_user = 'root';
@@ -132,7 +132,6 @@ foreach ($fetch_result as $key => $value) {
     foreach ($worksnap_hour as $ws)
     {
         $hours=$ws['hours'];
-        //echo $stu_id.$hours;
         if($hours >= 3)
         {
             $ws_value=15;
@@ -162,7 +161,7 @@ foreach ($fetch_result as $key => $value) {
             $ws_value=0;
         }
     }
-    echo '<td>'. $ws_value.'</td>';
+    echo '<td>'.$ws_value.'</td>';
     $total_score += $ws_value;
 //..........................Total Score.......................
     echo'<td class="final_result">'.number_format((float)$total_score, 2, '.', '').'</td>';
