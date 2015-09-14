@@ -167,14 +167,13 @@ function send_data(e)
 
 $(document).ready(function(){
     $('#group_id').change(function(){
+        //$('#test_data_table').html('<center><img width="50" height="auto" src="/edu_kpi/images/ajax-loader-big.gif"> loading...</center>');
         $.ajax({
 
             type: "GET",
             url: "test.php",
             data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
             success: function(aa){
-
-
                 $('#test_data_table').html(aa);
                 setTimeout(function () {
                     $(".add_score").click(send_data);
@@ -189,13 +188,14 @@ $(document).ready(function(){
         }); // Ajax Call
     }); //event handler
     $('#batch_id').change(function(){
+
         $.ajax({
 
             type: "GET",
             url: "test.php",
             data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
-            success: function(aa){
 
+            success: function(aa){
 
                 $('#test_data_table').html(aa);
                 setTimeout(function () {
@@ -214,6 +214,7 @@ $(document).ready(function(){
 
 });
 
+
 //ajax calling and sorting data end
 
 
@@ -228,6 +229,16 @@ function fuck()
     console.log(today);
 }
 //Dashboard JS
+
+//var $loading = $('#loadingDiv').hide();
+//$(document)
+//    .ajaxStart(function () {
+//        $loading.show();
+//    })
+//    .ajaxStop(function () {
+//        $loading.hide();
+//    });
+
 function storage_remove()
 {
     localStorage.removeItem("username");
@@ -285,8 +296,8 @@ $(document).ready(function(){
             headers: { 'x-my-custom-header': '' },
             data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
             success: function(aa){
-                $('#dashboard-data-table').html(aa)
-                $('td.final_result').each(function()
+                $('#dashboard-data-table').html(aa);
+               $('td.final_result').each(function()
                 {
                     if($(this).html()>=80)
                     {
@@ -311,6 +322,8 @@ $(document).ready(function(){
                     }
 
                 })
+
+
             },
             error: function(x)
             {

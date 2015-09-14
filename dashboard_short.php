@@ -132,6 +132,7 @@ foreach ($fetch_result as $key => $value) {
     foreach ($worksnap_hour as $ws)
     {
         $hours=$ws['hours'];
+        //echo $stu_id.$hours;
         if($hours >= 3)
         {
             $ws_value=15;

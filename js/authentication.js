@@ -3,6 +3,7 @@ $(document).ready(function() {
 
 	var current_batch_id;
 	var current_group_id;
+	$("#link_loading").hide();
 
 	batch_come();
 	
@@ -122,9 +123,13 @@ $(document).ready(function() {
 
 	$("#gr_select").change(function(){
 
+		$('#worktable').html("");
+		$('#records_table').html("");
+		$("#link_loading").show();
        var groupId = $("#gr_select").val();
        console.log(groupId);
        current_group_id = groupId;
+
        student_come();
     });
 
@@ -134,6 +139,7 @@ $(document).ready(function() {
 		// alert(current_batch_id+" "+current_group_id);
 
 		var token = 'Bearer '+localStorage.getItem("usertoken");
+
 		$.ajax({headers: {
 			'Authorization': token },
 			type: 'get',
@@ -149,8 +155,11 @@ $(document).ready(function() {
 					trHTML += '<tr><td><input  class="form-control input-sm transparent" readonly type="number" name="s_id[]" value="'+this.id+'"></td><td><input  class="form-control input-sm transparent" readonly type="text" name="name[]" value="'+this.name+ '"</td><td><input  type="checkbox" name="attendance[]" value="1" id="'+ this.id +'"> Yes <input  type="checkbox" name="attendance[]" value="0"> No </td></tr>';
 
 				});
+
 				$('#records_table').append('<tr><th>Student ID</th><th>Student Name</th><th>Attendance</th></tr>');
 				$('#records_table').append(trHTML);
+
+
 
 				//worksnap hours
 
@@ -161,6 +170,8 @@ $(document).ready(function() {
 					trHTML += '<tr><td><input  class="form-control input-sm transparent" readonly type="number" name="s_id[]" value="'+this.id+'"></td><td><input  class="form-control input-sm transparent" readonly type="text" name="name[]" value="'+this.name+ '"</td><td><input  class="form-control input-sm transparent" readonly type="text" name="hour[]" value="'+this.hours_spent_today+ '"</td></tr>';
 
 				});
+
+				$("#link_loading").hide();
 				$('#worktable').append('<tr><th>Student ID</th><th>Student Name</th><th>Wroksnap Hours</th></tr>');
 				$('#worktable').append(trHTML);
 

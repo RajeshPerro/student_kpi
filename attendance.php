@@ -147,14 +147,19 @@ else
                                 </div>
                             </div>
 
+                            <div id="link_loading" align="center">
+                                <img width="50" height="auto" src="/edu_kpi/images/ajax-loader-big.gif">
+                                <h2>fetching data..</h2>
+                            </div>
+
                             <div class="col-xs-12 col-sm-12 table_padding">
                                 <table class="text-center table table-striped table-condensed table-bordered" id="records_table">
 
-                                    <tr>
-                                        <th>Student ID</th>
-                                        <th>Student Name</th>
-                                        <th>Attendance</th>
-                                    </tr>
+<!--                                    <tr>-->
+<!--                                        <th>Student ID</th>-->
+<!--                                        <th>Student Name</th>-->
+<!--                                        <th>Attendance</th>-->
+<!--                                    </tr>-->
 
                                    <!--  <tr>
                                         <td><input  class="form-control input-sm" type="number" name="s_id" value=""></td>
@@ -242,33 +247,33 @@ else
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function() {
-        
-        var make_student_table = function(){
-
-            var jsongroup =  [{"id":428,"name":"Shamsul Islam  Sujon"},{"id":505,"name":"Simson  Halder"},{"id":552,"name":"Apurba  Biswas"},{"id":1019,"name":"Zakaria  Shuvo"},{"id":1377,"name":"Rahul  Ray"},{"id":1895,"name":"Sayeed  Hasan"},{"id":1897,"name":"Hasan  Talukder"},{"id":2055,"name":"Shakhawat Hossain Khan"},{"id":2180,"name":"Md.  Ibrahim Hossain"},{"id":2191,"name":"Osman  Shak"},{"id":2262,"name":"Md. Sakhawat Hossain"},{"id":2271,"name":"Manir  Hossen"},{"id":2277,"name":"Md  Irfanuzzaman"},{"id":2307,"name":"Sayed  Khan"},{"id":2337,"name":"Fahad Hossain Howlader"},{"id":2478,"name":"farhana  binte hasan"},{"id":2501,"name":"MD. Borhan  Uddin"}];
-            // $('#records_table').attr('enabled', 'true');
-            
-           
-
-            // $.ajax({
-            //     url: '/S_KPI/bt.json',
-            //     type: 'POST',        
-            //     success: function (response) {
-
-            //         alert("fuck me");
-            //         var trHTML = '';
-            //         $.each(response, function (i, item) {
-            //             trHTML += '<tr><td>' + item.id + '</td><td>' + item.name + '</td><td><input  type="radio" name="attendance" value="1"> Yes <input  type="radio" name="attendance" value="0"> No </td></tr>';
-            //         });
-            //         $('#records_table').append(trHTML);
-            //     }
-            // });
-        }
-
-
-        
-    });
+//    $(document).ready(function() {
+//
+//        var make_student_table = function(){
+//
+//            var jsongroup =  [{"id":428,"name":"Shamsul Islam  Sujon"},{"id":505,"name":"Simson  Halder"},{"id":552,"name":"Apurba  Biswas"},{"id":1019,"name":"Zakaria  Shuvo"},{"id":1377,"name":"Rahul  Ray"},{"id":1895,"name":"Sayeed  Hasan"},{"id":1897,"name":"Hasan  Talukder"},{"id":2055,"name":"Shakhawat Hossain Khan"},{"id":2180,"name":"Md.  Ibrahim Hossain"},{"id":2191,"name":"Osman  Shak"},{"id":2262,"name":"Md. Sakhawat Hossain"},{"id":2271,"name":"Manir  Hossen"},{"id":2277,"name":"Md  Irfanuzzaman"},{"id":2307,"name":"Sayed  Khan"},{"id":2337,"name":"Fahad Hossain Howlader"},{"id":2478,"name":"farhana  binte hasan"},{"id":2501,"name":"MD. Borhan  Uddin"}];
+//            // $('#records_table').attr('enabled', 'true');
+//
+//
+//
+//            // $.ajax({
+//            //     url: '/S_KPI/bt.json',
+//            //     type: 'POST',
+//            //     success: function (response) {
+//
+//            //         alert("fuck me");
+//            //         var trHTML = '';
+//            //         $.each(response, function (i, item) {
+//            //             trHTML += '<tr><td>' + item.id + '</td><td>' + item.name + '</td><td><input  type="radio" name="attendance" value="1"> Yes <input  type="radio" name="attendance" value="0"> No </td></tr>';
+//            //         });
+//            //         $('#records_table').append(trHTML);
+//            //     }
+//            // });
+//        }
+//
+//
+//
+//    });
 
 
 
