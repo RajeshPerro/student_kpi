@@ -17,9 +17,27 @@ $skill_type=$_GET['skill_type'];
 $skill_name=$_GET['skill_name'];
 //echo $Batch.$Group;
 include('rajesh_model.php');
+if(($Batch !='' && $Group !='') && ($frm_date =='' && $to_date=='' && $skill_type=='' && $skill_name==''))
+{
+    $sql="select * FROM student_assessment WHERE b_id='$Batch' AND g_id='$Group' GROUP BY s_id";
+}
+elseif((($Batch !='' && $Group !='') && ($frm_date !='' && $to_date!='')) && ($skill_type=='' && $skill_name==''))
+{
 $sql="select * FROM student_assessment WHERE (
+(b_id='$Batch' AND g_id='$Group') AND (entry_date BETWEEN '$frm_date' AND '$to_date')
+) GROUP BY s_id";
+}
+
+else
+{
+    $sql="select * FROM student_assessment WHERE (
 (b_id='$Batch' AND g_id='$Group') AND (entry_date BETWEEN '$frm_date' AND '$to_date') AND (skill_type='$skill_type' AND skill_name='$skill_name')
 )GROUP BY s_id";
+}
+//$sql="select * FROM student_assessment WHERE (
+//(b_id='$Batch' AND g_id='$Group') AND (entry_date BETWEEN '$frm_date' AND '$to_date') AND (skill_type='$skill_type' AND skill_name='$skill_name')
+//)GROUP BY s_id";
+
 $db_user='root';
 $db_pass='root123';
 $db_Name='student_kpi';

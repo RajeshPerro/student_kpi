@@ -284,19 +284,9 @@ $(document).ready(function(){
 
 
     $('.dashboard-batch').change(function(){
-        console.log("Batch is:"+$('#batch_id').val());
-        console.log("Group is:"+$('#group_id').val());
-        $(".date-value").change(function(){
-            console.log(frm_date.val());
-            console.log(to_date.val());
-        });
-        skill_name.change(function(){
-            console.log(skill_type.val());
-            console.log(skill_name.val());
-
-
-        });
-        $.ajax({
+        //console.log("Batch is:"+$('#batch_id').val());
+        //console.log("Group is:"+$('#group_id').val());
+       $.ajax({
 
             type: "GET",
             url: "dashboard_short.php",
@@ -339,28 +329,96 @@ $(document).ready(function(){
 
         }); // Ajax Call
     }); //event handler
-    //$('#batch_id').change(function(){
-    //    $.ajax({
-    //
-    //        type: "GET",
-    //        url: "test.php",
-    //        data: 'batch=' + $('#batch-id-dashboard').val() + '&group=' + $('#group-id-dashboard').val(),
-    //        success: function(aa){
-    //
-    //
-    //            $('#test_data_table').html(aa);
-    //            setTimeout(function () {
-    //
-    //                $(".add_score").click(send_data);
-    //            }, 100);
-    //
-    //        },
-    //        error: function(x)
-    //        {
-    //
-    //        }
-    //
-    //    }); // Ajax Call
-    //}); //event handler
+    $(".date-value").change(function(){
+        console.log(frm_date.val());
+        console.log(to_date.val());
+        $.ajax({
 
+            type: "GET",
+            url: "dashboard_short.php",
+            headers: { 'x-my-custom-header': '' },
+            data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val() + '&frm_date='+frm_date.val() + '&to_date='+to_date.val() +'&skill_type='+skill_type.val()+'&skill_name='+skill_name.val(),
+            success: function(aa){
+                $('#dashboard-data-table').html(aa);
+                $('td.final_result').each(function()
+                {
+                    if($(this).html()>=80)
+                    {
+                        $(this).css("background-color","green")
+                        $(this).css("color","white")
+                    }
+
+                    if($(this).html()<=49)
+                    {
+                        $(this).css("background-color","red")
+                        $(this).css("color","white")
+                    }
+                    if($(this).html()>=50&&$(this).html()<=69)
+                    {
+                        $(this).css("background-color","orange")
+                        $(this).css("color","white")
+                    }
+                    if($(this).html()>=70&&$(this).html()<=79)
+                    {
+                        $(this).css("background-color","mediumseagreen");
+                        $(this).css("color","white");
+                    }
+
+                })
+
+
+            },
+            error: function(x)
+            {
+
+            }
+
+        });
+    });
+    skill_name.change(function(){
+        console.log(skill_type.val());
+        console.log(skill_name.val());
+        $.ajax({
+
+            type: "GET",
+            url: "dashboard_short.php",
+            headers: { 'x-my-custom-header': '' },
+            data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val() + '&frm_date='+frm_date.val() + '&to_date='+to_date.val() +'&skill_type='+skill_type.val()+'&skill_name='+skill_name.val(),
+            success: function(aa){
+                $('#dashboard-data-table').html(aa);
+                $('td.final_result').each(function()
+                {
+                    if($(this).html()>=80)
+                    {
+                        $(this).css("background-color","green")
+                        $(this).css("color","white")
+                    }
+
+                    if($(this).html()<=49)
+                    {
+                        $(this).css("background-color","red")
+                        $(this).css("color","white")
+                    }
+                    if($(this).html()>=50&&$(this).html()<=69)
+                    {
+                        $(this).css("background-color","orange")
+                        $(this).css("color","white")
+                    }
+                    if($(this).html()>=70&&$(this).html()<=79)
+                    {
+                        $(this).css("background-color","mediumseagreen");
+                        $(this).css("color","white");
+                    }
+
+                })
+
+
+            },
+            error: function(x)
+            {
+
+            }
+
+        });
+    });
 });
