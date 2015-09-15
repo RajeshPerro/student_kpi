@@ -290,7 +290,7 @@ $(document).ready(function(){
             console.log(frm_date.val());
             console.log(to_date.val());
         });
-        skill.change(function(){
+        skill_name.change(function(){
             console.log(skill_type.val());
             console.log(skill_name.val());
 
