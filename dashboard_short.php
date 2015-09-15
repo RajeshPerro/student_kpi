@@ -11,15 +11,19 @@ $total_score=0;
 $test =array();
 $Batch=$_GET['batch'];
 $Group=$_GET['group'];
+$frm_date=$_GET['frm_date'];
+$to_date=$_GET['to_date'];
+$skill_type=$_GET['skill_type'];
+$skill_name=$_GET['skill_name'];
 //echo $Batch.$Group;
 include('rajesh_model.php');
-$sql="select * FROM student_assessment WHERE b_id='$Batch' AND g_id='$Group' GROUP BY s_id";
+$sql="select * FROM student_assessment WHERE b_id='$Batch' AND g_id='$Group' OR (entry_date BETWEEN '$frm_date' AND '$to_date') OR (skill_type='$skill_type' AND skill_name='$skill_name')GROUP BY s_id";
 $db_user='root';
 $db_pass='root123';
 $db_Name='student_kpi';
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
-echo ('<table class="table table-hover table-striped table-bordered"><thead><tr><th>SL#</th><th>Id</th><th>Name</th><th>Attendance</th><th>Small Test</th><th>Final Test</th><th>Assignments</th><th>Project</th><th>Worksnap</th><th>Total</th></tr></thead><tbody>');
+echo ('<table class="table table-hover table-striped table-bordered"><thead><tr><th>SL#</th><th>Id</th><th>Name</th><th>Attendance</th><th>Small Test</th><th>Final Test</th><th>Assignments</th><th>Project</th><th>Worksnap</th><th>Date</th><th>Total</th></tr></thead><tbody>');
 foreach ($fetch_result as $key => $value) {
     $sl++;
 
@@ -163,6 +167,11 @@ foreach ($fetch_result as $key => $value) {
     }
     echo '<td>'.$ws_value.'</td>';
     $total_score += $ws_value;
+
+ //........................Entry Date.........................
+ echo '<td>'.$value['entry_date'].'</td>';
+
+//..........................Skill Name..................
 //..........................Total Score.......................
     echo'<td class="final_result">'.number_format((float)$total_score, 2, '.', '').'</td>';
     //echo $total_score;

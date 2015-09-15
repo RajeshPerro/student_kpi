@@ -278,28 +278,30 @@ $(window).load(function(){
 //ajax calling for dash board
 $(document).ready(function(){
     var frm_date = $( "#from-date" ), to_date= $( "#to-date" );
-    var skill_type =$("#front_end"), skill=$("#skill-name");
+    var skill_type =$("#front_end"), skill_name=$("#skill-name");
     frm_date.datepicker({dateFormat: "yy-mm-dd"});
     to_date.datepicker({dateFormat: "yy-mm-dd"});
-    $(".date-value").change(function(){
-        console.log(frm_date.val());
-        console.log(to_date.val());
-    });
-     skill.change(function(){
-       console.log(skill_type.val());
-       console.log(skill.val());
 
 
-     });
     $('.dashboard-batch').change(function(){
         console.log("Batch is:"+$('#batch_id').val());
         console.log("Group is:"+$('#group_id').val());
+        $(".date-value").change(function(){
+            console.log(frm_date.val());
+            console.log(to_date.val());
+        });
+        skill.change(function(){
+            console.log(skill_type.val());
+            console.log(skill_name.val());
+
+
+        });
         $.ajax({
 
             type: "GET",
             url: "dashboard_short.php",
             headers: { 'x-my-custom-header': '' },
-            data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val(),
+            data: 'batch=' + $('#batch_id').val() + '&group=' + $('#group_id').val() + '&frm_date='+frm_date.val() + '&to_date='+to_date.val() +'&skill_type='+skill_type.val()+'&skill_name='+skill_name.val(),
             success: function(aa){
                 $('#dashboard-data-table').html(aa);
                $('td.final_result').each(function()
