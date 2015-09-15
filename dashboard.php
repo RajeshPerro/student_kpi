@@ -178,8 +178,8 @@ else{
 
                                     <div class="col-xs-12 col-sm-3 drop-down-space">
                                         <span>Skill type</span>
-                                        <select id="front_end" name="skill_type" class="skill-set">
-                                            <option value="#" id="op_id" selected>Select Skill Type</option>
+                                        <select id="front_end"  name="skill_type" class="skill-set">
+                                            <option value="#" class="default1" selected>Select Skill Type</option>
                                             <option value="Front End">Front End</option>
                                             <option value="Back End">Back End</option>
                                         </select>
@@ -394,7 +394,7 @@ else{
                                                     </tbody>
 
                                                 </table>
-                                                <input class="btn btn-info" type="button" onclick="tableToExcel('dashboard-data-table')" value="Export to Excel">
+                                                <input class="btn btn-info" type="button" onclick="tableToExcel('dashboard-data-table','Weekly Report')" value="Export to Excel">
                                             </div>
                                         </div>
                                     </div>
@@ -405,65 +405,65 @@ else{
                         </form>
 
 
-                        <div class="modal pop">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-
-                                    <div class="modal-body">
-                                        <div class="col-md-12">
-                                            <select class="selectpicker">
-                                                <option>Select Batch...</option>
-                                                <option>First batch</option>
-                                                <option>Second batch</option>
-                                                <option>Third batch</option>
-                                            </select>
-                                        </div>
-                                        <br>
-
-                                        <form>
-                                            <div class="col-xs-5 col-sm-5 text-right font">Students ID</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total"
-                                                                                            placeholder="2497"
-                                                                                            name="score"
-                                                                                            class="form-control"
-                                                                                            readonly></div>
-                                            <br>
-
-                                            <div class="col-xs-5 col-sm-5 text-right font">Total Score</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total"
-                                                                                            placeholder="Enter Score"
-                                                                                            name="score"
-                                                                                            class="form-control">
-                                            </div>
-                                            <br>
-
-                                            <div class="col-xs-5 col-sm-5 text-right font">Obtain Marks</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="obtain"
-                                                                                            placeholder="Enter Score"
-                                                                                            name="marks"
-                                                                                            class="form-control">
-                                            </div>
-                                            <br>
-
-                                            <div class="col-xs-5 col-sm-5 text-right font">Actual Marks</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="actual"
-                                                                                            placeholder="100"
-                                                                                            name="marks"
-                                                                                            class="form-control"
-                                                                                            readonly></div>
-
-
-                                            <button type="button" class="btn btn-lg btn-success"> Update Score
-                                            </button>
-
-                                        </form>
-                                        <button type="button" data-dismiss="modal" class="btn btn-danger cross">
-                                            <span>&times;</span></button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+<!--                        <div class="modal pop">-->
+<!--                            <div class="modal-dialog modal-sm">-->
+<!--                                <div class="modal-content">-->
+<!---->
+<!--                                    <div class="modal-body">-->
+<!--                                        <div class="col-md-12">-->
+<!--                                            <select class="selectpicker">-->
+<!--                                                <option>Select Batch...</option>-->
+<!--                                                <option>First batch</option>-->
+<!--                                                <option>Second batch</option>-->
+<!--                                                <option>Third batch</option>-->
+<!--                                            </select>-->
+<!--                                        </div>-->
+<!--                                        <br>-->
+<!---->
+<!--                                        <form>-->
+<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Students ID</div>-->
+<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total"-->
+<!--                                                                                            placeholder="2497"-->
+<!--                                                                                            name="score"-->
+<!--                                                                                            class="form-control"-->
+<!--                                                                                            readonly></div>-->
+<!--                                            <br>-->
+<!---->
+<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Total Score</div>-->
+<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total"-->
+<!--                                                                                            placeholder="Enter Score"-->
+<!--                                                                                            name="score"-->
+<!--                                                                                            class="form-control">-->
+<!--                                            </div>-->
+<!--                                            <br>-->
+<!---->
+<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Obtain Marks</div>-->
+<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="obtain"-->
+<!--                                                                                            placeholder="Enter Score"-->
+<!--                                                                                            name="marks"-->
+<!--                                                                                            class="form-control">-->
+<!--                                            </div>-->
+<!--                                            <br>-->
+<!---->
+<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Actual Marks</div>-->
+<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="actual"-->
+<!--                                                                                            placeholder="100"-->
+<!--                                                                                            name="marks"-->
+<!--                                                                                            class="form-control"-->
+<!--                                                                                            readonly></div>-->
+<!---->
+<!---->
+<!--                                            <button type="button" class="btn btn-lg btn-success"> Update Score-->
+<!--                                            </button>-->
+<!---->
+<!--                                        </form>-->
+<!--                                        <button type="button" data-dismiss="modal" class="btn btn-danger cross">-->
+<!--                                            <span>&times;</span></button>-->
+<!--                                    </div>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
 
                         <!-- Student List Section -->

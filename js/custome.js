@@ -117,16 +117,27 @@ function score_cal()
 $(document).ready(function(){
     $(".be").hide();
     $(".fe").hide();
+    var flag=0;
     $("#front_end").change(function(){
         if($("#front_end").val()=="Front End")
         {
-            $(".fe").show();
-            $(".be").hide();
+            if(flag===1){
+                $(".default").attr('selected', true);
+                $(".fe").show();
+                $(".be").hide();
+            }
+            else {
+                $(".fe").show();
+                $(".be").hide();
+            }
+
         }else if($("#front_end").val()=="Back End")
         {
             $(".default").attr('selected', true);
             $(".be").show();
             $(".fe").hide();
+            flag=1;
+
         }else
         {
 
