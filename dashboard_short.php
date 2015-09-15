@@ -27,7 +27,12 @@ $sql="select * FROM student_assessment WHERE (
 (b_id='$Batch' AND g_id='$Group') AND (entry_date BETWEEN '$frm_date' AND '$to_date')
 ) GROUP BY s_id";
 }
-
+elseif((($Batch !='' && $Group !='')&&($skill_type!='' && $skill_name!=''))&&($frm_date =='' && $to_date==''))
+{
+$sql="select * FROM student_assessment WHERE (
+(b_id='$Batch' AND g_id='$Group') AND (skill_type='$skill_type' AND skill_name='$skill_name')
+)GROUP BY s_id";
+}
 else
 {
     $sql="select * FROM student_assessment WHERE (

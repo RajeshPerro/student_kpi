@@ -166,15 +166,15 @@ else{
 
                                     <div class="col-xs-12 col-sm-3 drop-down-space">
                                         <span>Skill type</span>
-                                        <select id="front_end" name="skill_type">
-                                            <option value="#" selected>Select Skill Type</option>
+                                        <select id="front_end" name="skill_type" class="skill-set">
+                                            <option value="#" id="op_id" selected>Select Skill Type</option>
                                             <option value="Front End">Front End</option>
                                             <option value="Back End">Back End</option>
                                         </select>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 drop-down-space">
                                         <span>Skill</span>
-                                        <select name="skill_name" id="skill-name">
+                                        <select name="skill_name" id="skill-name" class="skill-set">
                                             <option value="#" class="default" selected>Select Skill
                                             </option>
                                             <option value="HTML and CSS" class="fe">HTML && CSS</option>

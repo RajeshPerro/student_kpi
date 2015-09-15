@@ -193,7 +193,7 @@ else {
 
                                                     <div class="col-md-12 drop-down-space">
                                                         <select id="front_end" name="skill_type">
-                                                            <option value="#" selected>Select Skill Type</option>
+                                                            <option value="#" id="op_id" selected>Select Skill Type</option>
                                                             <option value="Front End">Front End</option>
                                                             <option value="Back End">Back End</option>
                                                         </select>

@@ -124,6 +124,7 @@ $(document).ready(function(){
             $(".be").hide();
         }else if($("#front_end").val()=="Back End")
         {
+            $(".default").attr('selected', true);
             $(".be").show();
             $(".fe").hide();
         }else
@@ -375,7 +376,7 @@ $(document).ready(function(){
 
         });
     });
-    skill_name.change(function(){
+    $(".skill-set").change(function(){
         console.log(skill_type.val());
         console.log(skill_name.val());
         $.ajax({
