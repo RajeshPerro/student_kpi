@@ -16,36 +16,56 @@
     <link  rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link  rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
-<body class="images">
+<body class="images v-align-children">
+    <div class="vertical-align-helper"></div>
 
-
-<div class="container">
-
-    <div class="row marge">
-
-        <div class="col-xs-12 col-sm-offset-4 col-sm-4">
-
-            <div class="login_back ">
-                <form >
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
-                        <img src="images/ct_login.png" class="img-responsive ct">
-                    </div>
-                    <div class="form-group form-group-lg">
-
-                        <input  type="text" placeholder="Type your username" name="username" class="form-control" id="username" >
-                    </div>
-                    <div class="form-group form-group-lg">
-                        <input  type="password" placeholder="Enter password" name="password" class="form-control" id="password">
-                    </div>
-
-
-                    <button type="button" class="btn btn-lg btn-success btn-block" id="bt_login"> Login </button>
-
-                </form>
+    <div class="login_back ">
+        <form class="dib">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
+                <img src="images/ct_login.png" class="img-responsive ct">
             </div>
-        </div>
+            <div class="form-group form-group-lg">
+
+                <input  type="text" placeholder="Type your username" name="username" class="form-control" id="username" >
+            </div>
+            <div class="form-group form-group-lg">
+                <input  type="password" placeholder="Enter password" name="password" class="form-control" id="password">
+            </div>
+
+
+            <button type="button" class="btn btn-lg btn-success btn-block" id="bt_login"> Login </button>
+
+        </form>
     </div>
-</div>
+
+<!---->
+<!--<div class="container">-->
+<!---->
+<!--    <div class="row marge">-->
+<!---->
+<!--        <div class="col-xs-12 col-sm-offset-4 col-sm-4">-->
+<!---->
+<!--            <div class="login_back ">-->
+<!--                <form >-->
+<!--                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">-->
+<!--                        <img src="images/ct_login.png" class="img-responsive ct">-->
+<!--                    </div>-->
+<!--                    <div class="form-group form-group-lg">-->
+<!---->
+<!--                        <input  type="text" placeholder="Type your username" name="username" class="form-control" id="username" >-->
+<!--                    </div>-->
+<!--                    <div class="form-group form-group-lg">-->
+<!--                        <input  type="password" placeholder="Enter password" name="password" class="form-control" id="password">-->
+<!--                    </div>-->
+<!---->
+<!---->
+<!--                    <button type="button" class="btn btn-lg btn-success btn-block" id="bt_login"> Login </button>-->
+<!---->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

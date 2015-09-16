@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 14, 2015 at 03:29 PM
+-- Generation Time: Sep 16, 2015 at 10:51 AM
 -- Server version: 5.5.44-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.11
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `student_assessment` (
   `actual` double NOT NULL,
   `entry_date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=42 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=56 ;
 
 --
 -- Dumping data for table `student_assessment`
@@ -69,8 +69,6 @@ INSERT INTO `student_assessment` (`id`, `s_id`, `name`, `b_id`, `g_id`, `exam_ty
 (20, 75, 'Leo', 1, 1, 'ASS', '', '', 20, 3, 3, '2015-09-04'),
 (21, 75, 'Leo', 3, 3, 'PR', '', '', 50, 45, 18, '2015-09-08'),
 (22, 6, 'aaaaa', 1, 1, 'ST', '', '', 20, 12, 6, '2015-09-09'),
-(23, 12, 'Pavel', 1, 2, 'ST', 'Front End', 'Javascript', 50, 48, 9.6, '2015-09-09'),
-(24, 5, 'Linkon', 1, 3, 'ASS', 'Front End', 'Javascript', 50, 36, 14.4, '2015-09-09'),
 (25, 5, 'Linkon', 1, 3, 'FT', 'Front End', 'Javascript and jQuery', 100, 80, 28, '2015-09-09'),
 (26, 12, 'Pavel', 1, 2, 'ASS', 'Front End', 'Bootstrap', 45, 42, 18.67, '2015-09-09'),
 (27, 1, 'Rajesh', 1, 1, 'PR', 'Front End', 'Javascript and jQuery', 50, 50, 20, '2015-09-09'),
@@ -87,7 +85,21 @@ INSERT INTO `student_assessment` (`id`, `s_id`, `name`, `b_id`, `g_id`, `exam_ty
 (38, 2980, 'Shahnaz  Jahan', 2, 7, 'PR', 'Front End', 'Bootstrap', 20, 15, 15, '2015-09-13'),
 (39, 2980, 'Shahnaz  Jahan', 2, 7, 'FT', 'Front End', 'Bootstrap', 100, 85, 29.75, '2015-09-13'),
 (40, 53, 'Borhan Uddin Ahmed Shumit', 1, 2, 'ST', 'Front End', 'HTML and CSS', 45, 25, 5.56, '2015-09-14'),
-(41, 1615, 'Sazid Rayhan raju', 1, 2, 'ST', 'Front End', 'Javascript and jQuery', 40, 36, 9, '2015-09-14');
+(41, 1615, 'Sazid Rayhan raju', 1, 2, 'ST', 'Front End', 'Javascript and jQuery', 40, 36, 9, '2015-09-14'),
+(42, 377, 'Hirok  Sarker', 1, 2, 'ST', 'Front End', 'HTML and CSS', 40, 36, 9, '2015-09-15'),
+(43, 94, 'Tariqul  Islam', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 40, 8, '2015-09-16'),
+(44, 160, 'jahidul  islam', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 41, 8.2, '2015-09-16'),
+(45, 180, 'Mohammad Fazlul  Kabir', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 35, 7, '2015-09-16'),
+(46, 223, 'Paresh Chandra Debnath', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 36, 7.2, '2015-09-16'),
+(47, 285, 'Md.Abdullah Al   Bake', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 34, 6.8, '2015-09-16'),
+(48, 357, 'Jahra  Jarin', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 39, 7.8, '2015-09-16'),
+(49, 365, 'Mostafizur  Rahman', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 37, 7.4, '2015-09-16'),
+(50, 534, 'Hossain  Turag', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 28, 5.6, '2015-09-16'),
+(51, 837, 'Md. Minhaz Ul Karim', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 50, 10, '2015-09-16'),
+(52, 1172, 'abdul  kader', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 31, 6.2, '2015-09-16'),
+(53, 1228, 'Md Khairul Islam', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 39, 7.8, '2015-09-16'),
+(54, 1279, 'Nurul  Azim', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 35, 7, '2015-09-16'),
+(55, 1662, 'Mosharof Hossain  Rony', 1, 4, 'ST', 'Front End', 'Javascript and jQuery', 50, 38, 7.6, '2015-09-16');
 
 -- --------------------------------------------------------
 
@@ -104,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `student_attendance` (
   `attendance` tinyint(1) NOT NULL,
   `entry_date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=94 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=108 ;
 
 --
 -- Dumping data for table `student_attendance`
@@ -188,7 +200,21 @@ INSERT INTO `student_attendance` (`id`, `s_id`, `name`, `b_id`, `g_id`, `attenda
 (90, 1615, 'Sazid Rayhan raju', 1, 2, 1, '2015-09-14'),
 (91, 1702, 'Rokebul  Hassan', 1, 2, 1, '2015-09-14'),
 (92, 1882, 'Syeda Aysha  Nimmi', 1, 2, 1, '2015-09-14'),
-(93, 2062, 'mahmudul  islam', 1, 2, 1, '2015-09-14');
+(93, 2062, 'mahmudul  islam', 1, 2, 1, '2015-09-14'),
+(94, 94, 'Tariqul  Islam', 1, 4, 1, '2015-09-16'),
+(95, 160, 'jahidul  islam', 1, 4, 1, '2015-09-16'),
+(96, 180, 'Mohammad Fazlul  Kabir', 1, 4, 0, '2015-09-16'),
+(97, 223, 'Paresh Chandra Debnath', 1, 4, 1, '2015-09-16'),
+(98, 285, 'Md.Abdullah Al   Bake', 1, 4, 1, '2015-09-16'),
+(99, 357, 'Jahra  Jarin', 1, 4, 1, '2015-09-16'),
+(100, 365, 'Mostafizur  Rahman', 1, 4, 0, '2015-09-16'),
+(101, 400, 'Mosharop  Hossian', 1, 4, 1, '2015-09-16'),
+(102, 534, 'Hossain  Turag', 1, 4, 1, '2015-09-16'),
+(103, 837, 'Md. Minhaz Ul Karim', 1, 4, 0, '2015-09-16'),
+(104, 1172, 'abdul  kader', 1, 4, 1, '2015-09-16'),
+(105, 1228, 'Md Khairul Islam', 1, 4, 1, '2015-09-16'),
+(106, 1279, 'Nurul  Azim', 1, 4, 1, '2015-09-16'),
+(107, 1662, 'Mosharof Hossain  Rony', 1, 4, 0, '2015-09-16');
 
 -- --------------------------------------------------------
 
@@ -205,7 +231,7 @@ CREATE TABLE IF NOT EXISTS `worksnap` (
   `hours` float NOT NULL,
   `entry_date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=70 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=99 ;
 
 --
 -- Dumping data for table `worksnap`
@@ -226,7 +252,36 @@ INSERT INTO `worksnap` (`id`, `s_id`, `name`, `b_id`, `g_id`, `hours`, `entry_da
 (66, 1615, 'Sazid Rayhan raju', 1, 2, 5.67, '2015-09-14'),
 (67, 1702, 'Rokebul  Hassan', 1, 2, 0, '2015-09-14'),
 (68, 1882, 'Syeda Aysha  Nimmi', 1, 2, 3.83, '2015-09-14'),
-(69, 2062, 'mahmudul  islam', 1, 2, 0, '2015-09-14');
+(69, 2062, 'mahmudul  islam', 1, 2, 0, '2015-09-14'),
+(70, 53, 'Borhan Uddin Ahmed Shumit', 1, 2, 0, '2015-09-15'),
+(71, 114, 'Rakib  Hasan', 1, 2, 0, '2015-09-15'),
+(72, 138, 'Mollah  Tareq', 1, 2, 0, '2015-09-15'),
+(73, 236, 'Md. Mashiur  Rahman', 1, 2, 0, '2015-09-15'),
+(74, 377, 'Hirok  Sarker', 1, 2, 0, '2015-09-15'),
+(75, 420, 'Ibrahim  Khalil', 1, 2, 0, '2015-09-15'),
+(76, 435, 'Mihir kanti Biswas', 1, 2, 0, '2015-09-15'),
+(77, 680, 'Ashif  Mahmud', 1, 2, 1, '2015-09-15'),
+(78, 713, 'Imtiaz  Hasan', 1, 2, 0.67, '2015-09-15'),
+(79, 904, 'Md.Rifat  Alam', 1, 2, 0, '2015-09-15'),
+(80, 1288, 'Mazharul Mazharul Haq', 1, 2, 0, '2015-09-15'),
+(81, 1615, 'Sazid Rayhan raju', 1, 2, 2.33, '2015-09-15'),
+(82, 1702, 'Rokebul  Hassan', 1, 2, 0, '2015-09-15'),
+(83, 1882, 'Syeda Aysha  Nimmi', 1, 2, 0, '2015-09-15'),
+(84, 2062, 'mahmudul  islam', 1, 2, 0, '2015-09-15'),
+(85, 94, 'Tariqul  Islam', 1, 4, 0, '2015-09-16'),
+(86, 160, 'jahidul  islam', 1, 4, 0.33, '2015-09-16'),
+(87, 180, 'Mohammad Fazlul  Kabir', 1, 4, 4.17, '2015-09-16'),
+(88, 223, 'Paresh Chandra Debnath', 1, 4, 0, '2015-09-16'),
+(89, 285, 'Md.Abdullah Al   Bake', 1, 4, 0, '2015-09-16'),
+(90, 357, 'Jahra  Jarin', 1, 4, 1.33, '2015-09-16'),
+(91, 365, 'Mostafizur  Rahman', 1, 4, 0, '2015-09-16'),
+(92, 400, 'Mosharop  Hossian', 1, 4, 3.17, '2015-09-16'),
+(93, 534, 'Hossain  Turag', 1, 4, 0, '2015-09-16'),
+(94, 837, 'Md. Minhaz Ul Karim', 1, 4, 0, '2015-09-16'),
+(95, 1172, 'abdul  kader', 1, 4, 2.17, '2015-09-16'),
+(96, 1228, 'Md Khairul Islam', 1, 4, 4.17, '2015-09-16'),
+(97, 1279, 'Nurul  Azim', 1, 4, 0, '2015-09-16'),
+(98, 1662, 'Mosharof Hossain  Rony', 1, 4, 0, '2015-09-16');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

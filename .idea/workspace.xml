@@ -29,7 +29,7 @@
       <file leaf-file-name="input_score.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input_score.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.4">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="202" column="92" selection-start-line="202" selection-start-column="85" selection-end-line="202" selection-end-column="92" />
               <folding />
             </state>
@@ -39,31 +39,67 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0">
-              <caret line="181" column="77" selection-start-line="181" selection-start-column="77" selection-end-line="181" selection-end-column="77" />
+            <state vertical-scroll-proportion="-7.3516483">
+              <caret line="355" column="2" selection-start-line="355" selection-start-column="2" selection-end-line="355" selection-end-column="2" />
               <folding>
-                <marker date="1442306511936" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442306511936" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
-                <marker date="1442306511936" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442306511936" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442306511936" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442306511936" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442306511936" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
+                <marker date="1442390553969" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
+                <marker date="1442390553969" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
+                <marker date="1442390553969" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553969" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553969" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553969" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553969" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custome.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/custome.js">
+      <file leaf-file-name="check.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4056604">
-              <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#7386#8846#0" expanded="false" />
-                <element signature="e#8924#10483#0" expanded="false" />
-                <element signature="e#9014#10475#0" expanded="false" />
-                <element signature="e#10618#12079#0" expanded="false" />
+                <marker date="1442289770532" expanded="true" signature="1069:1202" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wroksnap_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wroksnap_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.26666668">
+              <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+              <folding>
+                <marker date="1442390603821" expanded="true" signature="1073:1191" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atten_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atten_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.2666667">
+              <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+              <folding>
+                <marker date="1442390582025" expanded="true" signature="1079:1212" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rajesh_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rajesh_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1442289770564" expanded="true" signature="1279:1325" placeholder="select * fro..." />
+                <marker date="1442289770564" expanded="true" signature="2757:2802" placeholder="insert into ..." />
+                <marker date="1442289770564" expanded="true" signature="4666:4711" placeholder="insert into ..." />
+                <marker date="1442289770564" expanded="true" signature="9254:9284" placeholder="delete from ..." />
               </folding>
             </state>
           </provider>
@@ -72,39 +108,41 @@
       <file leaf-file-name="dashboard_short.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard_short.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.5">
-              <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+            <state vertical-scroll-proportion="-2.8">
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding>
-                <marker date="1442301777044" expanded="true" signature="459:529" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="459:543" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="459:1531" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="671:813" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="671:1107" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="937:1073" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="937:1086" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="1108:1309" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="1322:1527" placeholder="select * FRO..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="1979:2102" placeholder="..." />
-                <marker date="1442301777044" expanded="true" signature="2053:2102" placeholder="..." />
-                <marker date="1442301777044" expanded="true" signature="2275:2335" placeholder="select atten..student_attendance..." />
-                <marker date="1442301777044" expanded="true" signature="3069:3160" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="3686:3778" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="4292:4385" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="4896:4988" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1442301777044" expanded="true" signature="5543:5620" placeholder="select hours..worksnap..." />
+                <marker date="1442390553961" expanded="true" signature="459:543" placeholder="select * FRO..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="671:813" placeholder="select * FRO..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="937:1086" placeholder="select * FRO..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="1108:1309" placeholder="select * FRO..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="2275:2335" placeholder="select atten..student_attendance..." />
+                <marker date="1442390553961" expanded="true" signature="3069:3160" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="3686:3778" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="4292:4385" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="4896:4988" placeholder="select SUM(a..student_assessment..." />
+                <marker date="1442390553961" expanded="true" signature="5543:5620" placeholder="select hours..worksnap..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excel_test.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/excel_test.php">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+            <state vertical-scroll-proportion="-0.96666664">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.13055182">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+                <marker date="1442289770568" expanded="true" signature="207:291" placeholder="select * FRO..student_attendance..." />
               </folding>
             </state>
           </provider>
@@ -127,21 +165,22 @@
         <option value="$PROJECT_DIR$/dust.php" />
         <option value="$PROJECT_DIR$/css/styles_tar.css" />
         <option value="$PROJECT_DIR$/sorry.php" />
-        <option value="$PROJECT_DIR$/controller.php" />
         <option value="$PROJECT_DIR$/rajesh_model.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/wroksnap_controller.php" />
-        <option value="$PROJECT_DIR$/atten_controller.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/worksnap1.php" />
         <option value="$PROJECT_DIR$/js/authentication.js" />
         <option value="$PROJECT_DIR$/attendance.php" />
         <option value="$PROJECT_DIR$/input_score.php" />
-        <option value="$PROJECT_DIR$/dashboard_short.php" />
         <option value="$PROJECT_DIR$/excel_test.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/js/custome.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/dashboard_short.php" />
+        <option value="$PROJECT_DIR$/atten_controller.php" />
+        <option value="$PROJECT_DIR$/wroksnap_controller.php" />
+        <option value="$PROJECT_DIR$/controller.php" />
       </list>
     </option>
   </component>
@@ -187,8 +226,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,8 +244,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu_kpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu_kpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,14 +324,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1600" height="876" extended-state="6" />
+    <frame x="0" y="24" width="1600" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.158125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -289,6 +341,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -323,6 +376,69 @@
     <entry file="file://$PROJECT_DIR$/input_score.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="202" column="92" selection-start-line="202" selection-start-column="85" selection-end-line="202" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="77" selection-start-line="181" selection-start-column="77" selection-end-line="181" selection-end-column="77" />
+          <folding>
+            <marker date="1442390553969" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
+            <marker date="1442390553969" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7386#8846#0" expanded="false" />
+            <element signature="e#8924#10483#0" expanded="false" />
+            <element signature="e#9014#10475#0" expanded="false" />
+            <element signature="e#10618#12079#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard_short.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+          <folding>
+            <marker date="1442390553961" expanded="true" signature="459:543" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="671:813" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="937:1086" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="1108:1309" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="2275:2335" placeholder="select atten..student_attendance..." />
+            <marker date="1442390553961" expanded="true" signature="3069:3160" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="3686:3778" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="4292:4385" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="4896:4988" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="5543:5620" placeholder="select hours..worksnap..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excel_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_score.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="126" column="38" selection-start-line="123" selection-start-column="32" selection-end-line="126" selection-end-column="38" />
           <folding />
         </state>
@@ -346,13 +462,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1442306511936" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
-            <marker date="1442306511936" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
+            <marker date="1442390553969" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
+            <marker date="1442390553969" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
           </folding>
         </state>
       </provider>
@@ -361,7 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -378,13 +493,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="327" column="0" selection-start-line="285" selection-start-column="64" selection-end-line="327" selection-end-column="0" />
           <folding>
-            <marker date="1442306511936" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
-            <marker date="1442306511936" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
+            <marker date="1442390553969" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
+            <marker date="1442390553969" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
           </folding>
         </state>
       </provider>
@@ -497,49 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rajesh_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="58.8">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="194" column="1" selection-start-line="194" selection-start-column="1" selection-end-line="194" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/attendance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.9638752">
           <caret line="287" column="2" selection-start-line="287" selection-start-column="2" selection-end-line="287" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_score.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.4">
-          <caret line="202" column="92" selection-start-line="202" selection-start-column="85" selection-end-line="202" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,32 +623,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard_short.php">
+    <entry file="file://$PROJECT_DIR$/js/custome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5">
-          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
           <folding>
-            <marker date="1442301777044" expanded="true" signature="459:529" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="459:543" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="459:1531" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="671:813" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="671:1107" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="937:1073" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="937:1086" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="1108:1309" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="1322:1527" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="1979:2102" placeholder="..." />
-            <marker date="1442301777044" expanded="true" signature="2053:2102" placeholder="..." />
-            <marker date="1442301777044" expanded="true" signature="2275:2335" placeholder="select atten..student_attendance..." />
-            <marker date="1442301777044" expanded="true" signature="3069:3160" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="3686:3778" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="4292:4385" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="4896:4988" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442301777044" expanded="true" signature="5543:5620" placeholder="select hours..worksnap..." />
+            <element signature="e#7386#8846#0" expanded="false" />
+            <element signature="e#8924#10483#0" expanded="false" />
+            <element signature="e#9014#10475#0" expanded="false" />
+            <element signature="e#10618#12079#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -581,38 +643,125 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_score.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="202" column="92" selection-start-line="202" selection-start-column="85" selection-end-line="202" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+            <marker date="1442289770532" expanded="true" signature="1069:1202" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rajesh_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1442289770564" expanded="true" signature="1279:1325" placeholder="select * fro..." />
+            <marker date="1442289770564" expanded="true" signature="2757:2802" placeholder="insert into ..." />
+            <marker date="1442289770564" expanded="true" signature="4666:4711" placeholder="insert into ..." />
+            <marker date="1442289770564" expanded="true" signature="9254:9284" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0">
-          <caret line="181" column="77" selection-start-line="181" selection-start-column="77" selection-end-line="181" selection-end-column="77" />
+        <state vertical-scroll-proportion="-7.3516483">
+          <caret line="355" column="2" selection-start-line="355" selection-start-column="2" selection-end-line="355" selection-end-column="2" />
           <folding>
-            <marker date="1442306511936" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
-            <marker date="1442306511936" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1442306511936" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
+            <marker date="1442390553969" expanded="true" signature="2180:2226" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="13893:13953" placeholder="select atten..student_attendance..." />
+            <marker date="1442390553969" expanded="true" signature="16299:16390" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="17881:17973" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="19399:19492" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="20910:21002" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553969" expanded="true" signature="22521:22598" placeholder="select hours..worksnap..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custome.js">
+    <entry file="file://$PROJECT_DIR$/dashboard_short.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4056604">
-          <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+        <state vertical-scroll-proportion="-2.8">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
-            <element signature="e#7386#8846#0" expanded="false" />
-            <element signature="e#8924#10483#0" expanded="false" />
-            <element signature="e#9014#10475#0" expanded="false" />
-            <element signature="e#10618#12079#0" expanded="false" />
+            <marker date="1442390553961" expanded="true" signature="459:543" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="671:813" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="937:1086" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="1108:1309" placeholder="select * FRO..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="2275:2335" placeholder="select atten..student_attendance..." />
+            <marker date="1442390553961" expanded="true" signature="3069:3160" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="3686:3778" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="4292:4385" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="4896:4988" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1442390553961" expanded="true" signature="5543:5620" placeholder="select hours..worksnap..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atten_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2666667">
+          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding>
+            <marker date="1442390582025" expanded="true" signature="1079:1212" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wroksnap_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.26666668">
+          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding>
+            <marker date="1442390603821" expanded="true" signature="1073:1191" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.96666664">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.13055182">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1442289770568" expanded="true" signature="207:291" placeholder="select * FRO..student_attendance..." />
           </folding>
         </state>
       </provider>

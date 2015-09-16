@@ -1,3 +1,7 @@
+html,body.images {
+    height: 100%;
+    position: relative;
+}
 body {
 
     font-family: 'Lato', sans-serif;
@@ -13,6 +17,23 @@ select {
 
 option {
     padding: 8px 15px;
+}
+.v-align-children {
+    position: relative;
+}
+.v-align-children > * {
+    vertical-align: middle;
+}
+.dib {
+    display: inline-block;
+    position: relative;
+}
+.vertical-align-helper {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+    visibility: hidden;
+    vertical-align: middle;
 }
 
 a.logo {
@@ -82,9 +103,19 @@ select>option
     background: rgba(0,0,0,0.4);
     padding: 10px 15px 20px;
     border-radius: 15px;
+    display: inline-block;
 }
+
 .images{
     background: url("../images/bg.jpg") center no-repeat;
+    background-size:  auto 100%;
+
+    text-align: center;
+}
+@media (min-width: 1350px) {
+    .images {
+        background-size: 100% auto;
+    }
 }
 .ct{
     padding: 20px 0;
