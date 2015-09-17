@@ -88,7 +88,7 @@ foreach ($fetch_result as $key => $value) {
 //........................Small Test....................
 
     $stu_id = $value['s_id'];
-    $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND exam_type='ST'";
+    $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND (exam_type='ST' AND skill_name='$skill_name')";
     $db_user = 'root';
     $db_pass = 'root123';
     $db_Name = 'student_kpi';
@@ -101,12 +101,15 @@ foreach ($fetch_result as $key => $value) {
 
 
     }
-    $total_score += $small_score;
+
+
+        $total_score += $small_score;
+
 
 //....................Final Test Score........................
 
     $stu_id2 = $value['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='FT'";
+    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='FT' AND skill_name='$skill_name')";
     $db_user = 'root';
     $db_pass = 'root123';
     $db_Name = 'student_kpi';
@@ -117,12 +120,16 @@ foreach ($fetch_result as $key => $value) {
         echo '<td>'. number_format((float)$final_score, 2, '.', '').'</td>';
         //echo $final_score;
     }
-    $total_score += $final_score;
+    if($value['skill_name']==$skill_name)
+    {
+        //echo $skill_name;
+        $total_score += $final_score;
+    }
 
 //...................Assignment Score..................
 
     $stu_id2 = $value['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='ASS'";
+    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='ASS' AND skill_name='$skill_name')";
     $db_user = 'root';
     $db_pass = 'root123';
     $db_Name = 'student_kpi';
