@@ -18,6 +18,8 @@ $skill_name=$_GET['skill_name'];
 //echo $Batch.$Group;
 include('rajesh_model.php');
 include('database_config.php');
+$db_user =$database_user;
+$db_pass =$databse_pass;
 if(($Batch !='' && $Group !='') && ($frm_date =='' && $to_date=='' && $skill_type=='' && $skill_name==''))
 {
     $sql="select * FROM student_assessment WHERE b_id='$Batch' AND g_id='$Group' GROUP BY s_id";
@@ -62,8 +64,8 @@ foreach ($fetch_result as $key => $value) {
 
     $test = $value['s_id'];
     $sql = "select attendance FROM student_attendance WHERE s_id='$test' ";
-    $db_user = 'root';
-    $db_pass = 'root123';
+//    $db_user = 'root';
+//    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $attendance = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
     $cnt_one = 0;
@@ -90,8 +92,8 @@ foreach ($fetch_result as $key => $value) {
 
     $stu_id = $value['s_id'];
     $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND (exam_type='ST' AND skill_name='$skill_name')";
-    $db_user = 'root';
-    $db_pass = 'root123';
+//    $db_user = 'root';
+//    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $small_test = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
     $cnt_one = 0;
@@ -111,8 +113,8 @@ foreach ($fetch_result as $key => $value) {
 
     $stu_id2 = $value['s_id'];
     $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='FT' AND skill_name='$skill_name')";
-    $db_user = 'root';
-    $db_pass = 'root123';
+//    $db_user = 'root';
+//    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $final_test = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -131,8 +133,8 @@ foreach ($fetch_result as $key => $value) {
 
     $stu_id2 = $value['s_id'];
     $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='ASS' AND skill_name='$skill_name')";
-    $db_user = 'root';
-    $db_pass = 'root123';
+//    $db_user = 'root';
+//    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $assignment = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -145,8 +147,8 @@ foreach ($fetch_result as $key => $value) {
 //.......................Final Project Score...................
     $stu_id2 = $value['s_id'];
     $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='PR'";
-    $db_user = 'root';
-    $db_pass = 'root123';
+//    $db_user = 'root';
+//    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $project_final = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -161,8 +163,8 @@ foreach ($fetch_result as $key => $value) {
     $stu_id = $value['s_id'];
     $today = date('Y-m-d');
     $sql2 = "select hours FROM worksnap WHERE s_id='$stu_id' AND DATE(entry_date)='$today' ";
-    $db_user = 'root';
-    $db_pass = 'root123';
+//    $db_user = 'root';
+//    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $worksnap_hour = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -171,23 +173,23 @@ foreach ($fetch_result as $key => $value) {
         $hours=$ws['hours'];
         if($hours >= 3)
         {
-            $ws_value=10;
+            $ws_value=15;
         }
         elseif($hours >= 2.5 && $hours < 3)
         {
-            $ws_value=8;
+            $ws_value=12;
         }
         elseif($hours >= 2 && $hours < 2.5)
         {
-            $ws_value=6;
+            $ws_value=10;
         }
         elseif($hours >= 1.5 && $hours < 2)
         {
-            $ws_value=5;
+            $ws_value=8;
         }
         elseif($hours >= 1 && $hours < 1.5)
         {
-            $ws_value=4;
+            $ws_value=5;
         }
         elseif($hours >= 0.5 && $hours < 1)
         {
