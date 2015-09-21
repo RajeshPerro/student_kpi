@@ -7,7 +7,7 @@ $(document).ready(function() {
         var sID = $("#linkonn").val();
         $.ajax({
             type: 'get',
-            url: 'http://localhost/edu_kpi/graph_request.php?std_id='+sID,
+            url: '/edu_kpi/graph_request.php?std_id='+sID,
             dataType: "json",
             error: function (data) {console.log(data)},
             success: function (data) {
@@ -102,7 +102,7 @@ $(document).ready(function() {
                 var weeks = [];
                 $.ajax({
                     type: 'get',
-                    url: 'http://localhost/edu_kpi/weekly_worksnap.php?std_id=' + sID,
+                    url: '/edu_kpi/weekly_worksnap.php?std_id=' + sID,
                     dataType: "json",
                     error: function (data) {
                         console.log(data)

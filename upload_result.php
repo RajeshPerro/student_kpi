@@ -146,6 +146,10 @@ if(isset($_POST["submit"]))
                             Dashboard</a></li>
                     <li class="active">Upload Score</li>
                 </ul>
+                <ul>
+
+                    <li><a href="/edu_kpi/images/UploadTutorial.pdf">Don't know how to upload??</a></li>
+                </ul>
             </div>
             <div class="row">
                 <form name="import" method="post" enctype="multipart/form-data">
@@ -162,7 +166,16 @@ if(isset($_POST["submit"]))
             </div>
         </div>
     </div>
-
+    <section id="footer" class="padding-top-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>© 2015 | Powered by Mentor Team, Coderstrust  </p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 <script>
