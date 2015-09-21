@@ -17,6 +17,7 @@ $skill_type=$_GET['skill_type'];
 $skill_name=$_GET['skill_name'];
 //echo $Batch.$Group;
 include('rajesh_model.php');
+include('database_config.php');
 if(($Batch !='' && $Group !='') && ($frm_date =='' && $to_date=='' && $skill_type=='' && $skill_name==''))
 {
     $sql="select * FROM student_assessment WHERE b_id='$Batch' AND g_id='$Group' GROUP BY s_id";
@@ -43,8 +44,8 @@ else
 //(b_id='$Batch' AND g_id='$Group') AND (entry_date BETWEEN '$frm_date' AND '$to_date') AND (skill_type='$skill_type' AND skill_name='$skill_name')
 //)GROUP BY s_id";
 
-$db_user='root';
-$db_pass='root123';
+$db_user =$database_user;
+$db_pass =$databse_pass;
 $db_Name='student_kpi';
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);

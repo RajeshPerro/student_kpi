@@ -25,7 +25,10 @@ class connect
 }
 
 $connection_object=new connect();
-$dbcon=$connection_object->connection('localhost','root','root123','student_kpi');
+include('database_config.php');
+$db_user =$database_user;
+$db_pass =$databse_pass;
+$dbcon=$connection_object->connection('localhost',$db_user,$db_pass,'student_kpi');
 
  //start from here
 	$batch = $_POST['b_id'];

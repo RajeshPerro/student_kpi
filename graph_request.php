@@ -8,17 +8,25 @@
 $information = Array();
 $student_id=$_GET['std_id'];
 include('rajesh_model.php');
-$sql="select * FROM student_assessment WHERE s_id='$student_id'";
-$db_user = 'root';
-$db_pass = 'root123';
-$db_Name = 'student_kpi';
-$fetch_result = $raj_modelobject->DataView($sql, $db_user, $db_pass, $db_Name);
-header('Content-type: application/json');
-foreach($fetch_result as $data)
-{
-    $information['name']=$data['name'];
+//$sql="select * FROM student_assessment WHERE s_id='$student_id'";
+//$db_user = 'root';
+//$db_pass = 'root123';
+//$db_Name = 'student_kpi';
+//
+//value assign
+$htmlCss = 0;
+$bootstrap = 0;
+$jsjquery = 0;
+$phpsql = 0;
+$wordpress = 0;
+//$fetch_result = $raj_modelobject->DataView($sql, $db_user, $db_pass, $db_Name);
+//
+//header('Content-type: application/json');
+//foreach($fetch_result as $data)
+//{
+//    $information['name']=$data['name'];
     //echo json_encode($data);
-    $test = $data['s_id'];
+    $test = $student_id;
     $sql = "select attendance FROM student_attendance WHERE s_id='$test' ";
     $db_user = 'root';
     $db_pass = 'root123';
@@ -42,73 +50,219 @@ foreach($fetch_result as $data)
     $atten_score = ($cnt_one * 5) / $total_class;
     //$atten_score;
     $total_score += $atten_score;
-    $information['atten']=$atten_score;
+//    $information['atten']=$atten_score;
 
-    $stu_id = $data['s_id'];
-    $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND exam_type='ST'";
+
+    // getting small test
+    $stu_id = $student_id;
+        $sql = "SELECT AVG( actual ) , skill_name FROM student_assessment WHERE  s_id='$stu_id' AND exam_type =  'ST' GROUP BY skill_name";
     $db_user = 'root';
     $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $small_test = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
     $cnt_one = 0;
     $cnt_zero = 0;
+
+//    print_r($small_test);
     foreach ($small_test as $st) {
-        $small_score = $st['SUM(actual)'] / $st['COUNT(*)'];
+        $small_score = $st['AVG( actual )'];
+        $skill_naam = $st['skill_name'];
         $small_score_final=number_format((float)$small_score, 2, '.', '');
 
+//        echo $st['AVG( actual )'];
+//        echo $st['skill_name'];
+
+
+        if($skill_naam=="HTML and CSS")
+        {
+
+            $htmlCss+=$small_score_final;
+//            echo "got html css: ".$htmlCss;
+        }
+        else if($skill_naam=="Bootstrap")
+        {
+
+            $bootstrap+=$small_score_final;
+//            echo "got Bootstrap".$bootstrap;
+        }
+        else if($skill_naam == "Javascript and jQuery")
+        {
+            $jsjquery+=$small_score_final;
+//            echo "got js".$jsjquery;
+        }
+        else if($skill_naam == "PHP & MySQL")
+        {
+            $phpsql+=$small_score_final;
+//            echo "got js".$phpsql;
+        }
+        else if($skill_naam == "WordPress")
+        {
+            $wordpress+=$small_score_final;
+//            echo "got js".$wordpress;
+        }
+
 
     }
-    $total_score += $small_score_final;
-    $information['small_test']=$small_score_final;
 
-    $stu_id2 = $data['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='FT'";
-    $db_user = 'root';
-    $db_pass = 'root123';
-    $db_Name = 'student_kpi';
+
+
+//    $total_score += $small_score_final;
+//    $information['small_test']=$small_score_final;
+
+    //end of small test
+
+    //start for final test
+
+    $stu_id2 = $student_id;
+    $sql2 = "SELECT AVG( actual ) , skill_name FROM student_assessment WHERE  s_id='$stu_id' AND exam_type =  'FT' GROUP BY skill_name";
+//    $db_user = 'root';
+//    $db_pass = 'root123';
+//    $db_Name = 'student_kpi';
     $final_test = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
-    foreach ($final_test as $fft) {
-        $final_score = $fft['SUM(actual)'] / $fft['COUNT(*)'];
+    foreach ($final_test as $ft) {
+        $final_score = $ft['AVG( actual )'];
+        $skill_naam = $ft['skill_name'];
         $final_score_final=number_format((float)$final_score, 2, '.', '');
-        //echo $final_score;
-    }
-    $total_score += $final_score_final;
-    $information['final-score']=$final_score_final;
 
-    $stu_id2 = $data['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='ASS'";
-    $db_user = 'root';
-    $db_pass = 'root123';
-    $db_Name = 'student_kpi';
+//        echo $st['AVG( actual )'];
+//        echo $st['skill_name'];
+
+
+    if($skill_naam=="HTML and CSS")
+    {
+
+        $htmlCss+=$final_score_final;
+//        echo "got html css: ".$htmlCss;
+    }
+    else if($skill_naam=="Bootstrap")
+    {
+
+        $bootstrap+=$final_score_final;
+//        echo "got Bootstrap".$bootstrap;
+    }
+    else if($skill_naam == "Javascript and jQuery")
+    {
+        $jsjquery+=$final_score_final;
+//        echo "got js".$jsjquery;
+    }
+    else if($skill_naam == "PHP & MySQL")
+    {
+        $phpsql+=$final_score_final;
+//        echo "got js".$phpsql;
+    }
+    else if($skill_naam == "WordPress")
+    {
+        $wordpress+=$final_score_final;
+//        echo "got js".$wordpress;
+    }
+
+
+}
+
+    //end of final test
+
+    //start of assignment
+
+    $stu_id2 = $student_id;
+    $sql2 = "SELECT AVG( actual ) , skill_name FROM student_assessment WHERE  s_id='$stu_id' AND exam_type =  'ASS' GROUP BY skill_name";
+
     $assignment = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
     foreach ($assignment as $ass) {
-        $final_ass = $ass['SUM(actual)'] / $ass['COUNT(*)'];
-        $final_ass_final=number_format((float)$final_ass, 2, '.', '');
-        //echo $final_ass;
-    }
-    $total_score += $final_ass_final;
-    $information['assignment']=$final_ass_final;
 
-    $stu_id2 = $data['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='PR'";
-    $db_user = 'root';
-    $db_pass = 'root123';
-    $db_Name = 'student_kpi';
+        $ass_score = $ass['AVG( actual )'];
+        $skill_naam = $ass['skill_name'];
+        $ass_score_final=number_format((float)$ass_score, 2, '.', '');
+
+//        echo $st['AVG( actual )'];
+//        echo $st['skill_name'];
+
+
+        if($skill_naam=="HTML and CSS")
+        {
+
+            $htmlCss+=$ass_score_final;
+//            echo "got html css: ".$htmlCss;
+        }
+        else if($skill_naam=="Bootstrap")
+        {
+
+            $bootstrap+=$ass_score_final;
+//            echo "got Bootstrap".$bootstrap;
+        }
+        else if($skill_naam == "Javascript and jQuery")
+        {
+            $jsjquery+=$ass_score_final;
+//            echo "got js".$jsjquery;
+        }
+        else if($skill_naam == "PHP & MySQL")
+        {
+            $phpsql+=$ass_score_final;
+//            echo "got js".$phpsql;
+        }
+        else if($skill_naam == "WordPress")
+        {
+            $wordpress+=$ass_score_final;
+//            echo "got js".$wordpress;
+        }
+
+    }
+
+
+
+    //end of assignment
+
+    //start of project
+
+    $stu_id2 = $student_id;
+    $sql2 = "SELECT AVG( actual ) , skill_name FROM student_assessment WHERE  s_id='$stu_id' AND exam_type =  'PR' GROUP BY skill_name";
+
     $project_final = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
     foreach ($project_final as $pr) {
-        $final_pr = $pr['SUM(actual)'] / $pr['COUNT(*)'];
-        $final_pr_final=number_format((float)$final_pr, 2, '.', '');
-        // echo $final_pr;
-    }
-    $total_score += $final_pr_final;
-    $information['final_project']=$final_pr_final;
+        $pr_score = $pr['AVG( actual )'];
+        $skill_naam = $pr['skill_name'];
+        $pr_score_final=number_format((float)$pr_score, 2, '.', '');
 
+//        echo $st['AVG( actual )'];
+//        echo $st['skill_name'];
+
+
+        if($skill_naam=="HTML and CSS")
+        {
+
+            $htmlCss+=$pr_score_final;
+//            echo "got html css: ".$htmlCss;
+        }
+        else if($skill_naam=="Bootstrap")
+        {
+
+            $bootstrap+=$pr_score_final;
+//            echo "got Bootstrap".$bootstrap;
+        }
+        else if($skill_naam == "Javascript and jQuery")
+        {
+            $jsjquery+=$pr_score_final;
+//            echo "got js".$jsjquery;
+        }
+        else if($skill_naam == "PHP & MySQL")
+        {
+            $phpsql+=$pr_score_final;
+//            echo "got js".$phpsql;
+        }
+        else if($skill_naam == "WordPress")
+        {
+            $wordpress+=$pr_score_final;
+//            echo "got js".$wordpress;
+        }
+    }
+
+
+    //end of project
 
     $ws_value=0;
-    $stu_id = $data['s_id'];
+    $stu_id = $student_id;
     $today = date('Y-m-d');
     $sql2 = "select hours FROM worksnap WHERE s_id='$stu_id' AND DATE(entry_date)='$today' ";
     $db_user = 'root';
@@ -148,8 +302,21 @@ foreach($fetch_result as $data)
             $ws_value=0;
         }
     }
-    $information['worksnap']=$ws_value;
+//    $information['worksnap']=$ws_value;
     $total_score += $ws_value;
-}
+
+$htmlCss += ($atten_score + $ws_value);
+$bootstrap += ($atten_score + $ws_value);
+$jsjquery+= ($atten_score + $ws_value);
+$phpsql+= ($atten_score + $ws_value);
+$wordpress+= ($atten_score + $ws_value);
+
+$information['htmlcss']=$htmlCss;
+$information['bootstrap']=$bootstrap;
+$information['js']=$jsjquery;
+$information['php']=$phpsql;
+$information['wordpress']=$wordpress;
+//}
+//print_r($information) ;
 echo json_encode($information);
 ?>

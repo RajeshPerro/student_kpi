@@ -2,6 +2,7 @@
 <?php
 
 include('rajesh_model.php');
+include('database_config.php');
 session_start();
 
 //Registration Page Data Insert
@@ -10,8 +11,8 @@ session_start();
 if(isset($_POST['attendance']))//Mandatory field name
 {   $post=$_POST;
     //$file = $_FILES;
-    $db_user = 'root';
-    $db_pass = "root123";
+    $db_user =$database_user;
+    $db_pass =$databse_pass;
     $table = 'student_attendance';
     $db_name='student_kpi';
 
@@ -27,8 +28,8 @@ if(isset($_POST['exam_type']) )
 {
     $post=$_POST;
     //$file = $_FILES;
-    $db_user = 'root';
-    $db_pass = "root123";
+    $db_user =$database_user;
+    $db_pass =$databse_pass;
     $table = 'student_assessment';
     $db_name='student_kpi';
 

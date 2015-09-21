@@ -44,9 +44,10 @@
 
 $total_score = 0;
 include('rajesh_model.php');
+include('database_config.php');
 $sql = "select * FROM student_assessment GROUP BY s_id";
-$db_user = 'root';
-$db_pass = 'root123';
+$db_user =$database_user;
+$db_pass =$databse_pass;
 $db_Name = 'student_kpi';
 $fetch_result = $raj_modelobject->DataView($sql, $db_user, $db_pass, $db_Name);
 $userName = $_GET['user'];//"<script>document.write(localStorage.getItem('username'))</script>";
@@ -252,8 +253,8 @@ else{
                                                             <td><?php echo $row['name']; ?></td>
                                                             <td><?php $test = $row['s_id'];
                                                                 $sql = "select attendance FROM student_attendance WHERE s_id='$test' ";
-                                                                $db_user = 'root';
-                                                                $db_pass = 'root123';
+                                                                $db_user =$database_user;
+                                                                $db_pass =$databse_pass;
                                                                 $db_Name = 'student_kpi';
                                                                 $attendance = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
                                                                 $cnt_one = 0;
@@ -280,8 +281,8 @@ else{
                                                                 <?php
                                                                 $stu_id = $row['s_id'];
                                                                 $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND exam_type='ST'";
-                                                                $db_user = 'root';
-                                                                $db_pass = 'root123';
+                                                                $db_user =$database_user;
+                                                                $db_pass =$databse_pass;
                                                                 $db_Name = 'student_kpi';
                                                                 $small_test = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
                                                                 $cnt_one = 0;
@@ -299,8 +300,8 @@ else{
                                                                 <?php
                                                                 $stu_id2 = $row['s_id'];
                                                                 $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='FT'";
-                                                                $db_user = 'root';
-                                                                $db_pass = 'root123';
+                                                                $db_user =$database_user;
+                                                                $db_pass =$databse_pass;
                                                                 $db_Name = 'student_kpi';
                                                                 $final_test = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -316,8 +317,8 @@ else{
                                                                 <?php
                                                                 $stu_id2 = $row['s_id'];
                                                                 $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='ASS'";
-                                                                $db_user = 'root';
-                                                                $db_pass = 'root123';
+                                                                $db_user =$database_user;
+                                                                $db_pass =$databse_pass;
                                                                 $db_Name = 'student_kpi';
                                                                 $assignment = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -333,8 +334,8 @@ else{
                                                                 <?php
                                                                 $stu_id2 = $row['s_id'];
                                                                 $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND exam_type='PR'";
-                                                                $db_user = 'root';
-                                                                $db_pass = 'root123';
+                                                                $db_user =$database_user;
+                                                                $db_pass =$databse_pass;
                                                                 $db_Name = 'student_kpi';
                                                                 $project_final = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
@@ -351,8 +352,8 @@ else{
                                                                 $stu_id = $row['s_id'];
                                                                 $today = date('Y-m-d');
                                                                 $sql2 = "select hours FROM worksnap WHERE s_id='$stu_id' AND DATE(entry_date)='$today' ";
-                                                                $db_user = 'root';
-                                                                $db_pass = 'root123';
+                                                                $db_user =$database_user;
+                                                                $db_pass =$databse_pass;
                                                                 $db_Name = 'student_kpi';
                                                                 $worksnap_hour = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 
