@@ -8,6 +8,8 @@
 $information = Array();
 $student_id=$_GET['std_id'];
 include('rajesh_model.php');
+include('database_config.php');
+
 //$sql="select * FROM student_assessment WHERE s_id='$student_id'";
 //$db_user = 'root';
 //$db_pass = 'root123';
@@ -28,8 +30,8 @@ $wordpress = 0;
     //echo json_encode($data);
     $test = $student_id;
     $sql = "select attendance FROM student_attendance WHERE s_id='$test' ";
-    $db_user = 'root';
-    $db_pass = 'root123';
+    $db_user =$database_user;
+    $db_pass =$databse_pass;
     $db_Name = 'student_kpi';
     $attendance = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
     $cnt_one = 0;
@@ -56,8 +58,8 @@ $wordpress = 0;
     // getting small test
     $stu_id = $student_id;
         $sql = "SELECT AVG( actual ) , skill_name FROM student_assessment WHERE  s_id='$stu_id' AND exam_type =  'ST' GROUP BY skill_name";
-    $db_user = 'root';
-    $db_pass = 'root123';
+    $db_user =$database_user;
+    $db_pass =$databse_pass;
     $db_Name = 'student_kpi';
     $small_test = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
     $cnt_one = 0;
@@ -265,8 +267,8 @@ $wordpress = 0;
     $stu_id = $student_id;
     $today = date('Y-m-d');
     $sql2 = "select hours FROM worksnap WHERE s_id='$stu_id' AND DATE(entry_date)='$today' ";
-    $db_user = 'root';
-    $db_pass = 'root123';
+    $db_user =$database_user;
+    $db_pass =$databse_pass;
     $db_Name = 'student_kpi';
     $worksnap_hour = $raj_modelobject->DataView2($sql2, $db_user, $db_pass, $db_Name);
 

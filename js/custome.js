@@ -434,3 +434,4 @@ $(document).ready(function(){
         });
     });
 });
+//Upload Page validation
