@@ -68,6 +68,7 @@ $(document).ready(function() {
 
                 //new graph start
                 $('#graph_place2').highcharts({
+
                     chart: {
                         type: 'line'
                     },
@@ -105,7 +106,7 @@ $(document).ready(function() {
                     url: '/edu_kpi/weekly_worksnap.php?std_id=' + sID,
                     dataType: "json",
                     error: function (data) {
-                        console.log(data)
+                        
                     },
                     success: function (data) {
                         //console.log("weekly worksnap");
@@ -121,13 +122,18 @@ $(document).ready(function() {
                         console.log(total_hours);
                         //another graph
                         $('#graph_place3').highcharts({
+
                             chart: {
                                 type: 'column'
+
+
                             },
                             title: {
                                 text: 'Weekly Worksnap Update'
+
                             },
                             xAxis: {
+
                                 categories: weeks
                             },
                             yAxis: {
@@ -171,7 +177,7 @@ $(document).ready(function() {
                                 }
                             },
                             series: [{
-                                name: 'John',
+                                name:'Id:'+sID,
                                 data: total_hours
                             }]
                         });
