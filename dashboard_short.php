@@ -173,23 +173,23 @@ foreach ($fetch_result as $key => $value) {
         $hours=$ws['hours'];
         if($hours >= 3)
         {
-            $ws_value=15;
+            $ws_value=10;
         }
         elseif($hours >= 2.5 && $hours < 3)
         {
-            $ws_value=12;
+            $ws_value=8;
         }
         elseif($hours >= 2 && $hours < 2.5)
         {
-            $ws_value=10;
+            $ws_value=6;
         }
         elseif($hours >= 1.5 && $hours < 2)
         {
-            $ws_value=8;
+            $ws_value=5;
         }
         elseif($hours >= 1 && $hours < 1.5)
         {
-            $ws_value=5;
+            $ws_value=4;
         }
         elseif($hours >= 0.5 && $hours < 1)
         {
