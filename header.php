@@ -30,7 +30,12 @@ session_start();
     <li><a href="dashboard.php?user=<?php echo $_SESSION['user']?> &token=<?php echo $_SESSION['token']?>">
             <span class="glyphicon glyphicon-dashboard"></span>
             Dashboard</a></li>
-    <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a>
+    <li>
+        <a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-check"></span> Attendance</a>
+        <ul class="dropdown-menu">
+            <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
+            <li><a href="attendance_edit.php"><span class="glyphicon glyphicon-edit"></span> Attendance Edit</a></li>
+        </ul>
     </li>
     <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a>
     </li>
