@@ -112,7 +112,7 @@ else
                         <div class="col-xs-12 col-sm-12">
                             <br><br>
 
-                            <form action="atten_controller.php" method="post" enctype="multipart/form-data">
+                            <form action="attendance_edit_controller.php" method="post" enctype="multipart/form-data">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="col-xs-12 col-sm-5">
                                         <select name="b_id" id="batch_id" class="atten-parameter">
@@ -125,7 +125,7 @@ else
                                         </select>
                                     </div>
                                     <div class="col-xs-12 col-sm-2">
-                                        <input class="form-control atten-parameter" type="text" id="atten-date" name="from_date" placeholder="Select Date">
+                                        <input class="form-control atten-parameter" type="text" id="atten-date" name="entry_date" placeholder="Select Date">
                                     </div>
                                 </div>
 
