@@ -29,21 +29,31 @@
       <file leaf-file-name="attendance_edit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attendance_edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.033334">
-              <caret line="122" column="96" selection-start-line="122" selection-start-column="81" selection-end-line="122" selection-end-column="96" />
+            <state vertical-scroll-proportion="-10.133333">
+              <caret line="137" column="131" selection-start-line="137" selection-start-column="118" selection-end-line="137" selection-end-column="131" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendance_edit.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="attendance_edit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/attendance_edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1630013">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="96" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="96" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attendance_search.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/attendance_search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28263795">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,6 +111,7 @@
         <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/attendance_edit.php" />
         <option value="$PROJECT_DIR$/js/attendance_edit.js" />
+        <option value="$PROJECT_DIR$/attendance_search.php" />
       </list>
     </option>
   </component>
@@ -541,14 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38948786">
-          <caret line="293" column="17" selection-start-line="293" selection-start-column="12" selection-end-line="293" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/batchgroup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.24450193">
@@ -581,21 +584,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/custome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="341" column="12" selection-start-line="300" selection-start-column="6" selection-end-line="341" selection-end-column="12" />
+          <folding>
+            <element signature="e#7386#8846#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/attendance_edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.033334">
-          <caret line="122" column="96" selection-start-line="122" selection-start-column="81" selection-end-line="122" selection-end-column="96" />
+        <state vertical-scroll-proportion="-10.133333">
+          <caret line="137" column="131" selection-start-line="137" selection-start-column="118" selection-end-line="137" selection-end-column="131" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/attendance_edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1630013">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="96" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28263795">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
