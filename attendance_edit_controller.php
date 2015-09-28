@@ -40,7 +40,8 @@ $att = $_POST['attendance'];
 $en_date=$_POST['entry_date'];
 
 $preparedStatement = $dbcon->prepare("UPDATE student_attendance SET s_id=:sid, name=:sname, b_id=:bid, g_id=:gid, attendance=:atten, entry_date=:ent_date
-WHERE entry_date='$en_date'");
+WHERE entry_date='$en_date' AND s_id=:sid AND b_id='$batch' AND g_id='$group'");
+
 
 $arrlength = count($student_id);
 $flag=0;
@@ -55,6 +56,7 @@ for($x = 0; $x < $arrlength; $x++) {
     $preparedStatement->execute();
     $flag=1;
 }
+
 $user=$_SESSION['user'];$token=$_SESSION['token'];
 if($flag==1)
 {

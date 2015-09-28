@@ -17,6 +17,8 @@ $sql="select * FROM student_attendance WHERE b_id='$Batch' AND g_id='$Group' AND
 $db_Name='student_kpi';
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
+print_r($fetch_result);
+
 foreach ($fetch_result as $key => $value)
 {
     $sl++;
@@ -27,12 +29,12 @@ foreach ($fetch_result as $key => $value)
     if($value['attendance']==1)
     {
         echo '<td>'.'<input type="checkbox" name="attendance[]" value="'.$value['attendance'].'" '.checked.'> Yes '.'</td>';
-        echo '<td><input type="checkbox" name="attendance[]" value="'.$value['attendance'].'"> No </td>';
+        echo '<td><input type="checkbox" name="attendance[]" value="0"> No </td>';
     }
     else
     {
 
-        echo '<td>'.'<input type="checkbox" name="attendance[]" value="'.$value['attendance'].'"> Yes '.'</td>';
+        echo '<td>'.'<input type="checkbox" name="attendance[]" value="1"> Yes '.'</td>';
         echo '<td><input type="checkbox" name="attendance[]" value="'.$value['attendance'].'"'.checked.'> No </td>';
     }
 //

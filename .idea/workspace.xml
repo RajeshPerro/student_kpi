@@ -36,29 +36,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendance_edit_controller.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="attendance_edit_controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/attendance_edit_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.266667">
-              <caret line="39" column="27" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.82503366">
+              <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
               <folding>
-                <marker date="1443428226573" expanded="true" signature="1163:1278" placeholder="UPDATE stude..." />
-                <marker date="1443428226573" expanded="true" signature="1163:1296" placeholder="UPDATE stude..." />
-                <marker date="1443428226573" expanded="true" signature="1163:1306" placeholder="UPDATE stude..." />
-                <marker date="1443428226573" expanded="true" signature="1169:1278" placeholder="INSERT INTO ..." />
+                <marker date="1443430726837" expanded="true" signature="1163:1278" placeholder="UPDATE stude..." />
+                <marker date="1443430726837" expanded="true" signature="1163:1296" placeholder="UPDATE stude..." />
+                <marker date="1443430726837" expanded="true" signature="1163:1306" placeholder="UPDATE stude..." />
+                <marker date="1443430726837" expanded="true" signature="1163:1316" placeholder="UPDATE stude..." />
+                <marker date="1443430726837" expanded="true" signature="1163:1338" placeholder="UPDATE stude..." />
+                <marker date="1443430726837" expanded="true" signature="1163:1356" placeholder="UPDATE stude..." />
+                <marker date="1443430726837" expanded="true" signature="1169:1278" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendance_search.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="attendance_search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attendance_search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48183042">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state vertical-scroll-proportion="-18.233334">
+              <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
               <folding>
-                <marker date="1443420605741" expanded="true" signature="302:409" placeholder="select * FRO..student_attendance..." />
+                <marker date="1443429616401" expanded="true" signature="302:409" placeholder="select * FRO..student_attendance..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attendance.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/attendance.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="64.4">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentication.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/authentication.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="154" column="401" selection-start-line="154" selection-start-column="401" selection-end-line="154" selection-end-column="401" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,8 +149,8 @@
         <option value="$PROJECT_DIR$/js/attendance_edit.js" />
         <option value="$PROJECT_DIR$/attendance.html" />
         <option value="$PROJECT_DIR$/dashboard_short.php" />
-        <option value="$PROJECT_DIR$/attendance_search.php" />
         <option value="$PROJECT_DIR$/attendance_edit.php" />
+        <option value="$PROJECT_DIR$/attendance_search.php" />
         <option value="$PROJECT_DIR$/attendance_edit_controller.php" />
       </list>
     </option>
@@ -506,14 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5737705">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worksnap1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.8">
@@ -593,14 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67917204">
-          <caret line="169" column="88" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/attendance.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8304172">
@@ -635,25 +642,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_edit_controller.php">
+    <entry file="file://$PROJECT_DIR$/attendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.266667">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <marker date="1443428226573" expanded="true" signature="1163:1278" placeholder="UPDATE stude..." />
-            <marker date="1443428226573" expanded="true" signature="1163:1296" placeholder="UPDATE stude..." />
-            <marker date="1443428226573" expanded="true" signature="1163:1306" placeholder="UPDATE stude..." />
-            <marker date="1443428226573" expanded="true" signature="1169:1278" placeholder="INSERT INTO ..." />
-          </folding>
+        <state vertical-scroll-proportion="64.4">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="401" selection-start-line="154" selection-start-column="401" selection-end-line="154" selection-end-column="401" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48183042">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state vertical-scroll-proportion="-18.233334">
+          <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
           <folding>
-            <marker date="1443420605741" expanded="true" signature="302:409" placeholder="select * FRO..student_attendance..." />
+            <marker date="1443429616401" expanded="true" signature="302:409" placeholder="select * FRO..student_attendance..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_edit_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82503366">
+          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+          <folding>
+            <marker date="1443430726837" expanded="true" signature="1163:1278" placeholder="UPDATE stude..." />
+            <marker date="1443430726837" expanded="true" signature="1163:1296" placeholder="UPDATE stude..." />
+            <marker date="1443430726837" expanded="true" signature="1163:1306" placeholder="UPDATE stude..." />
+            <marker date="1443430726837" expanded="true" signature="1163:1316" placeholder="UPDATE stude..." />
+            <marker date="1443430726837" expanded="true" signature="1163:1338" placeholder="UPDATE stude..." />
+            <marker date="1443430726837" expanded="true" signature="1163:1356" placeholder="UPDATE stude..." />
+            <marker date="1443430726837" expanded="true" signature="1169:1278" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
