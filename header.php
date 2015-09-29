@@ -35,6 +35,7 @@ session_start();
         <ul class="dropdown-menu">
             <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
             <li><a href="attendance_edit.php"><span class="glyphicon glyphicon-edit"></span> Attendance Edit</a></li>
+            <li><a href="attendance_view.php"><span class="glyphicon glyphicon-asterisk"></span> Attendance View</a></li>
         </ul>
     </li>
     <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a>
