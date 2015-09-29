@@ -13,7 +13,7 @@ include('rajesh_model.php');
 include('database_config.php');
 $db_user =$database_user;
 $db_pass =$databse_pass;
-$sql_date="select entry_date FROM student_attendance WHERE b_id='$Batch' AND g_id='$Group'  GROUP BY entry_date DESC ";
+$sql_date="select entry_date FROM student_attendance WHERE b_id='$Batch' AND g_id='$Group'  GROUP BY entry_date DESC  LIMIT 8";
 $sql="select * FROM student_attendance WHERE b_id='$Batch' AND g_id='$Group'  ORDER BY entry_date DESC ";
 $db_Name='student_kpi';
 
@@ -27,7 +27,7 @@ foreach ($fetch_date as $key => $date_value) {
     $temp=$date_value["entry_date"];
 
     foreach ($fetch_result as $key => $value) {
-        echo '<td>' .'<a href="student_details?id='.$value["s_id"].'">'. $value["s_id"] . '</a>'.'</td>';
+        echo '<td>' .'<a href="student_details.php?id='.$value["s_id"].'">'. $value["s_id"] . '</a>'.'</td>';
         echo '<td>' . $value['name'] . '</td>';
 
 
