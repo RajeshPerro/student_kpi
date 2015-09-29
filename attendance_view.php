@@ -111,8 +111,6 @@ else
 
                         <div class="col-xs-12 col-sm-12">
                             <br><br>
-
-                            <form action="attendance_show.php" method="post" enctype="multipart/form-data">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="col-xs-12 col-sm-5">
                                         <select name="b_id" id="batch_id" class="atten-parameter">
@@ -137,33 +135,16 @@ else
                                 <div class="col-xs-12 col-sm-12 table_padding">
                                     <table class="text-center table table-striped table-condensed table-bordered" id="records_table">
 
-                                        <!--                                    <tr>-->
-                                        <!--                                        <th>Student ID</th>-->
-                                        <!--                                        <th>Student Name</th>-->
-                                        <!--                                        <th>Attendance</th>-->
-                                        <!--                                    </tr>-->
-
-                                        <!--  <tr>
-                                             <td><input  class="form-control input-sm" type="number" name="s_id" value=""></td>
-                                             <td><input  class="form-control input-sm" type="text" name="name" value=""></td>
-
-                                             <td>
-                                                 <input  type="radio" name="attendance" value="1"> Yes
-                                                 <input  type="radio" name="attendance" value="0"> No
-                                             </td>
-                                         </tr> -->
+                                                                            <tr>
+                                                                                <th>Student ID</th>
+                                                                                <th>Student Name</th>
+                                                                                <th>Date</th>
+                                                                                <th>Attendance</th>
+                                                                            </tr>
 
 
                                     </table>
                                 </div>
-                                <div class="col-xs-3 col-sm-3">
-                                    <input type="submit" class="btn btn-primary" value="Update" id="button_submit">
-                                </div>
-                            </form>
-
-
-                            <!-- Student List Section -->
-
 
 
                         </div>

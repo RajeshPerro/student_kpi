@@ -29,8 +29,8 @@
       <file leaf-file-name="attendance_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attendance_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.233334">
-              <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+            <state vertical-scroll-proportion="-14.266666">
+              <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -39,31 +39,13 @@
       <file leaf-file-name="attendance_show.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/attendance_show.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29340512">
-              <caret line="24" column="313" selection-start-line="24" selection-start-column="313" selection-end-line="24" selection-end-column="313" />
+            <state vertical-scroll-proportion="-0.017496636">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
-                <marker date="1443500950348" expanded="true" signature="302:386" placeholder="select * FRO..student_attendance..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard_short.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard_short.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.8">
-              <caret line="53" column="309" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="309" />
-              <folding>
-                <marker date="1443420181613" expanded="true" signature="542:626" placeholder="select * FRO..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="754:896" placeholder="select * FRO..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="1020:1169" placeholder="select * FRO..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="1191:1392" placeholder="select * FRO..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="2372:2432" placeholder="select atten..student_attendance..." />
-                <marker date="1443420181613" expanded="true" signature="3170:3292" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="3829:3952" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="4556:4680" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="5195:5287" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1443420181613" expanded="true" signature="5846:5923" placeholder="select hours..worksnap..." />
+                <marker date="1443503944100" expanded="true" signature="307:412" placeholder="select * FRO..student_attendance..." />
+                <marker date="1443503944100" expanded="true" signature="422:518" placeholder="select * FRO..student_attendance..." />
+                <marker date="1443503944100" expanded="true" signature="1267:1278" placeholder="..." />
+                <marker date="1443503944100" expanded="true" signature="1353:1362" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -138,8 +120,8 @@
         <option value="$PROJECT_DIR$/attendance_edit_controller.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/js/attendance_view.js" />
-        <option value="$PROJECT_DIR$/attendance_view.php" />
         <option value="$PROJECT_DIR$/attendance_show.php" />
+        <option value="$PROJECT_DIR$/attendance_view.php" />
       </list>
     </option>
   </component>
@@ -331,7 +313,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -629,14 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.233334">
-          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/attendance_view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -649,29 +623,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard_short.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.8">
-          <caret line="53" column="309" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="309" />
+        <state vertical-scroll-proportion="5.267833">
+          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="24" />
           <folding>
-            <marker date="1443420181613" expanded="true" signature="542:626" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="754:896" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="1020:1169" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="1191:1392" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="2372:2432" placeholder="select atten..student_attendance..." />
-            <marker date="1443420181613" expanded="true" signature="3170:3292" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="3829:3952" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="4556:4680" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="5195:5287" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1443420181613" expanded="true" signature="5846:5923" placeholder="select hours..worksnap..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select atten..student_attendance..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1443420181613" expanded="true" signature="-1:-1" placeholder="select hours..worksnap..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.266666">
+          <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance_show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29340512">
-          <caret line="24" column="313" selection-start-line="24" selection-start-column="313" selection-end-line="24" selection-end-column="313" />
+        <state vertical-scroll-proportion="-0.017496636">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
-            <marker date="1443500950348" expanded="true" signature="302:386" placeholder="select * FRO..student_attendance..." />
+            <marker date="1443503944100" expanded="true" signature="307:412" placeholder="select * FRO..student_attendance..." />
+            <marker date="1443503944100" expanded="true" signature="422:518" placeholder="select * FRO..student_attendance..." />
+            <marker date="1443503944100" expanded="true" signature="1267:1278" placeholder="..." />
+            <marker date="1443503944100" expanded="true" signature="1353:1362" placeholder="..." />
           </folding>
         </state>
       </provider>
