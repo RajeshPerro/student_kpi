@@ -23,6 +23,7 @@ $(document).ready(function(){
         });
     });
 
+
     $("#student-id").change(function(){
         console.log("Batch="+BatchId.val()+"Group="+GroupId.val()+"Student Id="+$("#student-id").val());
         $.ajax({
@@ -34,6 +35,28 @@ $(document).ready(function(){
             success: function(aa){
                 $('#name-show').html(aa);
                 //console.log(aa);
+            },
+            error: function(x)
+            {
+
+            }
+
+        });
+    });
+
+    $(".date-show").change(function(){
+        console.log("Batch="+BatchId.val()+"Group="+GroupId.val()+"Student Id="+$("#student-id").val());
+
+        console.log("Name="+$("#student-name").val()+"ExamType="+$("#exam-type").val()+"Skill="+$("#front_end").val()+"SkillName="+$("#skill-name").val());
+        $.ajax({
+
+            type: "GET",
+            url: "date_show.php",
+            headers: { 'x-my-custom-header': '' },
+            data: 'batch=' + BatchId.val() + '&group=' + GroupId.val() + '&s_id=' +$("#student-id").val() +'&name='+$("#student-name").val()+'&ExamType='+$("#exam-type").val()+'&Skill='+$("#front_end").val()+'&SkillName='+$("#skill-name").val(),
+            success: function(aa){
+                $('#date-select').html(aa);
+                console.log(aa);
             },
             error: function(x)
             {

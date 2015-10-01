@@ -26,24 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="score_update.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="score_update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/score_update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7348587">
-              <caret line="173" column="28" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+            <state vertical-scroll-proportion="-18.2">
+              <caret line="176" column="73" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="73" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_score.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input_score.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.6">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -52,10 +42,34 @@
         <entry file="file://$PROJECT_DIR$/js/score_update.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <caret line="55" column="196" selection-start-line="55" selection-start-column="196" selection-end-line="55" selection-end-column="196" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
+                <element signature="e#686#1233#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date_show.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/date_show.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7065949">
+              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <marker date="1443682174756" expanded="true" signature="498:706" placeholder="select name ..student_assessment..." />
+                <marker date="1443682174756" expanded="true" signature="715:922" placeholder="select entry..student_assessment..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="id_show.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/id_show.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.9">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,8 +77,8 @@
       <file leaf-file-name="name_show.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/name_show.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.076923">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state vertical-scroll-proportion="-5.3076925">
+              <caret line="23" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <marker date="1443676826672" expanded="true" signature="279:374" placeholder="select * FRO..student_assessment..." />
                 <marker date="1443676826672" expanded="true" signature="279:388" placeholder="select name ..student_assessment..." />
@@ -136,9 +150,10 @@
         <option value="$PROJECT_DIR$/score_update_controller.php" />
         <option value="$PROJECT_DIR$/id_show.php" />
         <option value="$PROJECT_DIR$/info_show.php" />
-        <option value="$PROJECT_DIR$/js/score_update.js" />
         <option value="$PROJECT_DIR$/name_show.php" />
         <option value="$PROJECT_DIR$/score_update.php" />
+        <option value="$PROJECT_DIR$/js/score_update.js" />
+        <option value="$PROJECT_DIR$/date_show.php" />
       </list>
     </option>
   </component>
@@ -330,19 +345,11 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard_short.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="220" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student_status.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -526,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="341" column="12" selection-start-line="300" selection-start-column="6" selection-end-line="341" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25437415">
@@ -675,40 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/id_show.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <marker date="1443673994507" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443673994507" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443673994507" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443673994507" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/name_show.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.076923">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <marker date="1443676826672" expanded="true" signature="279:374" placeholder="select * FRO..student_assessment..." />
-            <marker date="1443676826672" expanded="true" signature="279:388" placeholder="select name ..student_assessment..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/score_update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input_score.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.6">
@@ -717,12 +683,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/custome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.705045">
+          <caret line="317" column="21" selection-start-line="317" selection-start-column="21" selection-end-line="317" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/name_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3076925">
+          <caret line="23" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <marker date="1443676826672" expanded="true" signature="279:374" placeholder="select * FRO..student_assessment..." />
+            <marker date="1443676826672" expanded="true" signature="279:388" placeholder="select name ..student_assessment..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/id_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.9">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/score_update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7348587">
-          <caret line="173" column="28" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+        <state vertical-scroll-proportion="-18.2">
+          <caret line="176" column="73" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="73" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/score_update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="196" selection-start-line="55" selection-start-column="196" selection-end-line="55" selection-end-column="196" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#686#1233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/date_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7065949">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <marker date="1443682174756" expanded="true" signature="498:706" placeholder="select name ..student_assessment..." />
+            <marker date="1443682174756" expanded="true" signature="715:922" placeholder="select entry..student_assessment..." />
           </folding>
         </state>
       </provider>

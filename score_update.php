@@ -22,8 +22,8 @@
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/batchgroup.js"></script>
-        <script src="js/score_update.js"></script>
-        <script type="text/javascript" src="js/custome.js"></script>
+        <script type="text/javascript" src="js/score_update.js"></script>
+
 
     </head>
 <body>
@@ -138,7 +138,7 @@
                                 </div>
 
                                 <div class="col-xs-12 drop-down-space col-sm-3" >
-                                    <select id="ex" name="exam_type">
+                                    <select id="exam-type" name="exam_type" class="date-show">
                                         <option>--Select Assessment--</option>
                                         <option value="ST">Small Test</option>
                                         <option value="FT">Final Test</option>
@@ -149,14 +149,14 @@
 
 
                                 <div class="col-xs-12 drop-down-space col-sm-3">
-                                    <select id="front_end" name="skill_type">
+                                    <select id="front_end" name="skill_type" class="date-show">
                                         <option value="#" id="op_id" selected>Select Skill Type</option>
                                         <option value="Front End">Front End</option>
                                         <option value="Back End">Back End</option>
                                     </select>
                                 </div>
                                 <div class="col-xs-12 drop-down-space col-sm-3">
-                                    <select name="skill_name">
+                                    <select name="skill_name" id="skill-name" class="date-show">
                                         <option value="#" class="default" selected>Select Skill
                                         </option>
                                         <option value="HTML and CSS" class="fe">HTML && CSS</option>
@@ -171,8 +171,15 @@
                                 </div>
 
                             </div>
-                            <br><br>
+                            <br><br><br>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="col-xs-12 col-sm-3">
+                                <select name="entry_date" id="date-select">
 
+                                </select>
+                            </div> <br><br><br>
+                        </div>
+                            <br><br>
                             <div class="col-xs-3 col-sm-3">
                                 <input type="submit" class="btn btn-primary" value="Update" id="button_submit">
                             </div>
