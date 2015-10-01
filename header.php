@@ -38,7 +38,11 @@ session_start();
             <li><a href="attendance_view.php"><span class="glyphicon glyphicon-asterisk"></span> Attendance View</a></li>
         </ul>
     </li>
-    <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a>
+    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Score</a>
+        <ul class="dropdown-menu">
+            <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>
+            <li><a href="score_update.php"><span class="glyphicon glyphicon-edit"></span> Edit Score</a></li>
+        </ul>
     </li>
     <li><a href="worksnap1.php"><span class="glyphicon glyphicon-picture"></span> Worksnap Score</a></li>
     <li><a href="upload_result.php"><span class="glyphicon glyphicon-upload"></span>Upload Score</a></li>
