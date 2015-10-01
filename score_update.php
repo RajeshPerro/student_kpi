@@ -129,8 +129,16 @@
                                 </div>
 
                             </div>
-                            <div class="col-xs-12 col-sm-12">
+                            <div class="col-xs-12 col-sm-12" id="student-info">
+                                <div class="col-xs-12 col-sm-3" id="name-show">
+                                    <input class="form-control" readonly name="name" id="student-name" placeholder="Student Name">
+                                </div>
 
+                                <div class="col-xs-12 col-sm-3">
+                                    <select name="exam_type" id="exam-type">
+
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="col-xs-3 col-sm-3">

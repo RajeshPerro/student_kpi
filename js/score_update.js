@@ -23,4 +23,23 @@ $(document).ready(function(){
         });
     });
 
+    $("#student-id").change(function(){
+        console.log("Batch="+BatchId.val()+"Group="+GroupId.val()+"Student Id="+$("#student-id").val());
+        $.ajax({
+
+            type: "GET",
+            url: "name_show.php",
+            headers: { 'x-my-custom-header': '' },
+            data: 'batch=' + BatchId.val() + '&group=' + GroupId.val() + '&s_id=' +$("#student-id").val(),
+            success: function(aa){
+                $('#name-show').html(aa);
+                //console.log(aa);
+            },
+            error: function(x)
+            {
+
+            }
+
+        });
+    });
 });
