@@ -22,6 +22,7 @@
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/batchgroup.js"></script>
+        <script src="js/score_update.js"></script>
 
     </head>
 <body>
@@ -123,7 +124,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-4">
                                     <select name="s_id" id="student-id">
-                                        
+
                                     </select>
                                 </div>
 
