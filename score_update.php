@@ -138,7 +138,7 @@
                                 </div>
 
                                 <div class="col-xs-12 drop-down-space col-sm-3" >
-                                    <select id="exam-type" name="exam_type" class="date-show">
+                                    <select id="exam-type" name="exam_type" class="date-show" onchange="score_cal()">
                                         <option>--Select Assessment--</option>
                                         <option value="ST">Small Test</option>
                                         <option value="FT">Final Test</option>
@@ -177,8 +177,29 @@
                                 <select name="entry_date" id="date-select">
 
                                 </select>
-                            </div> <br><br><br>
+                            </div>
+
+                            <div id="score-show">
+                                <div class="col-xs-12 col-sm-3">
+                                    <input class="form-control" type="number" id="of"  name="outof"  placeholder="Out of">
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <input class="form-control"  onkeyup="score_cal()" type="number" id="obtain"  name="obtained"  placeholder="Obtained">
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <input class="form-control" id="actual"  name="actual"  placeholder="Actual Score">
+                                </div>
+                            </div>
                         </div>
+                            <div class="col-xs-10 col-sm-3">
+                                <p style="color: red;">Score has been Convert in:</p>
+                            </div>
+                            <div class="col-xs-2 col-sm-9">
+                                <p style="color: brown;" id="score_msg">0</p>
+                            </div>
+
+                            <br><br><br>
+
                             <br><br>
                             <div class="col-xs-3 col-sm-3">
                                 <input type="submit" class="btn btn-primary" value="Update" id="button_submit">
