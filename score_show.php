@@ -42,6 +42,13 @@ echo ('
 <div class="col-xs-12 col-sm-3">
 <input class="form-control" id="actual"  name="actual"  value="'.$value['actual'].'" placeholder="Actual Score">
 </div>
+<div class="col-xs-12 col-sm-12">
+<div class="col-xs-12 col-sm-2 text-danger" >You are updating</div>
+<div class="col-xs-12 col-sm-4">
+<input readonly class="form-control text-danger" name="id"  value="'.$value['id'].'">
+</div>
+<div class="col-xs-12 col-sm-2 text-danger">no.row in Database </div>
+</div>
 ');
 }
 ?>

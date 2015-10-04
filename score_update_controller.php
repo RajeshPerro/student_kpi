@@ -15,15 +15,15 @@ session_start();
 if(isset($_POST['entry_date']))//Mandatory field name
 {   $post=$_POST;
     //$file = $_FILES;
-    $id=$_POST['s_id'];
-    $date=$_POST['entry_date'];
+    $id=$_POST['id'];
+    $s_id=$_POST['s_id'];
     $db_user =$database_user;
     $db_pass =$databse_pass;
     $table = 'student_assessment';
     $db_name='student_kpi';
 
 
-    //$raj_modelobject->Data_Update($post,$id,$date,$table,$db_user,$db_pass,$db_name);
+    $raj_modelobject->Data_Update($post,$id,$s_id,$table,$db_user,$db_pass,$db_name);
 
     //data_insert_withfile($post,$file,$table,$db_user,$db_pass,$db_name);
     // data_insert($post,'user',$user,$pass,$dbname);//model's function Name(postdata,file,TableName)

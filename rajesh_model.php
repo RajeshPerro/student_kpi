@@ -242,7 +242,7 @@ class test
     }
 
 
- public function Data_Update($post,$id,$date,$table,$db_user,$db_pass,$db_name)//withoutFile
+ public function Data_Update($post,$id,$s_id,$table,$db_user,$db_pass,$db_name)//withoutFile
     {
 
         $con_user=$db_user; $con_pass=$db_pass; $con_name=$db_name;
@@ -307,10 +307,10 @@ class test
             $allimge="'".$imgvalues."'";
             $allvalues.=$colum.$allimge;
         }
-        $sql="update $table set $allvalues where s_id='$id' AND entry_date='$date' ";
-        print_r($allvalues['exam_type']);
-      print_r($sql);
-         exit;
+        $sql="update $table set $allvalues where id='$id' AND s_id='$s_id' ";
+//        print_r($allvalues['exam_type']);
+//      print_r($sql);
+//         exit;
 
         $connection_object=new connect();
         if(!empty($con_user) && !empty($con_pass))

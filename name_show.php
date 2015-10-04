@@ -21,6 +21,7 @@ foreach ($fetch_result as $key => $value)
 {
 
     echo '<input readonly class="form-control" name="name" id="student-name" value="'.$value['name'].'">';
+
 }
 
 
