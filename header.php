@@ -46,7 +46,7 @@ session_start();
     </li>
     <li><a href="worksnap1.php"><span class="glyphicon glyphicon-picture"></span> Worksnap Score</a></li>
 
-    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span>Upload</a>
+    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Upload</a>
         <ul class="dropdown-menu">
             <li><a href="upload_result.php"><span class="glyphicon glyphicon-send"></span> Upload Score</a></li>
             <li><a href="db_manage.php"><span class="glyphicon glyphicon-edit"></span> DataBase</a></li>

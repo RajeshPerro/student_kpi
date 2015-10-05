@@ -1,216 +1,80 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rajesh
- * Date: 10/4/15
- * Time: 5:01 PM
- */
-$flag=0;
-
-// Report all errors
-error_reporting(E_ALL);
-
-/**
- * Define database parameters here
- */
-define("DB_USER", 'root');
-define("DB_PASSWORD", 'root123');
-define("DB_NAME", 'student_kpi');
-define("DB_HOST", 'localhost');
-define("OUTPUT_DIR", '/var/www/html/');
-define("TABLES", '*');
-
-/**
- * Instantiate Backup_Database and perform backup
- */
-$backupDatabase = new Backup_Database(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-$status = $backupDatabase->backupTables(TABLES, OUTPUT_DIR) ? 'OK' : 'KO';
-echo "
-
-
-Backup result: ".$status;
-
-/**
- * The Backup_Database class
- */
-class Backup_Database {
-    /**
-     * Host where database is located
-     */
-    var $host = '';
-
-    /**
-     * Username used to connect to database
-     */
-    var $username = '';
-
-    /**
-     * Password used to connect to database
-     */
-    var $passwd = '';
-
-    /**
-     * Database to backup
-     */
-    var $dbName = '';
-
-    /**
-     * Database charset
-     */
-    var $charset = '';
-
-    /**
-     * Constructor initializes database
-     */
-    function Backup_Database($host, $username, $passwd, $dbName, $charset = 'utf8')
-    {
-        $this->host     = $host;
-        $this->username = $username;
-        $this->passwd   = $passwd;
-        $this->dbName   = $dbName;
-        $this->charset  = $charset;
-
-        $this->initializeDatabase();
-    }
-
-    protected function initializeDatabase()
-    {
-        $conn = mysql_connect($this->host, $this->username, $this->passwd);
-        mysql_select_db($this->dbName, $conn);
-        if (! mysql_set_charset ($this->charset, $conn))
-        {
-            mysql_query('SET NAMES '.$this->charset);
-        }
-    }
-
-    /**
-     * Backup the whole database or just some tables
-     * Use '*' for whole database or 'table1 table2 table3...'
-     * @param string $tables
-     */
-    public function backupTables($tables = '*', $outputDir = '.')
-    {
-        try
-        {
-            /**
-             * Tables to export
-             */
-            if($tables == '*')
-            {
-                $tables = array();
-                $result = mysql_query('SHOW TABLES');
-                while($row = mysql_fetch_row($result))
-                {
-                    $tables[] = $row[0];
-                }
-            }
-            else
-            {
-                $tables = is_array($tables) ? $tables : explode(',',$tables);
-            }
-
-            $sql = 'CREATE DATABASE IF NOT EXISTS '.$this->dbName.";\n\n";
-            $sql .= 'USE '.$this->dbName.";\n\n";
-
-            /**
-             * Iterate tables
-             */
-            foreach($tables as $table)
-            {
-                echo "Backing up ".$table." table...";
-
-                $result = mysql_query('SELECT * FROM '.$table);
-                $numFields = mysql_num_fields($result);
-
-                $sql .= 'DROP TABLE IF EXISTS '.$table.';';
-                $row2 = mysql_fetch_row(mysql_query('SHOW CREATE TABLE '.$table));
-                $sql.= "\n\n".$row2[1].";\n\n";
-
-                for ($i = 0; $i < $numFields; $i++)
-                {
-                    while($row = mysql_fetch_row($result))
-                    {
-                        $sql .= 'INSERT INTO '.$table.' VALUES(';
-                        for($j=0; $j<$numFields; $j++)
-                        {
-                            $row[$j] = addslashes($row[$j]);
-                            $row[$j] = ereg_replace("\n","\\n",$row[$j]);
-                            if (isset($row[$j]))
-                            {
-                                $sql .= '"'.$row[$j].'"' ;
-                            }
-                            else
-                            {
-                                $sql.= '""';
-                            }
-
-                            if ($j < ($numFields-1))
-                            {
-                                $sql .= ',';
-                            }
-                        }
-
-                        $sql.= ");\n";
-                    }
-                }
-
-                $sql.="\n\n\n";
-
-                echo " OK" . "
-";
-            }
-        }
-        catch (Exception $e)
-        {
-            var_dump($e->getMessage());
-            return false;
-        }
-
-        return $this->saveFile($sql, $outputDir);
-    }
-
-    /**
-     * Save SQL to file
-     * @param string $sql
-     */
-    protected function saveFile(&$sql, $outputDir = '.')
-    {
-        if (!$sql) return false;
-
-        try
-        {
-            $handle = fopen($outputDir.$this->dbName.'-'.date("Ymd-His", time()).'.sql','w+');
-            fwrite($handle, $sql);
-            fclose($handle);
-
-
-        }
-        catch (Exception $e)
-        {
-            var_dump($e->getMessage());
-            return false;
-        }
-
-        return true;
-    }
+// db config
+include('database_config.php');
+$dbhost = "localhost";
+$dbuser = $database_user;
+$dbpass = $databse_pass;
+$dbname = "student_kpi";
+// db connect
+$pdo = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+// file header stuff
+$output = "-- PHP MySQL Dump\n--\n";
+$output .= "-- Host: $dbhost\n";
+$output .= "-- Generated: " . date("r", time()) . "\n";
+$output .= "-- PHP Version: " . phpversion() . "\n\n";
+$output .= "SET SQL_MODE=\"NO_AUTO_VALUE_ON_ZERO\";\n\n";
+ $output .= "--\n-- Database: `$dbname`\n--\n";
+// get all table names in db and stuff them into an array
+$tables = array();
+$stmt = $pdo->query("SHOW TABLES");
+while($row = $stmt->fetch(PDO::FETCH_NUM)){
+    $tables[] = $row[0];
 }
-
-
-?>
-<html>
-<head>
-
-</head>
-<body onload="test()">
-
-<script>
-    function test()
-    {
-        alert("Your DB backup is complete in /var/www/html/ folder of your server!");
-        window.location.href='/edu_kpi/db_manage.php';
+// process each table in the db
+foreach($tables as $table){
+    $fields = "";
+    $sep2 = "";
+    $output .= "\n-- " . str_repeat("-", 60) . "\n\n";
+    $output .= "--\n-- Table structure for table `$table`\n--\n\n";
+    // get table create info
+    $stmt = $pdo->query("SHOW CREATE TABLE $table");
+    $row = $stmt->fetch(PDO::FETCH_NUM);
+    $output.= $row[1].";\n\n";
+    // get table data
+    $output .= "--\n-- Dumping data for table `$table`\n--\n\n";
+    $stmt = $pdo->query("SELECT * FROM $table");
+    while($row = $stmt->fetch(PDO::FETCH_OBJ)){
+        // runs once per table - create the INSERT INTO clause
+        if($fields == ""){
+            $fields = "INSERT INTO `$table` (";
+            $sep = "";
+            // grab each field name
+            foreach($row as $col => $val){
+                $fields .= $sep . "`$col`";
+                $sep = ", ";
+            }
+            $fields .= ") VALUES";
+            $output .= $fields . "\n";
+        }
+        // grab table data
+        $sep = "";
+        $output .= $sep2 . "(";
+        foreach($row as $col => $val){
+            // add slashes to field content
+            $val = addslashes($val);
+            // replace stuff that needs replacing
+            $search = array("\'", "\n", "\r");
+            $replace = array("''", "\\n", "\\r");
+            $val = str_replace($search, $replace, $val);
+            $output .= $sep . "'$val'";
+            $sep = ", ";
+        }
+        // terminate row data
+        $output .= ")";
+        $sep2 = ",\n";
     }
+    // terminate insert data
+    $output .= ";\n";
+}
+// output file to browser
+header('Content-Description: File Transfer');
+header('Content-type: application/octet-stream');
+header('Content-Disposition: attachment; filename=' . $dbname . '.sql');
+header('Content-Transfer-Encoding: binary');
+header('Content-Length: ' . strlen($output));
+header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+header('Expires: 0');
+header('Pragma: public');
+echo $output;
+?>
 
-
-</script>
-</body>
-</html>

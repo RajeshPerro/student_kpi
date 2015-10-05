@@ -26,16 +26,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db_backup.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db_backup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_backup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88694483">
-              <caret line="209" column="54" selection-start-line="209" selection-start-column="7" selection-end-line="209" selection-end-column="54" />
+            <state vertical-scroll-proportion="-19.866667">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
-                <marker date="1443958585311" expanded="true" signature="2796:2810" placeholder="SELECT * FRO..." />
-                <marker date="1443958585311" expanded="true" signature="2903:2924" placeholder="DROP TABLE I..." />
-                <marker date="1443958585311" expanded="true" signature="3254:3284" placeholder="INSERT INTO ..." />
+                <marker date="1444023185487" expanded="true" signature="1210:1224" placeholder="SELECT * FRO..." />
+                <marker date="1444023185487" expanded="true" signature="1395:1417" placeholder="INSERT INTO ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_db.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/import_db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.858681">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database_config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atten_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atten_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.3">
+              <caret line="30" column="24" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,7 +72,7 @@
       <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.1">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="59" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="59" />
               <folding />
             </state>
@@ -53,8 +82,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.666667">
-              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -63,7 +92,7 @@
       <file leaf-file-name="upload_result.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.566668">
+            <state vertical-scroll-proportion="0.0">
               <caret line="200" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
               <folding>
                 <marker date="1442828044878" expanded="true" signature="1576:1830" placeholder="INSERT INTO ..." />
@@ -75,7 +104,7 @@
       <file leaf-file-name="db_manage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_manage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.166666">
+            <state vertical-scroll-proportion="0.0">
               <caret line="76" column="107" selection-start-line="76" selection-start-column="107" selection-end-line="76" selection-end-column="107" />
               <folding />
             </state>
@@ -99,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/dust.php" />
         <option value="$PROJECT_DIR$/css/styles_tar.css" />
         <option value="$PROJECT_DIR$/sorry.php" />
@@ -147,9 +175,10 @@
         <option value="$PROJECT_DIR$/score_update_controller.php" />
         <option value="$PROJECT_DIR$/rajesh_model.php" />
         <option value="$PROJECT_DIR$/score_show.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/db_manage.php" />
+        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/db_backup.php" />
+        <option value="$PROJECT_DIR$/import_db.php" />
       </list>
     </option>
   </component>
@@ -196,7 +225,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +245,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,13 +361,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/std_graph.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -423,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25437415">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student_kpi.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -486,19 +501,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atten_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.166666">
-          <caret line="58" column="79" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/authentication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="154" column="401" selection-start-line="154" selection-start-column="401" selection-end-line="154" selection-end-column="401" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6153846">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="113" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.633333">
           <caret line="310" column="8" selection-start-line="310" selection-start-column="8" selection-end-line="312" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.566668">
+        <state vertical-scroll-proportion="0.0">
           <caret line="200" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding>
             <marker date="1442828044878" expanded="true" signature="1576:1830" placeholder="INSERT INTO ..." />
@@ -670,37 +674,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.666667">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.166666">
-          <caret line="76" column="107" selection-start-line="76" selection-start-column="107" selection-end-line="76" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.1">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="59" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="107" selection-start-line="76" selection-start-column="107" selection-end-line="76" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db_backup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88694483">
-          <caret line="209" column="54" selection-start-line="209" selection-start-column="7" selection-end-line="209" selection-end-column="54" />
+        <state vertical-scroll-proportion="-19.866667">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
-            <marker date="1443958585311" expanded="true" signature="2796:2810" placeholder="SELECT * FRO..." />
-            <marker date="1443958585311" expanded="true" signature="2903:2924" placeholder="DROP TABLE I..." />
-            <marker date="1443958585311" expanded="true" signature="3254:3284" placeholder="INSERT INTO ..." />
+            <marker date="1444023185487" expanded="true" signature="1210:1224" placeholder="SELECT * FRO..." />
+            <marker date="1444023185487" expanded="true" signature="1395:1417" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atten_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3">
+          <caret line="30" column="24" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.858681">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
