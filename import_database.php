@@ -2,9 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: rajesh
- * Date: 10/4/15
- * Time: 5:15 PM
- */?>
+ * Date: 10/5/15
+ * Time: 12:12 PM
+ */
+?>
+
 <html>
 <head>
     <title>EDU KPI :: Score Upload </title>
@@ -68,14 +70,17 @@
             </ul>
         </div>
         <div class="row">
-            <form name="import" method="post" enctype="multipart/form-data">
+            <form name="import" action="import_db.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-8 col-sm-4">
 
-                    <div class="col-xs-5 col-sm-5 text-right font">Manage DataBase:</div>
+                    <div class="col-xs-5 col-sm-5 text-right font">Select Database:</div>
                     <div class="col-xs-7 col-sm-7 text-left">
-<!--                        <input id="input_file" type="file" name="file" class="form-control">-->
-                       <a href="db_backup.php" class="btn btn-lg btn-success"> Export DB</a>
-                        <a href="import_database.php" class="btn btn-lg btn-info"> Import DB</a
+                        <select name="db_name">
+                            <option>--Select--</option>
+                            <option value="student_kpi">Student Kpi</option>
+                        </select>
+                        <input id="input_file" type="file" name="file" class="form-control">
+                        <input type="submit" value="Execute">
                     </div>
 
                 </div>
@@ -96,4 +101,3 @@
 </body>
 
 </html>
-

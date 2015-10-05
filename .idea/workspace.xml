@@ -26,86 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db_backup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db_backup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.866667">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <marker date="1444023185487" expanded="true" signature="1210:1224" placeholder="SELECT * FRO..." />
-                <marker date="1444023185487" expanded="true" signature="1395:1417" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="import_db.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/import_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.858681">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database_config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database_config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="atten_controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atten_controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.3">
-              <caret line="30" column="24" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="59" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload_result.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload_result.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="200" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-              <folding>
-                <marker date="1442828044878" expanded="true" signature="1576:1830" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_manage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db_manage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="107" selection-start-line="76" selection-start-column="107" selection-end-line="76" selection-end-column="107" />
+            <state vertical-scroll-proportion="0.42395693">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -128,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dust.php" />
         <option value="$PROJECT_DIR$/css/styles_tar.css" />
         <option value="$PROJECT_DIR$/sorry.php" />
         <option value="$PROJECT_DIR$/js/authentication.js" />
@@ -175,9 +99,10 @@
         <option value="$PROJECT_DIR$/score_update_controller.php" />
         <option value="$PROJECT_DIR$/rajesh_model.php" />
         <option value="$PROJECT_DIR$/score_show.php" />
-        <option value="$PROJECT_DIR$/db_manage.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/db_backup.php" />
+        <option value="$PROJECT_DIR$/db_manage.php" />
+        <option value="$PROJECT_DIR$/import_database.php" />
         <option value="$PROJECT_DIR$/import_db.php" />
       </list>
     </option>
@@ -361,13 +286,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/std_graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -664,69 +582,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.8304172">
           <caret line="200" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding>
-            <marker date="1442828044878" expanded="true" signature="1576:1830" placeholder="INSERT INTO ..." />
+            <marker date="1442828044878" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="59" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="107" selection-start-line="76" selection-start-column="107" selection-end-line="76" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_backup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.866667">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <marker date="1444023185487" expanded="true" signature="1210:1224" placeholder="SELECT * FRO..." />
-            <marker date="1444023185487" expanded="true" signature="1395:1417" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.36742935">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atten_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3">
-          <caret line="30" column="24" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.66083443">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22611037">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.766666">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5706595">
+          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3512785">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <marker date="1444023185487" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1444023185487" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39030954">
+          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.858681">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42395693">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding />
         </state>
       </provider>
