@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/pagination_style.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -45,17 +46,126 @@
 $total_score = 0;
 include('rajesh_model.php');
 include('database_config.php');
-$sql = "select * FROM student_assessment GROUP BY s_id";
 $db_user =$database_user;
 $db_pass =$databse_pass;
 $db_Name = 'student_kpi';
-$fetch_result = $raj_modelobject->DataView($sql, $db_user, $db_pass, $db_Name);
-$userName = $_GET['user'];//"<script>document.write(localStorage.getItem('username'))</script>";
-$token = $_GET['token'];//"<script>document.write(localStorage.getItem('usertoken'))</script>";
-//echo $userName."and".$token;
-
+session_start();
+$userName = $_GET['user'];
+$token = $_GET['token'];
 $_SESSION['user'] = $userName;
 $_SESSION['token'] = $token;
+
+//Pagination code start
+function displayPaginationBelow($per_page,$page){
+    //echo "UserName".$GLOBALS['userName'];
+    $page_url_test="user=".$GLOBALS['userName']."&token=".$GLOBALS['token'];
+     $page_url="?".$page_url_test."&";
+     $query = "SELECT COUNT(*) as totalCount FROM student_assessment GROUP BY s_id";
+     $rec = $GLOBALS['raj_modelobject']->DataView($query, $GLOBALS['db_user'], $GLOBALS['db_pass'], $GLOBALS['db_Name']);
+    $test=count($rec);
+    $total = $test;
+    $adjacents = "2";
+
+     $page = ($page == 0 ? 1 : $page);
+     $start = ($page - 1) * $per_page;
+
+     $prev = $page - 1;
+     $next = $page + 1;
+     $setLastpage = ceil($total/$per_page);
+     $lpm1 = $setLastpage - 1;
+
+     $setPaginate = "";
+     if($setLastpage > 1)
+     {
+         $setPaginate .= "<ul class='setPaginate'>";
+         $setPaginate .= "<li class='setPage'>Page $page of $setLastpage</li>";
+         if ($setLastpage < 7 + ($adjacents * 2))
+         {
+             for ($counter = 1; $counter <= $setLastpage; $counter++)
+             {
+                 if ($counter == $page)
+                     $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                 else
+                     $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+             }
+         }
+         elseif($setLastpage > 5 + ($adjacents * 2))
+         {
+             if($page < 1 + ($adjacents * 2))
+             {
+                 for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
+                 {
+                     if ($counter == $page)
+                         $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                     else
+                         $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+                 }
+                 $setPaginate.= "<li class='dot'>...</li>";
+                 $setPaginate.= "<li><a href='{$page_url}page=$lpm1'>$lpm1</a></li>";
+                 $setPaginate.= "<li><a href='{$page_url}page=$setLastpage'>$setLastpage</a></li>";
+             }
+             elseif($setLastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
+             {
+                 $setPaginate.= "<li><a href='{$page_url}page=1'>1</a></li>";
+                 $setPaginate.= "<li><a href='{$page_url}page=2'>2</a></li>";
+                 $setPaginate.= "<li class='dot'>...</li>";
+                 for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
+                 {
+                     if ($counter == $page)
+                         $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                     else
+                         $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+                 }
+                 $setPaginate.= "<li class='dot'>..</li>";
+                 $setPaginate.= "<li><a href='{$page_url}page=$lpm1'>$lpm1</a></li>";
+                 $setPaginate.= "<li><a href='{$page_url}page=$setLastpage'>$setLastpage</a></li>";
+             }
+             else
+             {
+                 $setPaginate.= "<li><a href='{$page_url}page=1'>1</a></li>";
+                 $setPaginate.= "<li><a href='{$page_url}page=2'>2</a></li>";
+                 $setPaginate.= "<li class='dot'>..</li>";
+                 for ($counter = $setLastpage - (2 + ($adjacents * 2)); $counter <= $setLastpage; $counter++)
+                 {
+                     if ($counter == $page)
+                         $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                     else
+                         $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+                 }
+             }
+         }
+
+         if ($page < $counter - 1){
+             $setPaginate.= "<li><a href='{$page_url}page=$next'>Next</a></li>";
+             $setPaginate.= "<li><a href='{$page_url}page=$setLastpage'>Last</a></li>";
+         }else{
+             $setPaginate.= "<li><a class='current_page'>Next</a></li>";
+             $setPaginate.= "<li><a class='current_page'>Last</a></li>";
+         }
+
+         $setPaginate.= "</ul>\n";
+     }
+
+
+     return $setPaginate;
+ }
+if(isset($_GET["page"]))
+    $page = (int)$_GET["page"];
+
+else
+    $page = 1;
+
+$setLimit = 10;
+
+$pageLimit = ($page * $setLimit) - $setLimit;
+
+//pagination code end
+$sql = "select * FROM student_assessment GROUP BY s_id LIMIT ".$pageLimit." , ".$setLimit;
+
+$fetch_result = $raj_modelobject->DataView($sql, $db_user, $db_pass, $db_Name);
+//echo $userName."and".$token;
+//
+//
 if ($_SESSION['user'] == null && $_SESSION['token'] == null) {
     echo("<script>location.href='sorry.php'</script>");
 }
@@ -404,75 +514,17 @@ else{
 
 
                         </form>
+                        <?php
+                        // Call the Pagination Function to load Pagination.
 
-
-<!--                        <div class="modal pop">-->
-<!--                            <div class="modal-dialog modal-sm">-->
-<!--                                <div class="modal-content">-->
-<!---->
-<!--                                    <div class="modal-body">-->
-<!--                                        <div class="col-md-12">-->
-<!--                                            <select class="selectpicker">-->
-<!--                                                <option>Select Batch...</option>-->
-<!--                                                <option>First batch</option>-->
-<!--                                                <option>Second batch</option>-->
-<!--                                                <option>Third batch</option>-->
-<!--                                            </select>-->
-<!--                                        </div>-->
-<!--                                        <br>-->
-<!---->
-<!--                                        <form>-->
-<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Students ID</div>-->
-<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total"-->
-<!--                                                                                            placeholder="2497"-->
-<!--                                                                                            name="score"-->
-<!--                                                                                            class="form-control"-->
-<!--                                                                                            readonly></div>-->
-<!--                                            <br>-->
-<!---->
-<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Total Score</div>-->
-<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total"-->
-<!--                                                                                            placeholder="Enter Score"-->
-<!--                                                                                            name="score"-->
-<!--                                                                                            class="form-control">-->
-<!--                                            </div>-->
-<!--                                            <br>-->
-<!---->
-<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Obtain Marks</div>-->
-<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="obtain"-->
-<!--                                                                                            placeholder="Enter Score"-->
-<!--                                                                                            name="marks"-->
-<!--                                                                                            class="form-control">-->
-<!--                                            </div>-->
-<!--                                            <br>-->
-<!---->
-<!--                                            <div class="col-xs-5 col-sm-5 text-right font">Actual Marks</div>-->
-<!--                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="actual"-->
-<!--                                                                                            placeholder="100"-->
-<!--                                                                                            name="marks"-->
-<!--                                                                                            class="form-control"-->
-<!--                                                                                            readonly></div>-->
-<!---->
-<!---->
-<!--                                            <button type="button" class="btn btn-lg btn-success"> Update Score-->
-<!--                                            </button>-->
-<!---->
-<!--                                        </form>-->
-<!--                                        <button type="button" data-dismiss="modal" class="btn btn-danger cross">-->
-<!--                                            <span>&times;</span></button>-->
-<!--                                    </div>-->
-<!---->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-
-                        <!-- Student List Section -->
+                        echo displayPaginationBelow($setLimit,$page);
+                        ?>
 
 
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -490,7 +542,21 @@ else{
     </div>
 </section>
 
+<!--//Script for pagination start-->
+<script type="text/javascript">
 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38304687-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<!--//Script for pagination END-->
 </body>
 </html>
 <?php

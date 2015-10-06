@@ -115,8 +115,8 @@ else
                         <div class="col-sm-3">
                             <input  class="form-control" type="text" name="search" id="student_search" placeholder="E.g: 123">
                         </div>
-                        <div class=" col-sm-2">
-                            <p style="font-weight:bolder; color:#3e8f3e; font-size: large;">(if you want to search single student)</p>
+                        <div class=" col-sm-3">
+                            <p style="font-weight:bolder; color:#3e8f3e; font-size:small;">(if you want to search single student)</p>
 
                         </div>
 
