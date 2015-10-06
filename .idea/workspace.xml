@@ -29,10 +29,11 @@
       <file leaf-file-name="attendance_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/attendance_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4064603">
-              <caret line="115" column="101" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.49125168">
+              <caret line="118" column="129" selection-start-line="118" selection-start-column="129" selection-end-line="118" selection-end-column="129" />
               <folding>
                 <element signature="e#5178#5242#0#HTML" expanded="true" />
+                <element signature="e#5581#5641#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,10 +127,10 @@
         <option value="$PROJECT_DIR$/import_database.php" />
         <option value="$PROJECT_DIR$/import_db.php" />
         <option value="$PROJECT_DIR$/student_details.php" />
-        <option value="$PROJECT_DIR$/attendance_view.php" />
         <option value="$PROJECT_DIR$/attendance_show.php" />
         <option value="$PROJECT_DIR$/js/attendance_view.js" />
         <option value="$PROJECT_DIR$/single_attendance_show.php" />
+        <option value="$PROJECT_DIR$/attendance_view.php" />
       </list>
     </option>
   </component>
@@ -693,10 +694,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4064603">
-          <caret line="115" column="101" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="101" />
+        <state vertical-scroll-proportion="0.49125168">
+          <caret line="118" column="129" selection-start-line="118" selection-start-column="129" selection-end-line="118" selection-end-column="129" />
           <folding>
             <element signature="e#5178#5242#0#HTML" expanded="true" />
+            <element signature="e#5581#5641#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
