@@ -107,7 +107,17 @@ else
                                 </div>-->
                             </div>
                         </div>
+                    <div class="col-xs-12 col-sm-12">
+                        <div class=" col-sm-2">
+                            <p style="font-weight:bolder; color: darkorange; font-size: large;">Enter Student Id:</p>
 
+                        </div>
+                        <div class="col-sm-3">
+                            <input  class="form-control" type="text" name="search" id="student_search" placeholder="E.g: 123">
+                        </div>
+
+
+                    </div>
 
                         <div class="col-xs-12 col-sm-12">
                             <br><br>

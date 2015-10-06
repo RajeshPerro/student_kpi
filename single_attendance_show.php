@@ -5,9 +5,8 @@
  * Date: 9/28/15
  * Time: 10:55 AM
  */
-$Batch=$_GET['batch'];
-$Group=$_GET['group'];
-$Date=$_GET['date'];
+$StudentId=$_GET['s_id'];
+
 //echo $Batch.$Group.$Date;
 include('rajesh_model.php');
 include('database_config.php');
@@ -18,8 +17,7 @@ $db_pass =$databse_pass;
 
 $test = "SELECT  s_id ,  name , GROUP_CONCAT( attendance ) as Attendance , GROUP_CONCAT(  entry_date ) as Entry_Date
 FROM  student_attendance
-WHERE  b_id='$Batch' AND g_id='$Group'
-GROUP BY  s_id";
+WHERE  s_id='$StudentId' ";
 
 $db_Name='student_kpi';
 
@@ -57,7 +55,7 @@ foreach($test_fetch_result as $key => $row)
     for($j =0 ;$j< count($value); $j++)
     {
         if($value[$j] == 1)
-        echo '<td style="color:green">Present</td>';
+            echo '<td style="color:green">Present</td>';
         else
             echo '<td style="color:red">Absent</td>';
     }

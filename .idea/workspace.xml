@@ -26,12 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="attendance_view.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="attendance_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/attendance_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.466667">
-              <caret line="169" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="169" selection-end-column="11" />
-              <folding />
+            <state vertical-scroll-proportion="0.4064603">
+              <caret line="115" column="101" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="101" />
+              <folding>
+                <element signature="e#5178#5242#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,37 +42,21 @@
         <entry file="file://$PROJECT_DIR$/js/attendance_view.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attendance_show.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance_show.php">
+      <file leaf-file-name="single_attendance_show.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/single_attendance_show.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-42.966667">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="24" />
+            <state vertical-scroll-proportion="-13.3">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
-                <marker date="1444042147331" expanded="true" signature="309:423" placeholder="select entry..student_attendance..." />
-                <marker date="1444042147331" expanded="true" signature="434:530" placeholder="select * FRO..student_attendance..." />
-                <marker date="1444042147331" expanded="true" signature="544:730" placeholder="SELECT s_id ..student_attendance..." />
-                <marker date="1444042147331" expanded="true" signature="1908:1919" placeholder="..." />
-                <marker date="1444042147331" expanded="true" signature="1978:1987" placeholder="..." />
-                <marker date="1444042147331" expanded="true" signature="2653:2664" placeholder="..." />
-                <marker date="1444042147331" expanded="true" signature="2747:2756" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="student_details.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/student_details.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65006727">
-              <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
-              <folding>
-                <marker date="1444044250787" expanded="true" signature="231:287" placeholder="select * FRO..student_assessment..." />
+                <marker date="1444105233249" expanded="true" signature="504:661" placeholder="SELECT s_id ..student_attendance..." />
+                <marker date="1444105233249" expanded="true" signature="1844:1855" placeholder="..." />
+                <marker date="1444105233249" expanded="true" signature="1914:1923" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -93,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/styles_tar.css" />
         <option value="$PROJECT_DIR$/sorry.php" />
         <option value="$PROJECT_DIR$/js/authentication.js" />
         <option value="$PROJECT_DIR$/input_score.php" />
@@ -125,8 +110,6 @@
         <option value="$PROJECT_DIR$/attendance_edit.php" />
         <option value="$PROJECT_DIR$/attendance_search.php" />
         <option value="$PROJECT_DIR$/attendance_edit_controller.php" />
-        <option value="$PROJECT_DIR$/js/attendance_view.js" />
-        <option value="$PROJECT_DIR$/attendance_view.php" />
         <option value="$PROJECT_DIR$/dashboard_short.php" />
         <option value="$PROJECT_DIR$/id_show.php" />
         <option value="$PROJECT_DIR$/info_show.php" />
@@ -142,8 +125,11 @@
         <option value="$PROJECT_DIR$/db_manage.php" />
         <option value="$PROJECT_DIR$/import_database.php" />
         <option value="$PROJECT_DIR$/import_db.php" />
-        <option value="$PROJECT_DIR$/attendance_show.php" />
         <option value="$PROJECT_DIR$/student_details.php" />
+        <option value="$PROJECT_DIR$/attendance_view.php" />
+        <option value="$PROJECT_DIR$/attendance_show.php" />
+        <option value="$PROJECT_DIR$/js/attendance_view.js" />
+        <option value="$PROJECT_DIR$/single_attendance_show.php" />
       </list>
     </option>
   </component>
@@ -159,9 +145,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1600" />
-    <option name="height" value="904" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -189,7 +175,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -225,6 +210,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
+    <frame x="0" y="24" width="1600" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -301,14 +287,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -340,13 +326,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -610,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8304172">
           <caret line="200" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5706595">
           <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3512785">
           <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,9 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39030954">
           <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,48 +646,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42395693">
           <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
+          <folding>
+            <marker date="1444044250787" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <marker date="1444104737165" expanded="true" signature="-1:-1" placeholder="SELECT s_id ..student_attendance..." />
+            <marker date="1444104737165" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1444104737165" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/attendance_view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_show.php">
+    <entry file="file://$PROJECT_DIR$/single_attendance_show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-42.966667">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="24" />
+        <state vertical-scroll-proportion="-13.3">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <marker date="1444042147331" expanded="true" signature="309:423" placeholder="select entry..student_attendance..." />
-            <marker date="1444042147331" expanded="true" signature="434:530" placeholder="select * FRO..student_attendance..." />
-            <marker date="1444042147331" expanded="true" signature="544:730" placeholder="SELECT s_id ..student_attendance..." />
-            <marker date="1444042147331" expanded="true" signature="1908:1919" placeholder="..." />
-            <marker date="1444042147331" expanded="true" signature="1978:1987" placeholder="..." />
-            <marker date="1444042147331" expanded="true" signature="2653:2664" placeholder="..." />
-            <marker date="1444042147331" expanded="true" signature="2747:2756" placeholder="..." />
+            <marker date="1444105233249" expanded="true" signature="504:661" placeholder="SELECT s_id ..student_attendance..." />
+            <marker date="1444105233249" expanded="true" signature="1844:1855" placeholder="..." />
+            <marker date="1444105233249" expanded="true" signature="1914:1923" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.466667">
-          <caret line="169" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="169" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65006727">
-          <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.4064603">
+          <caret line="115" column="101" selection-start-line="115" selection-start-column="87" selection-end-line="115" selection-end-column="101" />
           <folding>
-            <marker date="1444044250787" expanded="true" signature="231:287" placeholder="select * FRO..student_assessment..." />
+            <element signature="e#5178#5242#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
