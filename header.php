@@ -31,14 +31,14 @@ session_start();
             <span class="glyphicon glyphicon-dashboard"></span>
             Dashboard</a></li>
     <li>
-        <a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-check"></span> Attendance</a>
+        <a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-check"></span> Attendance <span class='caret'></span></a>
         <ul class="dropdown-menu">
             <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>
             <li><a href="attendance_edit.php"><span class="glyphicon glyphicon-edit"></span> Attendance Edit</a></li>
             <li><a href="attendance_view.php"><span class="glyphicon glyphicon-asterisk"></span> Attendance View</a></li>
         </ul>
     </li>
-    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Score</a>
+    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Score <span class='caret'></span></a>
         <ul class="dropdown-menu">
             <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>
             <li><a href="score_update.php"><span class="glyphicon glyphicon-edit"></span> Edit Score</a></li>
@@ -46,14 +46,14 @@ session_start();
     </li>
     <li><a href="worksnap1.php"><span class="glyphicon glyphicon-picture"></span> Worksnap Score</a></li>
 
-    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Upload</a>
+    <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Upload <span class='caret'></span></a>
         <ul class="dropdown-menu">
             <li><a href="upload_result.php"><span class="glyphicon glyphicon-send"></span> Upload Score</a></li>
             <li><a href="db_manage.php"><span class="glyphicon glyphicon-edit"></span> DataBase</a></li>
         </ul>
     </li>
 
-    <li><a href="student_status.php"><span class="glyphicon glyphicon-apple"></span>Student Status</a></li>
+    <li><a href="student_status.php"><span class="glyphicon glyphicon-apple"></span> Student Status</a></li>
     <li>
         <a  class='dropdown-toggle' data-toggle='dropdown'><span class="glyphicon glyphicon-user"></span> User Profile<span class='caret'></span></a>
         <ul class='dropdown-menu'>

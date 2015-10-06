@@ -78,7 +78,7 @@ function displayPaginationBelow($per_page,$page){
      if($setLastpage > 1)
      {
          $setPaginate .= "<ul class='setPaginate'>";
-         $setPaginate .= "<li class='setPage'>Page $page of $setLastpage</li>";
+         $setPaginate .= "<li>Page $page of $setLastpage</li>";
          if ($setLastpage < 7 + ($adjacents * 2))
          {
              for ($counter = 1; $counter <= $setLastpage; $counter++)
@@ -155,7 +155,7 @@ if(isset($_GET["page"]))
 else
     $page = 1;
 
-$setLimit = 10;
+$setLimit = 24;
 
 $pageLimit = ($page * $setLimit) - $setLimit;
 
@@ -196,22 +196,7 @@ else{
 
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <!--                        <ul class="nav navbar-nav navbar-left">-->
-                    <!--                            <li><a href="dashboard.php?user=--><?php //echo $_SESSION['user']
-                    ?><!-- &token=--><?php //echo $_SESSION['token']
-                    ?><!--">-->
-                    <!--                                    <span class="glyphicon glyphicon-dashboard"></span>-->
-                    <!--                                    Dashboard</a></li>-->
-                    <!--                            <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a>-->
-                    <!--                            </li>-->
-                    <!--                            <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a>-->
-                    <!--                            </li>-->
-                    <!--                            <li><a href="logout.php" id="sign-out"><span class="glyphicon glyphicon-log-out"></span>-->
-                    <!--                                    Sign Out</a></li>-->
-                    <!--                            <li><a href="dashboard.php"><span class=""></span>-->
-                    <?php //echo $_SESSION['user'];
-                    ?><!--</a></li>-->
-                    <!--                        </ul>-->
+
                     <?php include('header.php'); ?>
                 </div>
 
@@ -227,17 +212,7 @@ else{
 
 
     <div class="container">
-
-
-        <!--<div class="row">
-
-             <ul class="breadcrumb">
-                 <li ><a href="#"> Dashboard</a></li>
-                 <li class="active">Attendance</li>
-             </ul>
-         </div> -->
-
-        <div class="row">
+<div class="row">
             <div class="back">
                 <div class="mainbody">
                     <div class="row custom-border">
@@ -245,11 +220,7 @@ else{
                             <div class="col-md-6">
                                 <h3 class="pull-left">Dashboard</h3>
                             </div>
-                            <!--    <div class="col-md-6">
-                                <h3 class="pull-right">
-                                    <input readonly  id="e_date" class="form-control input-lg" type="text" name="entry_date" value="">
-                                </h3>
-                            </div>-->
+
                         </div>
                     </div>
 
@@ -312,10 +283,6 @@ else{
                                     </div>
                                 </div>
 
-                                <!--                                    <div class="col-xs-12 col-sm-2">-->
-                                <!--                                        <input readonly id="e_date" class="form-control" type="text" name="entry_date"-->
-                                <!--                                               value="">-->
-                                <!--                                    </div>-->
                             </div>
 
 
@@ -325,13 +292,7 @@ else{
                                     <div class="col-xs-12 col-sm-12">
                                         <div class="bs-example table_back table_padding"
                                              data-example-id="contextual-table">
-                                            <!--                                                <div class="table-responsive">-->
-                                            <!--                                                    <table class="table table-hover table-striped table-bordered">-->
-                                            <!---->
-                                            <!--                                                        <tbody>-->
-                                            <!--                                                        </tbody>-->
-                                            <!--                                                    </table>-->
-                                            <!--                                                </div>-->
+
                                             <div class="table-responsive">
                                                 <table class="table table-hover table-striped table-bordered"
                                                        id="dashboard-data-table">
@@ -505,8 +466,9 @@ else{
                                                     </tbody>
 
                                                 </table>
-                                                <input class="btn btn-info" type="button" onclick="tableToExcel('dashboard-data-table','Weekly Report')" value="Export to Excel">
+
                                             </div>
+                                            <input class="btn btn-info" type="button" onclick="tableToExcel('dashboard-data-table','Weekly Report')" value="Export to Excel">
                                         </div>
                                     </div>
                                 </div>
@@ -526,21 +488,30 @@ else{
             </div>
 
         </div>
+
+
+
+
+
     </div>
+    <section id="footer" class="padding-top-bottom">
+        <div class="container">
+
+            <div class="col-md-12 text-center">
+                <p>© 2015 | Powered by Mentor Team, Coderstrust </p>
+
+                <p>All Rights Reserved</p>
+            </div>
+
+        </div>
+    </section>
 
 </div>
 
-<section id="footer" class="padding-top-bottom">
-    <div class="container">
 
-        <div class="col-md-12 text-center">
-            <p>© 2015 | Powered by Mentor Team, Coderstrust </p>
 
-            <p>All Rights Reserved</p>
-        </div>
 
-    </div>
-</section>
+
 
 <!--//Script for pagination start-->
 <script type="text/javascript">
