@@ -257,6 +257,11 @@ elseif(isset($_POST["table_type"]) && $table_name ==='worksnap' )
 
 <script>
     $(document).ready(function(){
+        $("#input_file").attr('disabled', true);
+        $("#table-select").change(function(){
+            $("#input_file").attr('disabled', false);
+        });
+
         console.log("wtf");
         $('#uploadButton').attr('disabled', true);
         $('#input_file').change(function () {

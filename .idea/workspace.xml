@@ -29,12 +29,12 @@
       <file leaf-file-name="upload_result.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68909824">
-              <caret line="128" column="130" selection-start-line="128" selection-start-column="130" selection-end-line="128" selection-end-column="130" />
+            <state vertical-scroll-proportion="0.71736205">
+              <caret line="261" column="51" selection-start-line="261" selection-start-column="51" selection-end-line="261" selection-end-column="51" />
               <folding>
-                <marker date="1444194042211" expanded="true" signature="1652:1906" placeholder="INSERT INTO ..." />
-                <marker date="1444194042211" expanded="true" signature="2750:2902" placeholder="INSERT INTO ..." />
-                <marker date="1444194042211" expanded="true" signature="3743:3875" placeholder="INSERT INTO ..." />
+                <marker date="1444194873539" expanded="true" signature="1652:1906" placeholder="INSERT INTO ..." />
+                <marker date="1444194873539" expanded="true" signature="2750:2902" placeholder="INSERT INTO ..." />
+                <marker date="1444194873539" expanded="true" signature="3743:3875" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -676,12 +676,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68909824">
-          <caret line="128" column="130" selection-start-line="128" selection-start-column="130" selection-end-line="128" selection-end-column="130" />
+        <state vertical-scroll-proportion="0.71736205">
+          <caret line="261" column="51" selection-start-line="261" selection-start-column="51" selection-end-line="261" selection-end-column="51" />
           <folding>
-            <marker date="1444194042211" expanded="true" signature="1652:1906" placeholder="INSERT INTO ..." />
-            <marker date="1444194042211" expanded="true" signature="2750:2902" placeholder="INSERT INTO ..." />
-            <marker date="1444194042211" expanded="true" signature="3743:3875" placeholder="INSERT INTO ..." />
+            <marker date="1444194873539" expanded="true" signature="1652:1906" placeholder="INSERT INTO ..." />
+            <marker date="1444194873539" expanded="true" signature="2750:2902" placeholder="INSERT INTO ..." />
+            <marker date="1444194873539" expanded="true" signature="3743:3875" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
