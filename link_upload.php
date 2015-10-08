@@ -10,9 +10,113 @@ include('rajesh_model.php');
 include('database_config.php');
 $db_user =$database_user;
 $db_pass =$databse_pass;
-$sql="select * FROM resources";// WHERE b_id='$Batch' AND g_id='$Group' AND s_id='$StudentId' AND name='$StudentName' AND exam_type='$ExamType' AND skill_type='$SkillType' AND skill_name='$SkillName'";
+function displayPaginationBelow($per_page,$page){
+    //echo "UserName".$GLOBALS['userName'];
+    $page_url_test="user=".$GLOBALS['userName']."&token=".$GLOBALS['token'];
+    $page_url="?".$page_url_test."&";
+    $query = "SELECT COUNT(*) as totalCount FROM resources";
+    $rec = $GLOBALS['raj_modelobject']->DataView2($query, $GLOBALS['db_user'], $GLOBALS['db_pass'], $GLOBALS['db_Name']);
+    $test=count($rec);
+    echo $total = $test;
+    $adjacents = "2";
+
+    $page = ($page == 0 ? 1 : $page);
+    $start = ($page - 1) * $per_page;
+
+    $prev = $page - 1;
+    $next = $page + 1;
+    $setLastpage = ceil($total/$per_page);
+    $lpm1 = $setLastpage - 1;
+
+    $setPaginate = "";
+    if($setLastpage > 1)
+    {
+        $setPaginate .= "<ul class='setPaginate'>";
+        $setPaginate .= "<li>Page $page of $setLastpage</li>";
+        if ($setLastpage < 7 + ($adjacents * 2))
+        {
+            for ($counter = 1; $counter <= $setLastpage; $counter++)
+            {
+                if ($counter == $page)
+                    $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                else
+                    $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+            }
+        }
+        elseif($setLastpage > 5 + ($adjacents * 2))
+        {
+            if($page < 1 + ($adjacents * 2))
+            {
+                for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
+                {
+                    if ($counter == $page)
+                        $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                    else
+                        $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+                }
+                $setPaginate.= "<li class='dot'>...</li>";
+                $setPaginate.= "<li><a href='{$page_url}page=$lpm1'>$lpm1</a></li>";
+                $setPaginate.= "<li><a href='{$page_url}page=$setLastpage'>$setLastpage</a></li>";
+            }
+            elseif($setLastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
+            {
+                $setPaginate.= "<li><a href='{$page_url}page=1'>1</a></li>";
+                $setPaginate.= "<li><a href='{$page_url}page=2'>2</a></li>";
+                $setPaginate.= "<li class='dot'>...</li>";
+                for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
+                {
+                    if ($counter == $page)
+                        $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                    else
+                        $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+                }
+                $setPaginate.= "<li class='dot'>..</li>";
+                $setPaginate.= "<li><a href='{$page_url}page=$lpm1'>$lpm1</a></li>";
+                $setPaginate.= "<li><a href='{$page_url}page=$setLastpage'>$setLastpage</a></li>";
+            }
+            else
+            {
+                $setPaginate.= "<li><a href='{$page_url}page=1'>1</a></li>";
+                $setPaginate.= "<li><a href='{$page_url}page=2'>2</a></li>";
+                $setPaginate.= "<li class='dot'>..</li>";
+                for ($counter = $setLastpage - (2 + ($adjacents * 2)); $counter <= $setLastpage; $counter++)
+                {
+                    if ($counter == $page)
+                        $setPaginate.= "<li><a class='current_page'>$counter</a></li>";
+                    else
+                        $setPaginate.= "<li><a href='{$page_url}page=$counter'>$counter</a></li>";
+                }
+            }
+        }
+
+        if ($page < $counter - 1){
+            $setPaginate.= "<li><a href='{$page_url}page=$next'>Next</a></li>";
+            $setPaginate.= "<li><a href='{$page_url}page=$setLastpage'>Last</a></li>";
+        }else{
+            $setPaginate.= "<li><a class='current_page'>Next</a></li>";
+            $setPaginate.= "<li><a class='current_page'>Last</a></li>";
+        }
+
+        $setPaginate.= "</ul>\n";
+    }
+
+
+    return $setPaginate;
+}
+if(isset($_GET["page"]))
+    $page = (int)$_GET["page"];
+
+else
+    $page = 1;
+
+$setLimit = 1;
+
+$pageLimit = ($page * $setLimit) - $setLimit;
+$sql="select * FROM resources LIMIT ".$pageLimit." , ".$setLimit;// WHERE b_id='$Batch' AND g_id='$Group' AND s_id='$StudentId' AND name='$StudentName' AND exam_type='$ExamType' AND skill_type='$SkillType' AND skill_name='$SkillName'";
 $db_Name='student_kpi';
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
+
+
 ?>
 
 <html>
@@ -24,6 +128,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
     <link  rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link  rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link  rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/pagination_style.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -125,15 +230,20 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                         <tr>
                             <td><?php echo $value['name']?></td>
                             <td><?php echo $value['description']?></td>
-                            <td><?php echo $value['link']?></td>
-                            <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> | <a
-                                    class="text-danger" href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                            <td><a href="<?php echo $value['link']?>"><?php echo $value['link']?></a></td>
+                            <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> |
+                                <a class="text-danger" href="#"><span class="glyphicon glyphicon-trash"></span></a>
                             </td>
                         </tr>
                         <?php
                     }
                     ?>
                 </table>
+                <?php
+                // Call the Pagination Function to load Pagination.
+
+                echo displayPaginationBelow($setLimit,$page);
+                ?>
             </div>
         </div>
     </div>
