@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="delete_controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete_controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delete_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39569312">
+            <state vertical-scroll-proportion="-9.8">
               <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding>
                 <marker date="1444295007185" expanded="true" signature="464:652" placeholder="..." />
@@ -37,6 +37,36 @@
                 <marker date="1444295007185" expanded="true" signature="519:592" placeholder="{...}" />
                 <marker date="1444295007185" expanded="true" signature="598:641" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.466667">
+              <caret line="63" column="162" selection-start-line="63" selection-start-column="162" selection-end-line="63" selection-end-column="162" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5828652">
+              <caret line="3474" column="20" selection-start-line="3474" selection-start-column="20" selection-end-line="3474" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.rnc" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,13 +158,13 @@
         <option value="$PROJECT_DIR$/upload_result.php" />
         <option value="$PROJECT_DIR$/js/authentication.js" />
         <option value="$PROJECT_DIR$/attendance.php" />
-        <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/link_controller.php" />
         <option value="$PROJECT_DIR$/rajesh_model.php" />
         <option value="$PROJECT_DIR$/js/delete_link.js" />
         <option value="$PROJECT_DIR$/link_upload.php" />
         <option value="$PROJECT_DIR$/delete_controller.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
       </list>
     </option>
   </component>
@@ -606,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1614" column="17" selection-start-line="1614" selection-start-column="17" selection-end-line="1614" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/authentication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -638,14 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4064603">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -712,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delete_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39569312">
+        <state vertical-scroll-proportion="-9.8">
           <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding>
             <marker date="1444295007185" expanded="true" signature="464:652" placeholder="..." />
@@ -720,6 +735,30 @@
             <marker date="1444295007185" expanded="true" signature="519:592" placeholder="{...}" />
             <marker date="1444295007185" expanded="true" signature="598:641" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.466667">
+          <caret line="63" column="162" selection-start-line="63" selection-start-column="162" selection-end-line="63" selection-end-column="162" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5828652">
+          <caret line="3474" column="20" selection-start-line="3474" selection-start-column="20" selection-end-line="3474" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
