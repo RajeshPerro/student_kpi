@@ -183,7 +183,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 
         </div>
         <div class="row">
-            <div class=" col-xs-12 col-sm-4">
+            <div class=" col-xs-12 col-sm-7">
                 <?php
                 if($flag==1)
                 {
@@ -216,37 +216,43 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                </div>
             </form>
             </div>
-            <div class="col-xs-12 col-sm-8">
-                <table class="table-bordered table-hover table-condensed " >
-                    <tr>
-                        <th>SL#</th>
-                        <th>Link Name</th>
-                        <th>Description</th>
-                        <th>URL</th>
-                        <th>Action</th>
-                    </tr>
-                    <?php
-                    $sl=0;
-                    foreach($fetch_result as $key=>$value)
-                    {
-                        $sl++;
-
-
-
-                        ?>
+            <div class="col-xs-12 col-sm-offset-2 col-sm-3">
+    <img src="images/1.png" alt="Help">
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <div class="table-responsive">
+                    <table class="table-bordered table-hover table-condensed " >
                         <tr>
-                            <td><?php echo $sl;?></td>
-                            <td><?php echo $value['name']?></td>
-                            <td><?php echo $value['description']?></td>
-                            <td><a href="<?php echo $value['link']?>"><?php echo $value['link']?></a></td>
-                            <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> |
-                                <a onclick="if (! confirm('Are you sure?')) return false;" class="text-danger" href="delete_controller.php?id=<?php  echo $value['id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
+                            <th>SL#</th>
+                            <th>Link Name</th>
+                            <th>Description</th>
+                            <th>URL</th>
+                            <th>Action</th>
                         </tr>
                         <?php
-                    }
-                    ?>
-                </table>
+                        $sl=0;
+                        foreach($fetch_result as $key=>$value)
+                        {
+                            $sl++;
+
+
+
+                            ?>
+                            <tr>
+                                <td><?php echo $sl;?></td>
+                                <td><?php echo $value['name']?></td>
+                                <td><?php echo $value['description']?></td>
+                                <td><a href="<?php echo $value['link']?>"><?php echo $value['link']?></a></td>
+                                <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> |
+                                    <a onclick="if (! confirm('Are you sure?')) return false;" class="text-danger" href="delete_controller.php?id=<?php  echo $value['id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </table>
+
+                </div>
                 <?php
                 // Call the Pagination Function to load Pagination.
 
