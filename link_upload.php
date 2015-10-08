@@ -5,6 +5,14 @@
  * Date: 10/8/15
  * Time: 11:43 AM
  */
+$flag=$_GET['flag'];
+include('rajesh_model.php');
+include('database_config.php');
+$db_user =$database_user;
+$db_pass =$databse_pass;
+$sql="select * FROM resources";// WHERE b_id='$Batch' AND g_id='$Group' AND s_id='$StudentId' AND name='$StudentName' AND exam_type='$ExamType' AND skill_type='$SkillType' AND skill_name='$SkillName'";
+$db_Name='student_kpi';
+$fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 ?>
 
 <html>
@@ -67,13 +75,22 @@
 
         </div>
         <div class="row">
-
             <div class=" col-xs-12 col-sm-4">
-        <div class="alert alert-success alert-dismissable fade in">The message is add successfully
-        <button type="button" data-dismiss="alert" class="close "> &CircleTimes; </button>
-        </div>
+                <?php
+                if($flag==1)
+                {
+                    echo('
+                    <div class="alert alert-success alert-dismissable fade in">The message is add successfully
+                    <button type="button" data-dismiss="alert" class="close "> &CircleTimes; </button>
+                </div>
+                    ');
+                    $flag=0;
+                }
 
-            <form name="import" method="post" enctype="multipart/form-data">
+                ?>
+
+
+            <form action="link_controller.php" name="import" method="post" enctype="multipart/form-data">
                 <div class=" col-xs-12 col-sm-12">
                    <div class="form-group">
                       Link Name <input name="name" class="form-control" type="text" placeholder="Type link name">
@@ -86,7 +103,7 @@
                        URL <input name="link" class="form-control" type="text" placeholder="Enter Url">
                    </div>
                    <div class="form-group">
-                       <input type="submit" value="Add" class="btn btn-primary" disabled>
+                       <input type="submit" value="Add" class="btn btn-primary">
                    </div>
                </div>
             </form>
@@ -99,15 +116,23 @@
                         <th>URL</th>
                         <th>Action</th>
                     </tr>
-                    <tr>
-                        <td>Uahahaha</td>
-                        <td>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
-                            Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
-                            Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</td>
-                        <td>www.www.com</td>
-                        <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> | <a class="text-danger" href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
-                    </tr>
+                    <?php
+                    foreach($fetch_result as $key=>$value)
+                    {
 
+
+                        ?>
+                        <tr>
+                            <td><?php echo $value['name']?></td>
+                            <td><?php echo $value['description']?></td>
+                            <td><?php echo $value['link']?></td>
+                            <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> | <a
+                                    class="text-danger" href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
                 </table>
             </div>
         </div>
