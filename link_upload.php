@@ -16,8 +16,10 @@ function displayPaginationBelow($per_page,$page){
     $page_url="?".$page_url_test."&";
     $query = "SELECT COUNT(*) as totalCount FROM resources";
     $rec = $GLOBALS['raj_modelobject']->DataView2($query, $GLOBALS['db_user'], $GLOBALS['db_pass'], $GLOBALS['db_Name']);
-    $test=count($rec);
-    echo $total = $test;
+    //print_r($rec);
+    //$test=count($rec);
+    $test=$rec[0]['totalCount'];
+     $total = $test;
     $adjacents = "2";
 
     $page = ($page == 0 ? 1 : $page);
@@ -109,7 +111,7 @@ if(isset($_GET["page"]))
 else
     $page = 1;
 
-$setLimit = 1;
+$setLimit = 5;
 
 $pageLimit = ($page * $setLimit) - $setLimit;
 $sql="select * FROM resources LIMIT ".$pageLimit." , ".$setLimit;// WHERE b_id='$Batch' AND g_id='$Group' AND s_id='$StudentId' AND name='$StudentName' AND exam_type='$ExamType' AND skill_type='$SkillType' AND skill_name='$SkillName'";
