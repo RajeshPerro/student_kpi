@@ -51,7 +51,7 @@ $db_pass =$databse_pass;
 $db_Name='student_kpi';
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
-echo ('<table class="table table-hover table-striped table-bordered"><thead><tr><th>SL#</th><th>Id</th><th>Name</th><th>Attendance</th><th>Small Test</th><th>Final Test</th><th>Assignments</th><th>Project</th><th>Worksnap</th><th>Date</th><th>Skill Type</th><th>Skill</th><th>Total</th></tr></thead><tbody>');
+echo ('<table class="table table-hover table-striped table-bordered"><thead><tr><th>SL#</th><th>Id</th><th>Name</th><th>Attendance</th><th>Small Test</th><th>Final Test</th><th>Assignments</th><th>Project</th><th>Worksnap</th><th>Total</th></tr></thead><tbody>');
 foreach ($fetch_result as $key => $value) {
     $sl++;
 
@@ -91,11 +91,20 @@ foreach ($fetch_result as $key => $value) {
 //........................Small Test....................
 
     $stu_id = $value['s_id'];
-    $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND (exam_type='ST' AND skill_name='$skill_name')";
+    if($skill_name == '')
+    {
+        $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND (exam_type='ST')";
+    }
+    else
+    {
+
+        $sql = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id' AND (exam_type='ST' AND skill_name='$skill_name')";
+    }
 //    $db_user = 'root';
 //    $db_pass = 'root123';
     $db_Name = 'student_kpi';
     $small_test = $raj_modelobject->DataView2($sql, $db_user, $db_pass, $db_Name);
+   // print_r($sql);
     $cnt_one = 0;
     $cnt_zero = 0;
     foreach ($small_test as $st) {
@@ -112,7 +121,14 @@ foreach ($fetch_result as $key => $value) {
 //....................Final Test Score........................
 
     $stu_id2 = $value['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='FT' AND skill_name='$skill_name')";
+    if($skill_name=='')
+    {
+        $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='FT')";
+    }
+    else
+    {
+        $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='FT' AND skill_name='$skill_name')";
+    }
 //    $db_user = 'root';
 //    $db_pass = 'root123';
     $db_Name = 'student_kpi';
@@ -123,16 +139,21 @@ foreach ($fetch_result as $key => $value) {
         echo '<td>'. number_format((float)$final_score, 2, '.', '').'</td>';
         //echo $final_score;
     }
-    if($value['skill_name']==$skill_name)
-    {
-        //echo $skill_name;
+
         $total_score += $final_score;
-    }
+
 
 //...................Assignment Score..................
 
     $stu_id2 = $value['s_id'];
-    $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='ASS' AND skill_name='$skill_name')";
+    if($skill_name=='')
+    {
+        $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='ASS')";
+    }
+    else{
+
+        $sql2 = "select SUM(actual),COUNT(*) FROM student_assessment WHERE s_id='$stu_id2' AND (exam_type='ASS' AND skill_name='$skill_name')";
+    }
 //    $db_user = 'root';
 //    $db_pass = 'root123';
     $db_Name = 'student_kpi';
@@ -204,12 +225,12 @@ foreach ($fetch_result as $key => $value) {
     $total_score += $ws_value;
 
  //........................Entry Date.........................
- echo '<td>'.$value['entry_date'].'</td>';
+// echo '<td>'.$value['entry_date'].'</td>';
 
 //..........................Skill Name..................
- echo '<td>'.$value['skill_type'].'</td>';
+// echo '<td>'.$value['skill_type'].'</td>';
 //..........................Skill Name..................
-    echo '<td>'.$value['skill_name'].'</td>';
+   // echo '<td>'.$value['skill_name'].'</td>';
 //..........................Total Score.......................
     echo'<td class="final_result">'.number_format((float)$total_score, 2, '.', '').'</td>';
     //echo $total_score;

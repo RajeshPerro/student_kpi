@@ -266,17 +266,17 @@ $(window).load(function(){
             $(this).css("color","white");
         }
 
-        if($(this).html()<=49)
+        if($(this).html()<50)
         {
             $(this).css("background-color","red");
             $(this).css("color","white");
         }
-        if($(this).html()>=50&&$(this).html()<=69)
+        if($(this).html()>=50&&$(this).html()<70)
         {
             $(this).css("background-color","orange");
             $(this).css("color","white");
         }
-        if($(this).html()>=70&&$(this).html()<=79)
+        if($(this).html()>=70&&$(this).html()<80)
         {
             $(this).css("background-color","mediumseagreen");
             $(this).css("color","white");
@@ -314,17 +314,17 @@ $(document).ready(function(){
                         $(this).css("color","white")
                     }
 
-                    if($(this).html()<=49)
+                    if($(this).html()<50)
                     {
                         $(this).css("background-color","red")
                         $(this).css("color","white")
                     }
-                    if($(this).html()>=50&&$(this).html()<=69)
+                    if($(this).html()>=50&&$(this).html()<70)
                     {
                         $(this).css("background-color","orange")
                         $(this).css("color","white")
                     }
-                    if($(this).html()>=70&&$(this).html()<=79)
+                    if($(this).html()>=70&&$(this).html()<80)
                     {
                         $(this).css("background-color","mediumseagreen");
                         $(this).css("color","white");
@@ -360,17 +360,17 @@ $(document).ready(function(){
                         $(this).css("color","white")
                     }
 
-                    if($(this).html()<=49)
+                    if($(this).html()<50)
                     {
                         $(this).css("background-color","red")
                         $(this).css("color","white")
                     }
-                    if($(this).html()>=50&&$(this).html()<=69)
+                    if($(this).html()>=50&&$(this).html()<70)
                     {
                         $(this).css("background-color","orange")
                         $(this).css("color","white")
                     }
-                    if($(this).html()>=70&&$(this).html()<=79)
+                    if($(this).html()>=70&&$(this).html()<80)
                     {
                         $(this).css("background-color","mediumseagreen");
                         $(this).css("color","white");
@@ -406,17 +406,17 @@ $(document).ready(function(){
                         $(this).css("color","white")
                     }
 
-                    if($(this).html()<=49)
+                    if($(this).html()<50)
                     {
                         $(this).css("background-color","red")
                         $(this).css("color","white")
                     }
-                    if($(this).html()>=50&&$(this).html()<=69)
+                    if($(this).html()>=50&&$(this).html()<70)
                     {
                         $(this).css("background-color","orange")
                         $(this).css("color","white")
                     }
-                    if($(this).html()>=70&&$(this).html()<=79)
+                    if($(this).html()>=70&&$(this).html()<80)
                     {
                         $(this).css("background-color","mediumseagreen");
                         $(this).css("color","white");
