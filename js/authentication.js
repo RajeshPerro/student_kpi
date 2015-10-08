@@ -153,6 +153,7 @@ $(document).ready(function() {
 				$.each(data, function() {
 					// console.log(this.name+"  "+this.hours_spent_today);
 					trHTML += '<tr><td><input  class="form-control input-sm transparent" readonly type="number" name="s_id[]" value="'+this.id+'"></td><td><input  class="form-control input-sm transparent" readonly type="text" name="name[]" value="'+this.name+ '"</td><td><input  type="checkbox" name="attendance[]" value="1" id="'+ this.id +'"> Yes <input  type="checkbox" name="attendance[]" value="0"> No </td></tr>';
+					//trHTML += '<tr><td>'+this.id+'</td><td>'+this.name+ '</td><td><input  type="checkbox" name="attendance[]" value="1" id="'+ this.id +'"> Yes <input  type="checkbox" name="attendance[]" value="0"> No </td></tr>';
 
 				});
 

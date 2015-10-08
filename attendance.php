@@ -71,16 +71,7 @@ else
 
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<!--                    <ul class="nav navbar-nav navbar-left">-->
-<!--                        <li><a href="dashboard.php?user=--><?php //echo $_SESSION['user']?><!-- &token=--><?php //echo $_SESSION['token']?><!--">-->
-<!--                                <span class="glyphicon glyphicon-dashboard"></span>-->
-<!--                                Dashboard</a></li>-->
-<!--                        <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>-->
-<!--                        <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>-->
-<!--                        <li><a href="logout.php" id="sign-out"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>-->
-<!--                        <li><a href="dashboard.php"><span class=""></span>--><?php //echo $_SESSION['user']; ?><!--</a></li>-->
-<!---->
-<!--                    </ul>-->
+
                     <?php include('header.php'); ?>
                 </div>
 
@@ -183,44 +174,9 @@ else
 
 
 
-                        <div class="modal pop">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-
-                                    <div class="modal-body">
-                                        <div class="col-md-12">
-                                            <select class="selectpicker">
-                                                <option>Select Batch...</option>
-                                                <option>First batch</option>
-                                                <option>Second batch</option>
-                                                <option>Third batch</option>
-                                            </select>
-                                        </div>
-                                        <br>
-                                        <form >
-                                            <div class="col-xs-5 col-sm-5 text-right font">Students ID</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total" placeholder="2497" name="score" class="form-control" readonly></div>
-                                            <br>
-                                            <div class="col-xs-5 col-sm-5 text-right font">Total Score</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="total" placeholder="Enter Score" name="score" class="form-control"></div>
-                                            <br>
-                                            <div class="col-xs-5 col-sm-5 text-right font">Obtain Marks</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="obtain" placeholder="Enter Score" name="marks" class="form-control"></div>
-                                            <br>
-                                            <div class="col-xs-5 col-sm-5 text-right font">Actual Marks</div>
-                                            <div class="col-xs-7 col-sm-7 text-left"><input type="text" id="actual" placeholder="100" name="marks" class="form-control" readonly></div>
 
 
-                                            <button type="button" class="btn btn-lg btn-success"> Update Score </button>
-
-                                        </form>
-                                        <button type="button" data-dismiss="modal" class="btn btn-danger cross" ><span>&times;</span></button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
+                    </div>
 
                         <!-- Student List Section -->
 

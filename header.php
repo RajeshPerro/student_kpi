@@ -49,6 +49,7 @@ session_start();
     <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Upload <span class='caret'></span></a>
         <ul class="dropdown-menu">
             <li><a href="upload_result.php"><span class="glyphicon glyphicon-send"></span> Upload Score</a></li>
+            <li><a href="link_upload.php"><span class="glyphicon glyphicon-send"></span> External Link</a></li>
             <li><a href="db_manage.php"><span class="glyphicon glyphicon-edit"></span> DataBase</a></li>
         </ul>
     </li>
