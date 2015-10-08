@@ -26,16 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="link_upload.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/link_upload.php">
+      <file leaf-file-name="delete_controller.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/delete_controller.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.39569312">
-              <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding>
-                <marker date="1444291386393" expanded="true" signature="445:489" placeholder="SELECT COUNT..resources..." />
-                <marker date="1444291386393" expanded="true" signature="4471:4494" placeholder="select * FRO..resources..." />
-                <marker date="1444291386393" expanded="true" signature="4471:4518" placeholder="select * FRO..resources..." />
-                <marker date="1444291386393" expanded="true" signature="7386:7543" placeholder="..." />
+                <marker date="1444295007185" expanded="true" signature="464:652" placeholder="..." />
+                <marker date="1444295007185" expanded="true" signature="519:568" placeholder="{...}" />
+                <marker date="1444295007185" expanded="true" signature="519:592" placeholder="{...}" />
+                <marker date="1444295007185" expanded="true" signature="598:641" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.2">
+              <caret line="24" column="0" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="link_upload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/link_upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.2637362">
+              <caret line="242" column="71" selection-start-line="242" selection-start-column="71" selection-end-line="242" selection-end-column="71" />
+              <folding>
+                <marker date="1444294969625" expanded="true" signature="445:489" placeholder="SELECT COUNT..resources..." />
+                <marker date="1444294969625" expanded="true" signature="4471:4494" placeholder="select * FRO..resources..." />
+                <marker date="1444294969625" expanded="true" signature="4471:4518" placeholder="select * FRO..resources..." />
+                <marker date="1444294969625" expanded="true" signature="7432:7589" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -46,8 +71,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -59,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wroksnap_controller.php" />
-        <option value="$PROJECT_DIR$/controller.php" />
         <option value="$PROJECT_DIR$/check.php" />
         <option value="$PROJECT_DIR$/atten_controller.php" />
         <option value="$PROJECT_DIR$/graph_request.php" />
@@ -85,7 +108,6 @@
         <option value="$PROJECT_DIR$/score_update.php" />
         <option value="$PROJECT_DIR$/name_show.php" />
         <option value="$PROJECT_DIR$/score_update_controller.php" />
-        <option value="$PROJECT_DIR$/rajesh_model.php" />
         <option value="$PROJECT_DIR$/score_show.php" />
         <option value="$PROJECT_DIR$/db_backup.php" />
         <option value="$PROJECT_DIR$/db_manage.php" />
@@ -109,7 +131,10 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/link_controller.php" />
+        <option value="$PROJECT_DIR$/rajesh_model.php" />
+        <option value="$PROJECT_DIR$/js/delete_link.js" />
         <option value="$PROJECT_DIR$/link_upload.php" />
+        <option value="$PROJECT_DIR$/delete_controller.php" />
       </list>
     </option>
   </component>
@@ -321,20 +346,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/attendance_old.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32166892">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph_request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6958277">
@@ -482,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36742935">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/atten_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66083443">
@@ -546,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/attendance_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7011643">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/single_attendance_show.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31090176">
@@ -564,13 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22611037">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rajesh_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.1938088">
-          <caret line="323" column="9" selection-start-line="323" selection-start-column="9" selection-end-line="323" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -676,15 +666,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/attendance_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10866753">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <element signature="e#110#1121#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rajesh_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.4952893">
+          <caret line="332" column="55" selection-start-line="332" selection-start-column="48" selection-end-line="332" selection-end-column="55" />
+          <folding>
+            <marker date="1444293017033" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1444293017033" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1444293017033" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1444293017033" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/link_upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39569312">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state vertical-scroll-proportion="-1.2637362">
+          <caret line="242" column="71" selection-start-line="242" selection-start-column="71" selection-end-line="242" selection-end-column="71" />
           <folding>
-            <marker date="1444291386393" expanded="true" signature="445:489" placeholder="SELECT COUNT..resources..." />
-            <marker date="1444291386393" expanded="true" signature="4471:4494" placeholder="select * FRO..resources..." />
-            <marker date="1444291386393" expanded="true" signature="4471:4518" placeholder="select * FRO..resources..." />
-            <marker date="1444291386393" expanded="true" signature="7386:7543" placeholder="..." />
+            <marker date="1444294969625" expanded="true" signature="445:489" placeholder="SELECT COUNT..resources..." />
+            <marker date="1444294969625" expanded="true" signature="4471:4494" placeholder="select * FRO..resources..." />
+            <marker date="1444294969625" expanded="true" signature="4471:4518" placeholder="select * FRO..resources..." />
+            <marker date="1444294969625" expanded="true" signature="7432:7589" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.2">
+          <caret line="24" column="0" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39569312">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <marker date="1444295007185" expanded="true" signature="464:652" placeholder="..." />
+            <marker date="1444295007185" expanded="true" signature="519:568" placeholder="{...}" />
+            <marker date="1444295007185" expanded="true" signature="519:592" placeholder="{...}" />
+            <marker date="1444295007185" expanded="true" signature="598:641" placeholder="{...}" />
           </folding>
         </state>
       </provider>

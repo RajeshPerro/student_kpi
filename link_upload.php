@@ -135,6 +135,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/delete_link.js"></script>
 
 </head>
 <body>
@@ -207,10 +208,10 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                    </div>
 
                    <div class="form-group">
-                       URL <input name="link" class="form-control" type="text" placeholder="Enter Url">
+                       URL <input id="input_link" name="link" class="form-control" type="text" placeholder="Enter Url">
                    </div>
                    <div class="form-group">
-                       <input type="submit" value="Add" class="btn btn-primary">
+                       <input id="add_button" type="submit" value="Add" class="btn btn-primary">
                    </div>
                </div>
             </form>
@@ -218,23 +219,28 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
             <div class="col-xs-12 col-sm-8">
                 <table class="table-bordered table-hover table-condensed " >
                     <tr>
+                        <th>SL#</th>
                         <th>Link Name</th>
                         <th>Description</th>
                         <th>URL</th>
                         <th>Action</th>
                     </tr>
                     <?php
+                    $sl=0;
                     foreach($fetch_result as $key=>$value)
                     {
+                        $sl++;
+
 
 
                         ?>
                         <tr>
+                            <td><?php echo $sl;?></td>
                             <td><?php echo $value['name']?></td>
                             <td><?php echo $value['description']?></td>
                             <td><a href="<?php echo $value['link']?>"><?php echo $value['link']?></a></td>
                             <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> |
-                                <a class="text-danger" href="#"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a onclick="if (! confirm('Are you sure?')) return false;" class="text-danger" href="delete_controller.php?id=<?php  echo $value['id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
                             </td>
                         </tr>
                         <?php
@@ -264,26 +270,13 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 
 <script>
     $(document).ready(function(){
-        $("#input_file").attr('disabled', true);
-        $("#table-select").change(function(){
-            $("#input_file").attr('disabled', false);
-        });
+        $("#add_button").attr('disabled', true);
+        $('#input_link').keyup(function () {
 
-        console.log("wtf");
-        $('#uploadButton').attr('disabled', true);
-        $('#input_file').change(function () {
-            var ext = this.value.match(/\.(.+)$/)[1];
+            $("#add_button").attr('disabled', false);
 
-            switch (ext) {
-                case 'csv':
-                case 'CSV':
-                    $('#uploadButton').attr('disabled', false);
-                    break;
-                default:
-                    alert('This is not an allowed file type.');
-                    this.value = '';
-            }
         });
     });
+
 </script>
 </html>

@@ -346,14 +346,7 @@ class test
         //$query=mysql_query($sql);
         $deleteStatement = $dbcon->prepare($sql);
 
-        if ($deleteStatement->execute(array(':id' => $id))) {
-            echo "<script> alert('Data Deleted!!')</script>";
-            echo("<script>location.href='enter.php'</script>");
-        } else {
-
-            echo "<script> alert('Sorry!! Not Possible')</script>";
-            echo("<script>location.href='enter.php'</script>");
-        }
+        $deleteStatement->execute(array(':id' => $id));
 
     }
 
