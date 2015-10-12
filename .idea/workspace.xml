@@ -26,25 +26,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard_short.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashboard_short.php">
+      <file leaf-file-name="link_upload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/link_upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5935397">
-              <caret line="53" column="226" selection-start-line="53" selection-start-column="226" selection-end-line="53" selection-end-column="226" />
+            <state vertical-scroll-proportion="0.68909824">
+              <caret line="202" column="87" selection-start-line="202" selection-start-column="87" selection-end-line="202" selection-end-column="87" />
               <folding>
-                <marker date="1444309552126" expanded="true" signature="542:626" placeholder="select * FRO..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="754:896" placeholder="select * FRO..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="1020:1169" placeholder="select * FRO..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="1191:1392" placeholder="select * FRO..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="2326:2386" placeholder="select atten..student_attendance..." />
-                <marker date="1444309552126" expanded="true" signature="3160:3253" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="3294:3416" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="4014:4108" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="4149:4272" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="4836:4931" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="4968:5092" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="5613:5705" placeholder="select SUM(a..student_assessment..." />
-                <marker date="1444309552126" expanded="true" signature="6264:6341" placeholder="select hours..worksnap..." />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1444625758718" expanded="true" signature="445:489" placeholder="SELECT COUNT..resources..." />
+                <marker date="1444625758718" expanded="true" signature="4471:4518" placeholder="select * FRO..resources..." />
+                <marker date="1444625758718" expanded="true" signature="8116:8273" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -115,10 +106,10 @@
         <option value="$PROJECT_DIR$/js/delete_link.js" />
         <option value="$PROJECT_DIR$/delete_controller.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/link_upload.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/js/custome.js" />
         <option value="$PROJECT_DIR$/dashboard_short.php" />
+        <option value="$PROJECT_DIR$/link_upload.php" />
       </list>
     </option>
   </component>
@@ -277,14 +268,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -615,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.4952893">
           <caret line="332" column="55" selection-start-line="332" selection-start-column="48" selection-end-line="332" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1614" column="16" selection-start-line="1614" selection-start-column="16" selection-end-line="1614" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/link_upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="218" column="49" selection-start-line="218" selection-start-column="49" selection-end-line="218" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -670,22 +653,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard_short.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5935397">
+        <state vertical-scroll-proportion="0.0">
           <caret line="53" column="226" selection-start-line="53" selection-start-column="226" selection-end-line="53" selection-end-column="226" />
           <folding>
-            <marker date="1444309552126" expanded="true" signature="542:626" placeholder="select * FRO..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="754:896" placeholder="select * FRO..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="1020:1169" placeholder="select * FRO..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="1191:1392" placeholder="select * FRO..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="2326:2386" placeholder="select atten..student_attendance..." />
-            <marker date="1444309552126" expanded="true" signature="3160:3253" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="3294:3416" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="4014:4108" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="4149:4272" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="4836:4931" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="4968:5092" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="5613:5705" placeholder="select SUM(a..student_assessment..." />
-            <marker date="1444309552126" expanded="true" signature="6264:6341" placeholder="select hours..worksnap..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select * FRO..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select atten..student_attendance..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select SUM(a..student_assessment..." />
+            <marker date="1444309552126" expanded="true" signature="-1:-1" placeholder="select hours..worksnap..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/link_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68909824">
+          <caret line="202" column="87" selection-start-line="202" selection-start-column="87" selection-end-line="202" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1444625758718" expanded="true" signature="445:489" placeholder="SELECT COUNT..resources..." />
+            <marker date="1444625758718" expanded="true" signature="4471:4518" placeholder="select * FRO..resources..." />
+            <marker date="1444625758718" expanded="true" signature="8116:8273" placeholder="..." />
           </folding>
         </state>
       </provider>

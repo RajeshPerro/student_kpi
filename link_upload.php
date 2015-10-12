@@ -135,7 +135,22 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/delete_link.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var link_upload_click=$("#link_upload_click");
+            $("#upload-form").hide();
+            $("#help-image").hide();
+            link_upload_click.click(function(){
+                $("#upload-form").toggle("slow", function() {
+                    // Animation complete.
+                });
+                $("#help-image").toggle("slow", function() {
+                    // Animation complete.
+                });
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -183,12 +198,16 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 
         </div>
         <div class="row">
-            <div class=" col-xs-12 col-sm-7">
+            <div class="col-xs-12 col-sm-7">
+
+                <button id="link_upload_click" style="margin: 5px;" class="btn btn-info glyphicon glyphicon-upload"> Upload a Link</button>
+            </div>
+            <div class=" col-xs-12 col-sm-6">
                 <?php
                 if($flag==1)
                 {
                     echo('
-                    <div class="alert alert-success alert-dismissable fade in">The message is add successfully
+                    <div class="alert alert-success alert-dismissable fade in">The Content is add successfully
                     <button type="button" data-dismiss="alert" class="close "> &CircleTimes; </button>
                 </div>
                     ');
@@ -198,7 +217,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                 ?>
 
 
-            <form action="link_controller.php" name="import" method="post" enctype="multipart/form-data">
+            <form action="link_controller.php" name="import" method="post" enctype="multipart/form-data" id="upload-form">
                 <div class=" col-xs-12 col-sm-12">
                    <div class="form-group">
                       Link Name <input name="name" class="form-control" type="text" placeholder="Type link name">
@@ -216,9 +235,10 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                </div>
             </form>
             </div>
-            <div class="col-xs-12 col-sm-offset-2 col-sm-3">
-    <img src="images/1.png" alt="Help">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-3" id="help-image">
+                <img src="images/1.png" alt="Help">
             </div>
+
             <div class="col-xs-12 col-sm-12">
                 <div class="table-responsive">
                     <table class="table-bordered table-hover table-condensed " >
@@ -242,7 +262,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                                 <td><?php echo $sl;?></td>
                                 <td><?php echo $value['name']?></td>
                                 <td><?php echo $value['description']?></td>
-                                <td><a href="<?php echo $value['link']?>"><?php echo $value['link']?></a></td>
+                                <td><a href="<?php echo $value['link']?>" target="_blank"><?php echo $value['link']?></a></td>
                                 <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> |
                                     <a onclick="if (! confirm('Are you sure?')) return false;" class="text-danger" href="delete_controller.php?id=<?php  echo $value['id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
                                 </td>
