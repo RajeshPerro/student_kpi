@@ -231,7 +231,7 @@ else {
                                                     <br>
 
                                                     <div class="col-xs-5 col-sm-5 text-right font">Out Of</div>
-                                                    <div class="col-xs-7 col-sm-7 text-left"><input type="number"
+                                                    <div class="col-xs-7 col-sm-7 text-left"><input type="text"
                                                                                                     id="of"
                                                                                                     placeholder="Enter Score"
                                                                                                     name="outof"
@@ -241,7 +241,7 @@ else {
 
                                                     <div class="col-xs-5 col-sm-5 text-right font">Obtain Marks</div>
                                                     <div class="col-xs-7 col-sm-7 text-left"><input
-                                                            onkeyup="score_cal()" type="number" id="obtain"
+                                                            onkeyup="score_cal()" type="text" id="obtain"
                                                             placeholder="Enter Score" name="obtained"
                                                             class="form-control"></div>
                                                     <br>
