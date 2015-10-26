@@ -17,7 +17,7 @@ $db_Name = 'student_kpi';
 $total_score = 0;
 $sql="SELECT * FROM student_assessment GROUP BY s_id";
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
-echo'[';
+
 foreach($fetch_result as $key=>$value)
 {
 $information=array('s_id'=>$value['s_id']);
@@ -134,11 +134,12 @@ $information['name']=$value['name'];
 
     $information['total_score']=number_format((float)$total_score, 2, '.', '');;
    // print_r($information['name']);
-    //$test_rajesh=array(array('s_id' => $information['s_id'],'name' => $information['name'],'atten' => $information['atten'],'small_test' => $information['small_test'],'final_test' => $information['final_test'],'assignment' => $information['assignment'],'final_project' => $information['final_project'],'worksnap' => $information['worksnap'],'total_score' => $information['total_score']));
-    echo json_encode($information).',';
+   // $test_rajesh=array(array('s_id' => $information['s_id'],$information['name'],'atten' => $information['atten'],'small_test' => $information['small_test'],'final_test' => $information['final_test'],'assignment' => $information['assignment'],'final_project' => $information['final_project'],'worksnap' => $information['worksnap'],'total_score' => $information['total_score']),);
+    $test_rajesh=array($information);
+    echo json_encode($test_rajesh).',';
 
     //print_r($test_rajesh);
 
 }
-echo ']';
+
 ?>

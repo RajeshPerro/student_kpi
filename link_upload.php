@@ -135,22 +135,8 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/link_search.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            var link_upload_click=$("#link_upload_click");
-            $("#upload-form").hide();
-            $("#help-image").hide();
-            link_upload_click.click(function(){
-                $("#upload-form").toggle("slow", function() {
-                    // Animation complete.
-                });
-                $("#help-image").toggle("slow", function() {
-                    // Animation complete.
-                });
-            });
-        });
-    </script>
 
 </head>
 <body>
@@ -199,6 +185,9 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-7">
+                <input type="text" class="form-control" name="search" id="search_link" placeholder="What Do You Looking For?">
+            </div>
+            <div class="col-xs-12 col-sm-7">
 
                 <button id="link_upload_click" style="margin: 5px;" class="btn btn-info glyphicon glyphicon-upload"> Upload a Link</button>
             </div>
@@ -239,7 +228,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                 <img src="images/1.png" alt="Help">
             </div>
 
-            <div class="col-xs-12 col-sm-12">
+            <div class="col-xs-12 col-sm-12" id="search_data">
                 <div class="table-responsive">
                     <table class="table-bordered table-hover table-condensed " >
                         <tr>
@@ -259,7 +248,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 
                             ?>
                             <tr>
-                                <td><?php echo $sl;?></td>
+                                <td><?php echo $value['id'];?></td>
                                 <td><?php echo $value['name']?></td>
                                 <td><?php echo $value['description']?></td>
                                 <td><a href="<?php echo $value['link']?>" target="_blank"><?php echo $value['link']?></a></td>
@@ -302,6 +291,9 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
             $("#add_button").attr('disabled', false);
 
         });
+
+
+
     });
 
 </script>
