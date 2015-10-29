@@ -71,16 +71,7 @@ else
 
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <!--                    <ul class="nav navbar-nav navbar-left">-->
-                        <!--                        <li><a href="dashboard.php?user=--><?php //echo $_SESSION['user']?><!-- &token=--><?php //echo $_SESSION['token']?><!--">-->
-                        <!--                                <span class="glyphicon glyphicon-dashboard"></span>-->
-                        <!--                                Dashboard</a></li>-->
-                        <!--                        <li><a href="attendance.php"><span class="glyphicon glyphicon-check"></span> Attendance</a></li>-->
-                        <!--                        <li><a href="input_score.php"><span class="glyphicon glyphicon-send"></span> Input Score</a></li>-->
-                        <!--                        <li><a href="logout.php" id="sign-out"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>-->
-                        <!--                        <li><a href="dashboard.php"><span class=""></span>--><?php //echo $_SESSION['user']; ?><!--</a></li>-->
-                        <!---->
-                        <!--                    </ul>-->
+
                         <?php include('header.php'); ?>
                     </div>
 
@@ -100,6 +91,7 @@ else
 <!--       student status graph start-->
         <div class="container">
             <div class="row">
+
                 <div class="col-md-2">
                     <h4>Student Id:</h4>
                 </div>
@@ -155,39 +147,7 @@ else
 <!--    <script src="js/jquery-1.11.3.min.js"></script>-->
 <!--    <script src="js/bootstrap.min.js"></script>-->
     <script src="js/std_graph.js"></script>
-    <script>
-        //    $(document).ready(function() {
-        //
-        //        var make_student_table = function(){
-        //
-        //            var jsongroup =  [{"id":428,"name":"Shamsul Islam  Sujon"},{"id":505,"name":"Simson  Halder"},{"id":552,"name":"Apurba  Biswas"},{"id":1019,"name":"Zakaria  Shuvo"},{"id":1377,"name":"Rahul  Ray"},{"id":1895,"name":"Sayeed  Hasan"},{"id":1897,"name":"Hasan  Talukder"},{"id":2055,"name":"Shakhawat Hossain Khan"},{"id":2180,"name":"Md.  Ibrahim Hossain"},{"id":2191,"name":"Osman  Shak"},{"id":2262,"name":"Md. Sakhawat Hossain"},{"id":2271,"name":"Manir  Hossen"},{"id":2277,"name":"Md  Irfanuzzaman"},{"id":2307,"name":"Sayed  Khan"},{"id":2337,"name":"Fahad Hossain Howlader"},{"id":2478,"name":"farhana  binte hasan"},{"id":2501,"name":"MD. Borhan  Uddin"}];
-        //            // $('#records_table').attr('enabled', 'true');
-        //
-        //
-        //
-        //            // $.ajax({
-        //            //     url: '/S_KPI/bt.json',
-        //            //     type: 'POST',
-        //            //     success: function (response) {
-        //
-        //            //         alert("fuck me");
-        //            //         var trHTML = '';
-        //            //         $.each(response, function (i, item) {
-        //            //             trHTML += '<tr><td>' + item.id + '</td><td>' + item.name + '</td><td><input  type="radio" name="attendance" value="1"> Yes <input  type="radio" name="attendance" value="0"> No </td></tr>';
-        //            //         });
-        //            //         $('#records_table').append(trHTML);
-        //            //     }
-        //            // });
-        //        }
-        //
-        //
-        //
-        //    });
 
-
-
-
-    </script>
 
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>

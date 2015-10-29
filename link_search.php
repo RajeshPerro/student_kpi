@@ -17,7 +17,7 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 //print_r($fetch_result);
 echo ('<table class="table-bordered table-hover table-condensed " ><tr><th>SL#</th><th>Link Name</th><th>Description</th><th>URL</th></tr>');
 foreach ($fetch_result as $key => $value) {
-echo('<tr><td>'.$value['id'].'</td><td>'.$value['name'].'</td><td>'.$value['description'].'</td><td><a href="'.$value['link'].'" target="_blank">'.$value['link'].'</a></td></tr>');
+echo('<tr><td>'.$value['id'].'</td><td>'.$value['name'].'</td><td>'.$value['description'].'</td><td><a href="'.$value['link'].'" class="btn btn-primary btn-sm" target="_blank"><b>Click Here</b></a></td></tr>');
 
 }
 echo '</table>';

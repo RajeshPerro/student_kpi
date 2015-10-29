@@ -49,14 +49,20 @@ session_start();
     <li><a class="dropdown-toggle" data-toggle='dropdown'><span class="glyphicon glyphicon-send"></span> Upload <span class='caret'></span></a>
         <ul class="dropdown-menu">
             <li><a href="upload_result.php"><span class="glyphicon glyphicon-send"></span> Upload Score</a></li>
-
+            <li><a href="map_data_insert.php"><span class="glyphicon glyphicon-info-sign"></span> Add Earning Zones </a></li>
             <li><a href="db_manage.php"><span class="glyphicon glyphicon-edit"></span> DataBase</a></li>
         </ul>
     </li>
 
-    <li><a href="student_status.php"><span class="glyphicon glyphicon-apple"></span> Student Status</a></li>
+    <li><a  class='dropdown-toggle' data-toggle='dropdown'><span class="glyphicon glyphicon-apple"></span> Student Info <span class='caret'></span></a>
+        <ul class='dropdown-menu'>
+            <li><a href="student_status.php"><span class="glyphicon glyphicon-stats"></span> Student Status</a></li>
+            <li><a href="map_view.php" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Earning Zones</a></li>
+
+        </ul>
+    </li>
     <li>
-        <a  class='dropdown-toggle' data-toggle='dropdown'><span class="glyphicon glyphicon-cog"></span> Others<span class='caret'></span></a>
+        <a  class='dropdown-toggle' data-toggle='dropdown'><span class="glyphicon glyphicon-cog"></span> Others <span class='caret'></span></a>
         <ul class='dropdown-menu'>
             <li><a href="link_upload.php"><span class="glyphicon glyphicon-info-sign"></span> Help</a></li>
             <li><a href="logout.php" id="sign-out"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>

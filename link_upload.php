@@ -248,10 +248,10 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 
                             ?>
                             <tr>
-                                <td><?php echo $value['id'];?></td>
+                                <td><?php echo $sl;?></td>
                                 <td><?php echo $value['name']?></td>
                                 <td><?php echo $value['description']?></td>
-                                <td><a href="<?php echo $value['link']?>" target="_blank"><?php echo $value['link']?></a></td>
+                                <td><a href="<?php echo $value['link']?>" class="btn btn-primary btn-sm" target="_blank"><b>Click Here</b></a></td>
                                 <td><a class="text-primary" href="#"><span class="glyphicon glyphicon-edit"></span></a> |
                                     <a onclick="if (! confirm('Are you sure?')) return false;" class="text-danger" href="delete_controller.php?id=<?php  echo $value['id'] ?>"><span class="glyphicon glyphicon-trash"></span></a>
                                 </td>
