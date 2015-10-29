@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Google Maps Example</title>
+        <title>Students Earning Zone</title>
         <style type="text/css">
             *{
                 margin: 0px;
@@ -110,11 +110,13 @@
                 });
             } else {
                 
+                var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
                 var position = new google.maps.LatLng(parseFloat(location.lat), parseFloat(location.lon));
                 var marker = new google.maps.Marker({
                     map: map, 
                     position: position,
-                    title: location.name
+                    title: location.name,
+                     icon: iconBase + 'schools_maps.png'
                 });
                 
                 google.maps.event.addListener(marker, 'click', function() {
@@ -171,7 +173,7 @@
         </script>
     </head>
     <body onload="init();" >
-
+    <h1 style="float:right; color:#001451">All the Countries Where our Students Got Projects</h1>
     <form id="services">
          <input type="text" id="start" />
          <select hidden id="destination" onchange="calculateRoute();"></select>

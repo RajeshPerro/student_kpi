@@ -84,253 +84,256 @@ session_start();
                         <td><input class="form-control" type="text" name="name" size="30"></td>
                         <td>Address:</td>
                         <td><select name="address" id="countries" class="form-control">
-                                <option value='default' selected="selected">Please Select a Country</option>
-                                <option value='ad' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ad" data-title="Andorra">Andorra</option>
-                                <option value='ae' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ae" data-title="United Arab Emirates">United Arab Emirates</option>
-                                <option value='af' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag af" data-title="Afghanistan">Afghanistan</option>
-                                <option value='ag' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ag" data-title="Antigua and Barbuda">Antigua and Barbuda</option>
-                                <option value='ai' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ai" data-title="Anguilla">Anguilla</option>
-                                <option value='al' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag al" data-title="Albania">Albania</option>
-                                <option value='am' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag am" data-title="Armenia">Armenia</option>
-                                <option value='an' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag an" data-title="Netherlands Antilles">Netherlands Antilles</option>
-                                <option value='ao' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ao" data-title="Angola">Angola</option>
-                                <option value='aq' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag aq" data-title="Antarctica">Antarctica</option>
-                                <option value='ar' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ar" data-title="Argentina">Argentina</option>
-                                <option value='as' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag as" data-title="American Samoa">American Samoa</option>
-                                <option value='at' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag at" data-title="Austria">Austria</option>
-                                <option value='au' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag au" data-title="Australia">Australia</option>
-                                <option value='aw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag aw" data-title="Aruba">Aruba</option>
-                                <option value='ax' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ax" data-title="Aland Islands">Aland Islands</option>
-                                <option value='az' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag az" data-title="Azerbaijan">Azerbaijan</option>
-                                <option value='ba' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ba" data-title="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                                <option value='bb' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bb" data-title="Barbados">Barbados</option>
-                                <option value='bd' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bd" data-title="Bangladesh">Bangladesh</option>
-                                <option value='be' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag be" data-title="Belgium">Belgium</option>
-                                <option value='bf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bf" data-title="Burkina Faso">Burkina Faso</option>
-                                <option value='bg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bg" data-title="Bulgaria">Bulgaria</option>
-                                <option value='bh' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bh" data-title="Bahrain">Bahrain</option>
-                                <option value='bi' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bi" data-title="Burundi">Burundi</option>
-                                <option value='bj' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bj" data-title="Benin">Benin</option>
-                                <option value='bm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bm" data-title="Bermuda">Bermuda</option>
-                                <option value='bn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bn" data-title="Brunei Darussalam">Brunei Darussalam</option>
-                                <option value='bo' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bo" data-title="Bolivia">Bolivia</option>
-                                <option value='br' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag br" data-title="Brazil">Brazil</option>
-                                <option value='bs' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bs" data-title="Bahamas">Bahamas</option>
-                                <option value='bt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bt" data-title="Bhutan">Bhutan</option>
-                                <option value='bv' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bv" data-title="Bouvet Island">Bouvet Island</option>
-                                <option value='bw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bw" data-title="Botswana">Botswana</option>
-                                <option value='by' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag by" data-title="Belarus">Belarus</option>
-                                <option value='bz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bz" data-title="Belize">Belize</option>
-                                <option value='ca' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ca" data-title="Canada">Canada</option>
-                                <option value='cc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cc" data-title="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                                <option value='cd' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cd" data-title="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
-                                <option value='cf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cf" data-title="Central African Republic">Central African Republic</option>
-                                <option value='cg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cg" data-title="Congo">Congo</option>
-                                <option value='ch' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ch" data-title="Switzerland">Switzerland</option>
-                                <option value='ci' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ci" data-title="Cote D'Ivoire (Ivory Coast)">Cote D'Ivoire (Ivory Coast)</option>
-                                <option value='ck' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ck" data-title="Cook Islands">Cook Islands</option>
-                                <option value='cl' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cl" data-title="Chile">Chile</option>
-                                <option value='cm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cm" data-title="Cameroon">Cameroon</option>
-                                <option value='cn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cn" data-title="China">China</option>
-                                <option value='co' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag co" data-title="Colombia">Colombia</option>
-                                <option value='cr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cr" data-title="Costa Rica">Costa Rica</option>
-                                <option value='cs' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cs" data-title="Serbia and Montenegro">Serbia and Montenegro</option>
-                                <option value='cu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cu" data-title="Cuba">Cuba</option>
-                                <option value='cv' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cv" data-title="Cape Verde">Cape Verde</option>
-                                <option value='cx' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cx" data-title="Christmas Island">Christmas Island</option>
-                                <option value='cy' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cy" data-title="Cyprus">Cyprus</option>
-                                <option value='cz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag cz" data-title="Czech Republic">Czech Republic</option>
-                                <option value='de' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag de" data-title="Germany">Germany</option>
-                                <option value='dj' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag dj" data-title="Djibouti">Djibouti</option>
-                                <option value='dk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag dk" data-title="Denmark">Denmark</option>
-                                <option value='dm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag dm" data-title="Dominica">Dominica</option>
-                                <option value='do' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag do" data-title="Dominican Republic">Dominican Republic</option>
-                                <option value='dz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag dz" data-title="Algeria">Algeria</option>
-                                <option value='ec' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ec" data-title="Ecuador">Ecuador</option>
-                                <option value='ee' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ee" data-title="Estonia">Estonia</option>
-                                <option value='eg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag eg" data-title="Egypt">Egypt</option>
-                                <option value='eh' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag eh" data-title="Western Sahara">Western Sahara</option>
-                                <option value='er' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag er" data-title="Eritrea">Eritrea</option>
-                                <option value='es' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag es" data-title="Spain">Spain</option>
-                                <option value='et' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag et" data-title="Ethiopia">Ethiopia</option>
-                                <option value='fi' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fi" data-title="Finland">Finland</option>
-                                <option value='fj' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fj" data-title="Fiji">Fiji</option>
-                                <option value='fk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fk" data-title="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-                                <option value='fm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fm" data-title="Federated States of Micronesia">Federated States of Micronesia</option>
-                                <option value='fo' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fo" data-title="Faroe Islands">Faroe Islands</option>
-                                <option value='fr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fr" data-title="France">France</option>
-                                <option value='fx' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag fx" data-title="France, Metropolitan">France, Metropolitan</option>
-                                <option value='ga' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ga" data-title="Gabon">Gabon</option>
-                                <option value='gb' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gb" data-title="Great Britain (UK)">Great Britain (UK)</option>
-                                <option value='gd' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gd" data-title="Grenada">Grenada</option>
-                                <option value='ge' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ge" data-title="Georgia">Georgia</option>
-                                <option value='gf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gf" data-title="French Guiana">French Guiana</option>
-                                <option value='gh' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gh" data-title="Ghana">Ghana</option>
-                                <option value='gi' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gi" data-title="Gibraltar">Gibraltar</option>
-                                <option value='gl' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gl" data-title="Greenland">Greenland</option>
-                                <option value='gm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gm" data-title="Gambia">Gambia</option>
-                                <option value='gn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gn" data-title="Guinea">Guinea</option>
-                                <option value='gp' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gp" data-title="Guadeloupe">Guadeloupe</option>
-                                <option value='gq' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gq" data-title="Equatorial Guinea">Equatorial Guinea</option>
-                                <option value='gr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gr" data-title="Greece">Greece</option>
-                                <option value='gs' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gs" data-title="S. Georgia and S. Sandwich Islands">S. Georgia and S. Sandwich Islands</option>
-                                <option value='gt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gt" data-title="Guatemala">Guatemala</option>
-                                <option value='gu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gu" data-title="Guam">Guam</option>
-                                <option value='gw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gw" data-title="Guinea-Bissau">Guinea-Bissau</option>
-                                <option value='gy' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag gy" data-title="Guyana">Guyana</option>
-                                <option value='hk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag hk" data-title="Hong Kong">Hong Kong</option>
-                                <option value='hm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag hm" data-title="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
-                                <option value='hn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag hn" data-title="Honduras">Honduras</option>
-                                <option value='hr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag hr" data-title="Croatia (Hrvatska)">Croatia (Hrvatska)</option>
-                                <option value='ht' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ht" data-title="Haiti">Haiti</option>
-                                <option value='hu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag hu" data-title="Hungary">Hungary</option>
-                                <option value='id' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag id" data-title="Indonesia">Indonesia</option>
-                                <option value='ie' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ie" data-title="Ireland">Ireland</option>
-                                <option value='il' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag il" data-title="Israel">Israel</option>
-                                <option value='in' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag in" data-title="India">India</option>
-                                <option value='io' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag io" data-title="British Indian Ocean Territory">British Indian Ocean Territory</option>
-                                <option value='iq' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag iq" data-title="Iraq">Iraq</option>
-                                <option value='ir' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ir" data-title="Iran">Iran</option>
-                                <option value='is' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag is" data-title="Iceland">Iceland</option>
-                                <option value='it' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag it" data-title="Italy">Italy</option>
-                                <option value='jm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag jm" data-title="Jamaica">Jamaica</option>
-                                <option value='jo' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag jo" data-title="Jordan">Jordan</option>
-                                <option value='jp' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag jp" data-title="Japan">Japan</option>
-                                <option value='ke' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ke" data-title="Kenya">Kenya</option>
-                                <option value='kg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kg" data-title="Kyrgyzstan">Kyrgyzstan</option>
-                                <option value='kh' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kh" data-title="Cambodia">Cambodia</option>
-                                <option value='ki' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ki" data-title="Kiribati">Kiribati</option>
-                                <option value='km' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag km" data-title="Comoros">Comoros</option>
-                                <option value='kn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kn" data-title="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                                <option value='kp' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kp" data-title="Korea (North)">Korea (North)</option>
-                                <option value='kr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kr" data-title="Korea (South)">Korea (South)</option>
-                                <option value='kw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kw" data-title="Kuwait">Kuwait</option>
-                                <option value='ky' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ky" data-title="Cayman Islands">Cayman Islands</option>
-                                <option value='kz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kz" data-title="Kazakhstan">Kazakhstan</option>
-                                <option value='la' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag la" data-title="Laos">Laos</option>
-                                <option value='lb' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lb" data-title="Lebanon">Lebanon</option>
-                                <option value='lc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lc" data-title="Saint Lucia">Saint Lucia</option>
-                                <option value='li' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag li" data-title="Liechtenstein">Liechtenstein</option>
-                                <option value='lk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lk" data-title="Sri Lanka">Sri Lanka</option>
-                                <option value='lr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lr" data-title="Liberia">Liberia</option>
-                                <option value='ls' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ls" data-title="Lesotho">Lesotho</option>
-                                <option value='lt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lt" data-title="Lithuania">Lithuania</option>
-                                <option value='lu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lu" data-title="Luxembourg">Luxembourg</option>
-                                <option value='lv' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag lv" data-title="Latvia">Latvia</option>
-                                <option value='ly' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ly" data-title="Libya">Libya</option>
-                                <option value='ma' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ma" data-title="Morocco">Morocco</option>
-                                <option value='mc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mc" data-title="Monaco">Monaco</option>
-                                <option value='md' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag md" data-title="Moldova">Moldova</option>
-                                <option value='mg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mg" data-title="Madagascar">Madagascar</option>
-                                <option value='mh' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mh" data-title="Marshall Islands">Marshall Islands</option>
-                                <option value='mk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mk" data-title="Macedonia">Macedonia</option>
-                                <option value='ml' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ml" data-title="Mali">Mali</option>
-                                <option value='mm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mm" data-title="Myanmar">Myanmar</option>
-                                <option value='mn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mn" data-title="Mongolia">Mongolia</option>
-                                <option value='mo' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mo" data-title="Macao">Macao</option>
-                                <option value='mp' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mp" data-title="Northern Mariana Islands">Northern Mariana Islands</option>
-                                <option value='mq' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mq" data-title="Martinique">Martinique</option>
-                                <option value='mr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mr" data-title="Mauritania">Mauritania</option>
-                                <option value='ms' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ms" data-title="Montserrat">Montserrat</option>
-                                <option value='mt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mt" data-title="Malta">Malta</option>
-                                <option value='mu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mu" data-title="Mauritius">Mauritius</option>
-                                <option value='mv' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mv" data-title="Maldives">Maldives</option>
-                                <option value='mw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mw" data-title="Malawi">Malawi</option>
-                                <option value='mx' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mx" data-title="Mexico">Mexico</option>
-                                <option value='my' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag my" data-title="Malaysia">Malaysia</option>
-                                <option value='mz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag mz" data-title="Mozambique">Mozambique</option>
-                                <option value='na' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag na" data-title="Namibia">Namibia</option>
-                                <option value='nc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag nc" data-title="New Caledonia">New Caledonia</option>
-                                <option value='ne' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ne" data-title="Niger">Niger</option>
-                                <option value='nf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag nf" data-title="Norfolk Island">Norfolk Island</option>
-                                <option value='ng' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ng" data-title="Nigeria">Nigeria</option>
-                                <option value='ni' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ni" data-title="Nicaragua">Nicaragua</option>
-                                <option value='nl' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag nl" data-title="Netherlands">Netherlands</option>
-                                <option value='no' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag no" data-title="Norway">Norway</option>
-                                <option value='np' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag np" data-title="Nepal">Nepal</option>
-                                <option value='nr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag nr" data-title="Nauru">Nauru</option>
-                                <option value='nu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag nu" data-title="Niue">Niue</option>
-                                <option value='nz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag nz" data-title="New Zealand (Aotearoa)">New Zealand (Aotearoa)</option>
-                                <option value='om' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag om" data-title="Oman">Oman</option>
-                                <option value='pa' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pa" data-title="Panama">Panama</option>
-                                <option value='pe' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pe" data-title="Peru">Peru</option>
-                                <option value='pf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pf" data-title="French Polynesia">French Polynesia</option>
-                                <option value='pg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pg" data-title="Papua New Guinea">Papua New Guinea</option>
-                                <option value='ph' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ph" data-title="Philippines">Philippines</option>
-                                <option value='pk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pk" data-title="Pakistan">Pakistan</option>
-                                <option value='pl' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pl" data-title="Poland">Poland</option>
-                                <option value='pm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pm" data-title="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                                <option value='pn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pn" data-title="Pitcairn">Pitcairn</option>
-                                <option value='pr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pr" data-title="Puerto Rico">Puerto Rico</option>
-                                <option value='ps' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ps" data-title="Palestinian Territory">Palestinian Territory</option>
-                                <option value='pt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pt" data-title="Portugal">Portugal</option>
-                                <option value='pw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag pw" data-title="Palau">Palau</option>
-                                <option value='py' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag py" data-title="Paraguay">Paraguay</option>
-                                <option value='qa' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag qa" data-title="Qatar">Qatar</option>
-                                <option value='re' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag re" data-title="Reunion">Reunion</option>
-                                <option value='ro' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ro" data-title="Romania">Romania</option>
-                                <option value='ru' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ru" data-title="Russian Federation">Russian Federation</option>
-                                <option value='rw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag rw" data-title="Rwanda">Rwanda</option>
-                                <option value='sa' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sa" data-title="Saudi Arabia">Saudi Arabia</option>
-                                <option value='sb' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sb" data-title="Solomon Islands">Solomon Islands</option>
-                                <option value='sc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sc" data-title="Seychelles">Seychelles</option>
-                                <option value='sd' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sd" data-title="Sudan">Sudan</option>
-                                <option value='se' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag se" data-title="Sweden">Sweden</option>
-                                <option value='sg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sg" data-title="Singapore">Singapore</option>
-                                <option value='sh' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sh" data-title="Saint Helena">Saint Helena</option>
-                                <option value='si' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag si" data-title="Slovenia">Slovenia</option>
-                                <option value='sj' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sj" data-title="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
-                                <option value='sk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sk" data-title="Slovakia">Slovakia</option>
-                                <option value='sl' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sl" data-title="Sierra Leone">Sierra Leone</option>
-                                <option value='sm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sm" data-title="San Marino">San Marino</option>
-                                <option value='sn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sn" data-title="Senegal">Senegal</option>
-                                <option value='so' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag so" data-title="Somalia">Somalia</option>
-                                <option value='sr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sr" data-title="Suriname">Suriname</option>
-                                <option value='st' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag st" data-title="Sao Tome and Principe">Sao Tome and Principe</option>
-                                <option value='su' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag su" data-title="USSR (former)">USSR (former)</option>
-                                <option value='sv' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sv" data-title="El Salvador">El Salvador</option>
-                                <option value='sy' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sy" data-title="Syria">Syria</option>
-                                <option value='sz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sz" data-title="Swaziland">Swaziland</option>
-                                <option value='tc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tc" data-title="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                                <option value='td' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag td" data-title="Chad">Chad</option>
-                                <option value='tf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tf" data-title="French Southern Territories">French Southern Territories</option>
-                                <option value='tg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tg" data-title="Togo">Togo</option>
-                                <option value='th' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag th" data-title="Thailand">Thailand</option>
-                                <option value='tj' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tj" data-title="Tajikistan">Tajikistan</option>
-                                <option value='tk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tk" data-title="Tokelau">Tokelau</option>
-                                <option value='tl' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tl" data-title="Timor-Leste">Timor-Leste</option>
-                                <option value='tm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tm" data-title="Turkmenistan">Turkmenistan</option>
-                                <option value='tn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tn" data-title="Tunisia">Tunisia</option>
-                                <option value='to' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag to" data-title="Tonga">Tonga</option>
-                                <option value='tp' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tp" data-title="East Timor">East Timor</option>
-                                <option value='tr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tr" data-title="Turkey">Turkey</option>
-                                <option value='tt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tt" data-title="Trinidad and Tobago">Trinidad and Tobago</option>
-                                <option value='tv' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tv" data-title="Tuvalu">Tuvalu</option>
-                                <option value='tw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tw" data-title="Taiwan">Taiwan</option>
-                                <option value='tz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag tz" data-title="Tanzania">Tanzania</option>
-                                <option value='ua' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ua" data-title="Ukraine">Ukraine</option>
-                                <option value='ug' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ug" data-title="Uganda">Uganda</option>
-                                <option value='uk' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag uk" data-title="United Kingdom">United Kingdom</option>
-                                <option value='um' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag um" data-title="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
-                                <option value='us' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag us" data-title="United States">United States</option>
-                                <option value='uy' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag uy" data-title="Uruguay">Uruguay</option>
-                                <option value='uz' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag uz" data-title="Uzbekistan">Uzbekistan</option>
-                                <option value='va' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag va" data-title="Vatican City State (Holy See)">Vatican City State (Holy See)</option>
-                                <option value='vc' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag vc" data-title="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-                                <option value='ve' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ve" data-title="Venezuela">Venezuela</option>
-                                <option value='vg' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag vg" data-title="Virgin Islands (British)">Virgin Islands (British)</option>
-                                <option value='vi' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag vi" data-title="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
-                                <option value='vn' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag vn" data-title="Viet Nam">Viet Nam</option>
-                                <option value='vu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag vu" data-title="Vanuatu">Vanuatu</option>
-                                <option value='wf' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag wf" data-title="Wallis and Futuna">Wallis and Futuna</option>
-                                <option value='ws' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ws" data-title="Samoa">Samoa</option>
-                                <option value='ye' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ye" data-title="Yemen">Yemen</option>
-                                <option value='yt' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag yt" data-title="Mayotte">Mayotte</option>
-                                <option value='yu' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag yu" data-title="Yugoslavia (former)">Yugoslavia (former)</option>
-                                <option value='za' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag za" data-title="South Africa">South Africa</option>
-                                <option value='zm' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag zm" data-title="Zambia">Zambia</option>
-                                <option value='zr' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag zr" data-title="Zaire (former)">Zaire (former)</option>
-                                <option value='zw' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag zw" data-title="Zimbabwe">Zimbabwe</option>
+<option value='default' selected="selected">Please Select a Country</option>
+<option value="Afghanistan" data-image="images/msdropdown/icons/blank.gif" title="Afghanistan">Afghanistan</option>
+    <option value="Åland Islands" data-image="images/msdropdown/icons/blank.gif" title="Åland Islands">Åland Islands</option>
+    <option value="Albania" data-image="images/msdropdown/icons/blank.gif" title="Albania">Albania</option>
+    <option value="Algeria" data-image="images/msdropdown/icons/blank.gif" title="Algeria">Algeria</option>
+    <option value="American Samoa" data-image="images/msdropdown/icons/blank.gif" title="American Samoa">American Samoa</option>
+    <option value="Andorra" data-image="images/msdropdown/icons/blank.gif" title="Andorra">Andorra</option>
+    <option value="Angola" data-image="images/msdropdown/icons/blank.gif" title="Angola">Angola</option>
+    <option value="Anguilla" data-image="images/msdropdown/icons/blank.gif" title="Anguilla">Anguilla</option>
+    <option value="Antarctica" data-image="images/msdropdown/icons/blank.gif" title="Antarctica">Antarctica</option>
+    <option value="Antigua and Barbuda" data-image="images/msdropdown/icons/blank.gif" title="Antigua and Barbuda">Antigua and Barbuda</option>
+    <option value="Argentina" data-image="images/msdropdown/icons/blank.gif" title="Argentina">Argentina</option>
+    <option value="Armenia" data-image="images/msdropdown/icons/blank.gif" title="Armenia">Armenia</option>
+    <option value="Aruba" data-image="images/msdropdown/icons/blank.gif" title="Aruba">Aruba</option>
+    <option value="Australia" data-image="images/msdropdown/icons/blank.gif" title="Australia">Australia</option>
+    <option value="Austria" data-image="images/msdropdown/icons/blank.gif" title="Austria">Austria</option>
+    <option value="Azerbaijan" data-image="images/msdropdown/icons/blank.gif" title="Azerbaijan">Azerbaijan</option>
+    <option value="Bahamas" data-image="images/msdropdown/icons/blank.gif" title="Bahamas">Bahamas</option>
+    <option value="Bahrain" data-image="images/msdropdown/icons/blank.gif" title="Bahrain">Bahrain</option>
+    <option value="Bangladesh" data-image="images/msdropdown/icons/blank.gif" title="Bangladesh">Bangladesh</option>
+    <option value="Barbados" data-image="images/msdropdown/icons/blank.gif" title="Barbados">Barbados</option>
+    <option value="Belarus" data-image="images/msdropdown/icons/blank.gif" title="Belarus">Belarus</option>
+    <option value="Belgium" data-image="images/msdropdown/icons/blank.gif" title="Belgium">Belgium</option>
+    <option value="Belize" data-image="images/msdropdown/icons/blank.gif" title="Belize">Belize</option>
+    <option value="Benin" data-image="images/msdropdown/icons/blank.gif" title="Benin">Benin</option>
+    <option value="Bermuda" data-image="images/msdropdown/icons/blank.gif" title="Bermuda">Bermuda</option>
+    <option value="Bhutan" data-image="images/msdropdown/icons/blank.gif" title="Bhutan">Bhutan</option>
+    <option value="Bolivia, Plurinational State of" data-image="images/msdropdown/icons/blank.gif" title="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+    <option value="Bonaire, Sint Eustatius and Saba" data-image="images/msdropdown/icons/blank.gif" title="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+    <option value="Bosnia and Herzegovina" data-image="images/msdropdown/icons/blank.gif" title="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+    <option value="Botswana" data-image="images/msdropdown/icons/blank.gif" title="Botswana">Botswana</option>
+    <option value="Bouvet Island" data-image="images/msdropdown/icons/blank.gif" title="Bouvet Island">Bouvet Island</option>
+    <option value="Brazil" data-image="images/msdropdown/icons/blank.gif" title="Brazil">Brazil</option>
+    <option value="British Indian Ocean Territory" data-image="images/msdropdown/icons/blank.gif" title="British Indian Ocean Territory">British Indian Ocean Territory</option>
+    <option value="Brunei Darussalam" data-image="images/msdropdown/icons/blank.gif" title="Brunei Darussalam">Brunei Darussalam</option>
+    <option value="Bulgaria" data-image="images/msdropdown/icons/blank.gif" title="Bulgaria">Bulgaria</option>
+    <option value="Burkina Faso" data-image="images/msdropdown/icons/blank.gif" title="Burkina Faso">Burkina Faso</option>
+    <option value="Burundi" data-image="images/msdropdown/icons/blank.gif" title="Burundi">Burundi</option>
+    <option value="Cambodia" data-image="images/msdropdown/icons/blank.gif" title="Cambodia">Cambodia</option>
+    <option value="Cameroon" data-image="images/msdropdown/icons/blank.gif" title="Cameroon">Cameroon</option>
+    <option value="Canada" data-image="images/msdropdown/icons/blank.gif" title="Canada">Canada</option>
+    <option value="Cape Verde" data-image="images/msdropdown/icons/blank.gif" title="Cape Verde">Cape Verde</option>
+    <option value="Cayman Islands" data-image="images/msdropdown/icons/blank.gif" title="Cayman Islands">Cayman Islands</option>
+    <option value="Central African Republic" data-image="images/msdropdown/icons/blank.gif" title="Central African Republic">Central African Republic</option>
+    <option value="Chad" data-image="images/msdropdown/icons/blank.gif" title="Chad">Chad</option>
+    <option value="Chile" data-image="images/msdropdown/icons/blank.gif" title="Chile">Chile</option>
+    <option value="China" data-image="images/msdropdown/icons/blank.gif" title="China">China</option>
+    <option value="Christmas Island" data-image="images/msdropdown/icons/blank.gif" title="Christmas Island">Christmas Island</option>
+    <option value="Cocos (Keeling) Islands" data-image="images/msdropdown/icons/blank.gif" title="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+    <option value="Colombia" data-image="images/msdropdown/icons/blank.gif" title="Colombia">Colombia</option>
+    <option value="Comoros" data-image="images/msdropdown/icons/blank.gif" title="Comoros">Comoros</option>
+    <option value="Congo" data-image="images/msdropdown/icons/blank.gif" title="Congo">Congo</option>
+    <option value="Congo, the Democratic Republic of the" data-image="images/msdropdown/icons/blank.gif" title="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</option>
+    <option value="Cook Islands" data-image="images/msdropdown/icons/blank.gif" title="Cook Islands">Cook Islands</option>
+    <option value="Costa Rica" data-image="images/msdropdown/icons/blank.gif" title="Costa Rica">Costa Rica</option>
+    <option value="Côte d'Ivoire" data-image="images/msdropdown/icons/blank.gif" title="Côte d'Ivoire">Côte d'Ivoire</option>
+    <option value="Croatia" data-image="images/msdropdown/icons/blank.gif" title="Croatia">Croatia</option>
+    <option value="Cuba" data-image="images/msdropdown/icons/blank.gif" title="Cuba">Cuba</option>
+    <option value="Curaçao" data-image="images/msdropdown/icons/blank.gif" title="Curaçao">Curaçao</option>
+    <option value="Cyprus" data-image="images/msdropdown/icons/blank.gif" title="Cyprus">Cyprus</option>
+    <option value="Czech Republic" data-image="images/msdropdown/icons/blank.gif" title="Czech Republic">Czech Republic</option>
+    <option value="Denmark" data-image="images/msdropdown/icons/blank.gif" title="Denmark">Denmark</option>
+    <option value="Djibouti" data-image="images/msdropdown/icons/blank.gif" title="Djibouti">Djibouti</option>
+    <option value="Dominica" data-image="images/msdropdown/icons/blank.gif" title="Dominica">Dominica</option>
+    <option value="Dominican Republic" data-image="images/msdropdown/icons/blank.gif" title="Dominican Republic">Dominican Republic</option>
+    <option value="Ecuador" data-image="images/msdropdown/icons/blank.gif" title="Ecuador">Ecuador</option>
+    <option value="Egypt" data-image="images/msdropdown/icons/blank.gif" title="Egypt">Egypt</option>
+    <option value="El Salvador" data-image="images/msdropdown/icons/blank.gif" title="El Salvador">El Salvador</option>
+    <option value="Equatorial Guinea" data-image="images/msdropdown/icons/blank.gif" title="Equatorial Guinea">Equatorial Guinea</option>
+    <option value="Eritrea" data-image="images/msdropdown/icons/blank.gif" title="Eritrea">Eritrea</option>
+    <option value="Estonia" data-image="images/msdropdown/icons/blank.gif" title="Estonia">Estonia</option>
+    <option value="Ethiopia" data-image="images/msdropdown/icons/blank.gif" title="Ethiopia">Ethiopia</option>
+    <option value="Falkland Islands (Malvinas)" data-image="images/msdropdown/icons/blank.gif" title="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+    <option value="Faroe Islands" data-image="images/msdropdown/icons/blank.gif" title="Faroe Islands">Faroe Islands</option>
+    <option value="Fiji" data-image="images/msdropdown/icons/blank.gif" title="Fiji">Fiji</option>
+    <option value="Finland" data-image="images/msdropdown/icons/blank.gif" title="Finland">Finland</option>
+    <option value="France" data-image="images/msdropdown/icons/blank.gif" title="France">France</option>
+    <option value="French Guiana" data-image="images/msdropdown/icons/blank.gif" title="French Guiana">French Guiana</option>
+    <option value="French Polynesia" data-image="images/msdropdown/icons/blank.gif" title="French Polynesia">French Polynesia</option>
+    <option value="French Southern Territories" data-image="images/msdropdown/icons/blank.gif" title="French Southern Territories">French Southern Territories</option>
+    <option value="Gabon" data-image="images/msdropdown/icons/blank.gif" title="Gabon">Gabon</option>
+    <option value="Gambia" data-image="images/msdropdown/icons/blank.gif" title="Gambia">Gambia</option>
+    <option value="Georgia" data-image="images/msdropdown/icons/blank.gif" title="Georgia">Georgia</option>
+    <option value="Germany" data-image="images/msdropdown/icons/blank.gif" title="Germany">Germany</option>
+    <option value="Ghana" data-image="images/msdropdown/icons/blank.gif" title="Ghana">Ghana</option>
+    <option value="Gibraltar" data-image="images/msdropdown/icons/blank.gif" title="Gibraltar">Gibraltar</option>
+    <option value="Greece" data-image="images/msdropdown/icons/blank.gif" title="Greece">Greece</option>
+    <option value="Greenland" data-image="images/msdropdown/icons/blank.gif" title="Greenland">Greenland</option>
+    <option value="Grenada" data-image="images/msdropdown/icons/blank.gif" title="Grenada">Grenada</option>
+    <option value="Guadeloupe" data-image="images/msdropdown/icons/blank.gif" title="Guadeloupe">Guadeloupe</option>
+    <option value="Guam" data-image="images/msdropdown/icons/blank.gif" title="Guam">Guam</option>
+    <option value="Guatemala" data-image="images/msdropdown/icons/blank.gif" title="Guatemala">Guatemala</option>
+    <option value="Guernsey" data-image="images/msdropdown/icons/blank.gif" title="Guernsey">Guernsey</option>
+    <option value="Guinea" data-image="images/msdropdown/icons/blank.gif" title="Guinea">Guinea</option>
+    <option value="Guinea-Bissau" data-image="images/msdropdown/icons/blank.gif" title="Guinea-Bissau">Guinea-Bissau</option>
+    <option value="Guyana" data-image="images/msdropdown/icons/blank.gif" title="Guyana">Guyana</option>
+    <option value="Haiti" data-image="images/msdropdown/icons/blank.gif" title="Haiti">Haiti</option>
+    <option value="Heard Island and McDonald Islands" data-image="images/msdropdown/icons/blank.gif" title="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+    <option value="Holy See (Vatican City State)" data-image="images/msdropdown/icons/blank.gif" title="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+    <option value="Honduras" data-image="images/msdropdown/icons/blank.gif" title="Honduras">Honduras</option>
+    <option value="Hong Kong" data-image="images/msdropdown/icons/blank.gif" title="Hong Kong">Hong Kong</option>
+    <option value="Hungary" data-image="images/msdropdown/icons/blank.gif" title="Hungary">Hungary</option>
+    <option value="Iceland" data-image="images/msdropdown/icons/blank.gif" title="Iceland">Iceland</option>
+    <option value="India" data-image="images/msdropdown/icons/blank.gif" title="India">India</option>
+    <option value="Indonesia" data-image="images/msdropdown/icons/blank.gif" title="Indonesia">Indonesia</option>
+    <option value="Iran, Islamic Republic of" data-image="images/msdropdown/icons/blank.gif" title="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+    <option value="Iraq" data-image="images/msdropdown/icons/blank.gif" title="Iraq">Iraq</option>
+    <option value="Ireland" data-image="images/msdropdown/icons/blank.gif" title="Ireland">Ireland</option>
+    <option value="Isle of Man" data-image="images/msdropdown/icons/blank.gif" title="Isle of Man">Isle of Man</option>
+    <option value="Israel" data-image="images/msdropdown/icons/blank.gif" title="Israel">Israel</option>
+    <option value="Italy" data-image="images/msdropdown/icons/blank.gif" title="Italy">Italy</option>
+    <option value="Jamaica" data-image="images/msdropdown/icons/blank.gif" title="Jamaica">Jamaica</option>
+    <option value="Japan" data-image="images/msdropdown/icons/blank.gif" title="Japan">Japan</option>
+    <option value="Jersey" data-image="images/msdropdown/icons/blank.gif" title="Jersey">Jersey</option>
+    <option value="Jordan" data-image="images/msdropdown/icons/blank.gif" title="Jordan">Jordan</option>
+    <option value="Kazakhstan" data-image="images/msdropdown/icons/blank.gif" title="Kazakhstan">Kazakhstan</option>
+    <option value="Kenya" data-image="images/msdropdown/icons/blank.gif" title="Kenya">Kenya</option>
+    <option value="Kiribati" data-image="images/msdropdown/icons/blank.gif" title="Kiribati">Kiribati</option>
+    <option value="Korea, Democratic People's Republic of" data-image="images/msdropdown/icons/blank.gif" title="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+    <option value="Korea, Republic of" data-image="images/msdropdown/icons/blank.gif" title="Korea, Republic of">Korea, Republic of</option>
+    <option value="Kuwait" data-image="images/msdropdown/icons/blank.gif" title="Kuwait">Kuwait</option>
+    <option value="Kyrgyzstan" data-image="images/msdropdown/icons/blank.gif" title="Kyrgyzstan">Kyrgyzstan</option>
+    <option value="Lao People's Democratic Republic" data-image="images/msdropdown/icons/blank.gif" title="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+    <option value="Latvia" data-image="images/msdropdown/icons/blank.gif" title="Latvia">Latvia</option>
+    <option value="Lebanon" data-image="images/msdropdown/icons/blank.gif" title="Lebanon">Lebanon</option>
+    <option value="Lesotho" data-image="images/msdropdown/icons/blank.gif" title="Lesotho">Lesotho</option>
+    <option value="Liberia" data-image="images/msdropdown/icons/blank.gif" title="Liberia">Liberia</option>
+    <option value="Libya" data-image="images/msdropdown/icons/blank.gif" title="Libya">Libya</option>
+    <option value="Liechtenstein" data-image="images/msdropdown/icons/blank.gif" title="Liechtenstein">Liechtenstein</option>
+    <option value="Lithuania" data-image="images/msdropdown/icons/blank.gif" title="Lithuania">Lithuania</option>
+    <option value="Luxembourg" data-image="images/msdropdown/icons/blank.gif" title="Luxembourg">Luxembourg</option>
+    <option value="Macao" data-image="images/msdropdown/icons/blank.gif" title="Macao">Macao</option>
+    <option value="Macedonia, the former Yugoslav Republic of" data-image="images/msdropdown/icons/blank.gif" title="Macedonia, the former Yugoslav Republic of">Macedonia, the former Yugoslav Republic of</option>
+    <option value="Madagascar" data-image="images/msdropdown/icons/blank.gif" title="Madagascar">Madagascar</option>
+    <option value="Malawi" data-image="images/msdropdown/icons/blank.gif" title="Malawi">Malawi</option>
+    <option value="Malaysia" data-image="images/msdropdown/icons/blank.gif" title="Malaysia">Malaysia</option>
+    <option value="Maldives" data-image="images/msdropdown/icons/blank.gif" title="Maldives">Maldives</option>
+    <option value="Mali" data-image="images/msdropdown/icons/blank.gif" title="Mali">Mali</option>
+    <option value="Malta" data-image="images/msdropdown/icons/blank.gif" title="Malta">Malta</option>
+    <option value="Marshall Islands" data-image="images/msdropdown/icons/blank.gif" title="Marshall Islands">Marshall Islands</option>
+    <option value="Martinique" data-image="images/msdropdown/icons/blank.gif" title="Martinique">Martinique</option>
+    <option value="Mauritania" data-image="images/msdropdown/icons/blank.gif" title="Mauritania">Mauritania</option>
+    <option value="Mauritius" data-image="images/msdropdown/icons/blank.gif" title="Mauritius">Mauritius</option>
+    <option value="Mayotte" data-image="images/msdropdown/icons/blank.gif" title="Mayotte">Mayotte</option>
+    <option value="Mexico" data-image="images/msdropdown/icons/blank.gif" title="Mexico">Mexico</option>
+    <option value="Micronesia, Federated States of" data-image="images/msdropdown/icons/blank.gif" title="Micronesia, Federated States of">Micronesia, Federated States of</option>
+    <option value="Moldova, Republic of" data-image="images/msdropdown/icons/blank.gif" title="Moldova, Republic of">Moldova, Republic of</option>
+    <option value="Monaco" data-image="images/msdropdown/icons/blank.gif" title="Monaco">Monaco</option>
+    <option value="Mongolia" data-image="images/msdropdown/icons/blank.gif" title="Mongolia">Mongolia</option>
+    <option value="Montenegro" data-image="images/msdropdown/icons/blank.gif" title="Montenegro">Montenegro</option>
+    <option value="Montserrat" data-image="images/msdropdown/icons/blank.gif" title="Montserrat">Montserrat</option>
+    <option value="Morocco" data-image="images/msdropdown/icons/blank.gif" title="Morocco">Morocco</option>
+    <option value="Mozambique" data-image="images/msdropdown/icons/blank.gif" title="Mozambique">Mozambique</option>
+    <option value="Myanmar" data-image="images/msdropdown/icons/blank.gif" title="Myanmar">Myanmar</option>
+    <option value="Namibia" data-image="images/msdropdown/icons/blank.gif" title="Namibia">Namibia</option>
+    <option value="Nauru" data-image="images/msdropdown/icons/blank.gif" title="Nauru">Nauru</option>
+    <option value="Nepal" data-image="images/msdropdown/icons/blank.gif" title="Nepal">Nepal</option>
+    <option value="Netherlands" data-image="images/msdropdown/icons/blank.gif" title="Netherlands">Netherlands</option>
+    <option value="New Caledonia" data-image="images/msdropdown/icons/blank.gif" title="New Caledonia">New Caledonia</option>
+    <option value="New Zealand" data-image="images/msdropdown/icons/blank.gif" title="New Zealand">New Zealand</option>
+    <option value="Nicaragua" data-image="images/msdropdown/icons/blank.gif" title="Nicaragua">Nicaragua</option>
+    <option value="Niger" data-image="images/msdropdown/icons/blank.gif" title="Niger">Niger</option>
+    <option value="Nigeria" data-image="images/msdropdown/icons/blank.gif" title="Nigeria">Nigeria</option>
+    <option value="Niue" data-image="images/msdropdown/icons/blank.gif" title="Niue">Niue</option>
+    <option value="Norfolk Island" data-image="images/msdropdown/icons/blank.gif" title="Norfolk Island">Norfolk Island</option>
+    <option value="Northern Mariana Islands" data-image="images/msdropdown/icons/blank.gif" title="Northern Mariana Islands">Northern Mariana Islands</option>
+    <option value="Norway" data-image="images/msdropdown/icons/blank.gif" title="Norway">Norway</option>
+    <option value="Oman" data-image="images/msdropdown/icons/blank.gif" title="Oman">Oman</option>
+    <option value="Pakistan" data-image="images/msdropdown/icons/blank.gif" title="Pakistan">Pakistan</option>
+    <option value="Palau" data-image="images/msdropdown/icons/blank.gif" title="Palau">Palau</option>
+    <option value="Palestinian Territory, Occupied" data-image="images/msdropdown/icons/blank.gif" title="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+    <option value="Panama" data-image="images/msdropdown/icons/blank.gif" title="Panama">Panama</option>
+    <option value="Papua New Guinea" data-image="images/msdropdown/icons/blank.gif" title="Papua New Guinea">Papua New Guinea</option>
+    <option value="Paraguay" data-image="images/msdropdown/icons/blank.gif" title="Paraguay">Paraguay</option>
+    <option value="Peru" data-image="images/msdropdown/icons/blank.gif" title="Peru">Peru</option>
+    <option value="Philippines" data-image="images/msdropdown/icons/blank.gif" title="Philippines">Philippines</option>
+    <option value="Pitcairn" data-image="images/msdropdown/icons/blank.gif" title="Pitcairn">Pitcairn</option>
+    <option value="Poland" data-image="images/msdropdown/icons/blank.gif" title="Poland">Poland</option>
+    <option value="Portugal" data-image="images/msdropdown/icons/blank.gif" title="Portugal">Portugal</option>
+    <option value="Puerto Rico" data-image="images/msdropdown/icons/blank.gif" title="Puerto Rico">Puerto Rico</option>
+    <option value="Qatar" data-image="images/msdropdown/icons/blank.gif" title="Qatar">Qatar</option>
+    <option value="Réunion" data-image="images/msdropdown/icons/blank.gif" title="Réunion">Réunion</option>
+    <option value="Romania" data-image="images/msdropdown/icons/blank.gif" title="Romania">Romania</option>
+    <option value="Russian Federation" data-image="images/msdropdown/icons/blank.gif" title="Russian Federation">Russian Federation</option>
+    <option value="Rwanda" data-image="images/msdropdown/icons/blank.gif" title="Rwanda">Rwanda</option>
+    <option value="Saint Barthélemy" data-image="images/msdropdown/icons/blank.gif" title="Saint Barthélemy">Saint Barthélemy</option>
+    <option value="Saint Helena, Ascension and Tristan da Cunha" data-image="images/msdropdown/icons/blank.gif" title="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+    <option value="Saint Kitts and Nevis" data-image="images/msdropdown/icons/blank.gif" title="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+    <option value="Saint Lucia" data-image="images/msdropdown/icons/blank.gif" title="Saint Lucia">Saint Lucia</option>
+    <option value="Saint Martin (French part)" data-image="images/msdropdown/icons/blank.gif" title="Saint Martin (French part)">Saint Martin (French part)</option>
+    <option value="Saint Pierre and Miquelon" data-image="images/msdropdown/icons/blank.gif" title="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+    <option value="Saint Vincent and the Grenadines" data-image="images/msdropdown/icons/blank.gif" title="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+    <option value="Samoa" data-image="images/msdropdown/icons/blank.gif" title="Samoa">Samoa</option>
+    <option value="San Marino" data-image="images/msdropdown/icons/blank.gif" title="San Marino">San Marino</option>
+    <option value="Sao Tome and Principe" data-image="images/msdropdown/icons/blank.gif" title="Sao Tome and Principe">Sao Tome and Principe</option>
+    <option value="Saudi Arabia" data-image="images/msdropdown/icons/blank.gif" title="Saudi Arabia">Saudi Arabia</option>
+    <option value="Senegal" data-image="images/msdropdown/icons/blank.gif" title="Senegal">Senegal</option>
+    <option value="Serbia" data-image="images/msdropdown/icons/blank.gif" title="Serbia">Serbia</option>
+    <option value="Seychelles" data-image="images/msdropdown/icons/blank.gif" title="Seychelles">Seychelles</option>
+    <option value="Sierra Leone" data-image="images/msdropdown/icons/blank.gif" title="Sierra Leone">Sierra Leone</option>
+    <option value="Singapore" data-image="images/msdropdown/icons/blank.gif" title="Singapore">Singapore</option>
+    <option value="Sint Maarten (Dutch part)" data-image="images/msdropdown/icons/blank.gif" title="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+    <option value="Slovakia" data-image="images/msdropdown/icons/blank.gif" title="Slovakia">Slovakia</option>
+    <option value="Slovenia" data-image="images/msdropdown/icons/blank.gif" title="Slovenia">Slovenia</option>
+    <option value="Solomon Islands" data-image="images/msdropdown/icons/blank.gif" title="Solomon Islands">Solomon Islands</option>
+    <option value="Somalia" data-image="images/msdropdown/icons/blank.gif" title="Somalia">Somalia</option>
+    <option value="South Africa" data-image="images/msdropdown/icons/blank.gif" title="South Africa">South Africa</option>
+    <option value="South Georgia and the South Sandwich Islands" data-image="images/msdropdown/icons/blank.gif" title="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+    <option value="South Sudan" data-image="images/msdropdown/icons/blank.gif" title="South Sudan">South Sudan</option>
+    <option value="Spain" data-image="images/msdropdown/icons/blank.gif" title="Spain">Spain</option>
+    <option value="Sri Lanka" data-image="images/msdropdown/icons/blank.gif" title="Sri Lanka">Sri Lanka</option>
+    <option value="Sudan" data-image="images/msdropdown/icons/blank.gif" title="Sudan">Sudan</option>
+    <option value="Suriname" data-image="images/msdropdown/icons/blank.gif" title="Suriname">Suriname</option>
+    <option value="Svalbard and Jan Mayen" data-image="images/msdropdown/icons/blank.gif" title="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+    <option value="Swaziland" data-image="images/msdropdown/icons/blank.gif" title="Swaziland">Swaziland</option>
+    <option value="Sweden" data-image="images/msdropdown/icons/blank.gif" title="Sweden">Sweden</option>
+    <option value="Switzerland" data-image="images/msdropdown/icons/blank.gif" title="Switzerland">Switzerland</option>
+    <option value="Syrian Arab Republic" data-image="images/msdropdown/icons/blank.gif" title="Syrian Arab Republic">Syrian Arab Republic</option>
+    <option value="Taiwan, Province of China" data-image="images/msdropdown/icons/blank.gif" title="Taiwan, Province of China">Taiwan, Province of China</option>
+    <option value="Tajikistan" data-image="images/msdropdown/icons/blank.gif" title="Tajikistan">Tajikistan</option>
+    <option value="Tanzania, United Republic of" data-image="images/msdropdown/icons/blank.gif" title="Tanzania, United Republic of">Tanzania, United Republic of</option>
+    <option value="Thailand" data-image="images/msdropdown/icons/blank.gif" title="Thailand">Thailand</option>
+    <option value="Timor-Leste" data-image="images/msdropdown/icons/blank.gif" title="Timor-Leste">Timor-Leste</option>
+    <option value="Togo" data-image="images/msdropdown/icons/blank.gif" title="Togo">Togo</option>
+    <option value="Tokelau" data-image="images/msdropdown/icons/blank.gif" title="Tokelau">Tokelau</option>
+    <option value="Tonga" data-image="images/msdropdown/icons/blank.gif" title="Tonga">Tonga</option>
+    <option value="Trinidad and Tobago" data-image="images/msdropdown/icons/blank.gif" title="Trinidad and Tobago">Trinidad and Tobago</option>
+    <option value="Tunisia" data-image="images/msdropdown/icons/blank.gif" title="Tunisia">Tunisia</option>
+    <option value="Turkey" data-image="images/msdropdown/icons/blank.gif" title="Turkey">Turkey</option>
+    <option value="Turkmenistan" data-image="images/msdropdown/icons/blank.gif" title="Turkmenistan">Turkmenistan</option>
+    <option value="Turks and Caicos Islands" data-image="images/msdropdown/icons/blank.gif" title="Turks and Caicos Islands">Turks and Caicos Islands</option>
+    <option value="Tuvalu" data-image="images/msdropdown/icons/blank.gif" title="Tuvalu">Tuvalu</option>
+    <option value="Uganda" data-image="images/msdropdown/icons/blank.gif" title="Uganda">Uganda</option>
+    <option value="Ukraine" data-image="images/msdropdown/icons/blank.gif" title="Ukraine">Ukraine</option>
+    <option value="United Arab Emirates" data-image="images/msdropdown/icons/blank.gif" title="United Arab Emirates">United Arab Emirates</option>
+    <option value="United Kingdom" data-image="images/msdropdown/icons/blank.gif" title="United Kingdom">United Kingdom</option>
+    <option value="United States" data-image="images/msdropdown/icons/blank.gif" title="United States">United States</option>
+    <option value="United States Minor Outlying Islands" data-image="images/msdropdown/icons/blank.gif" title="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+    <option value="Uruguay" data-image="images/msdropdown/icons/blank.gif" title="Uruguay">Uruguay</option>
+    <option value="Uzbekistan" data-image="images/msdropdown/icons/blank.gif" title="Uzbekistan">Uzbekistan</option>
+    <option value="Vanuatu" data-image="images/msdropdown/icons/blank.gif" title="Vanuatu">Vanuatu</option>
+    <option value="Venezuela, Bolivarian Republic of" data-image="images/msdropdown/icons/blank.gif" title="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+    <option value="Viet Nam" data-image="images/msdropdown/icons/blank.gif" title="Viet Nam">Viet Nam</option>
+    <option value="Virgin Islands, British" data-image="images/msdropdown/icons/blank.gif" title="Virgin Islands, British">Virgin Islands, British</option>
+    <option value="Virgin Islands, U.S." data-image="images/msdropdown/icons/blank.gif" title="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+    <option value="Wallis and Futuna" data-image="images/msdropdown/icons/blank.gif" title="Wallis and Futuna">Wallis and Futuna</option>
+    <option value="Western Sahara" data-image="images/msdropdown/icons/blank.gif" title="Western Sahara">Western Sahara</option>
+    <option value="Yemen" data-image="images/msdropdown/icons/blank.gif" title="Yemen">Yemen</option>
+    <option value="Zambia" data-image="images/msdropdown/icons/blank.gif" title="Zambia">Zambia</option>
+    <option value="Zimbabwe" data-image="images/msdropdown/icons/blank.gif" title="Zimbabwe">Zimbabwe</option>
 
                             </select></td>
                         <td></td>
